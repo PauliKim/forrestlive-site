@@ -86,8 +86,15 @@ def fetch(url: str, retries: int = 3) -> bytes:
     raise RuntimeError(f"요청 실패: {url.split('?')[0]} ({last})")
 
 
+def service_key() -> str:
+    """Secret에 키 외의 글(공백, 줄바꿈, 문서 전체 등)이 섞여 있어도 32자리 키만 꺼낸다."""
+    raw = os.environ.get("KOPIS_API_KEY", "")
+    m = re.search(r"\b[0-9a-fA-F]{32}\b", raw)
+    return m.group(0) if m else raw.strip()
+
+
 def api(path: str, **params) -> ET.Element:
-    params["service"] = os.environ["KOPIS_API_KEY"]
+    params["service"] = service_key()
     root = ET.fromstring(fetch(f"{BASE}/{path}?{urllib.parse.urlencode(params)}"))
     if root.tag != "dbs" and root.find(".//db") is None:
         raise RuntimeError(f"KOPIS 응답 오류: {ET.tostring(root, encoding='unicode')[:300]}")
@@ -383,6 +390,8 @@ def main() -> int:
     if not os.environ.get("KOPIS_API_KEY"):
         print("KOPIS_API_KEY가 없습니다. GitHub 저장소 Settings > Secrets에 등록하세요.", file=sys.stderr)
         return 1
+    if len(os.environ["KOPIS_API_KEY"].strip()) != 32:
+        print(f"주의: KOPIS_API_KEY 값이 {len(os.environ['KOPIS_API_KEY'])}자입니다. 32자리 키만 넣어 두는 것이 좋습니다.", file=sys.stderr)
     if args.full:
         try:
             sync_venues()
