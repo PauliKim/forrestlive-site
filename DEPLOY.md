@@ -52,7 +52,7 @@ git push -u origin main
 
 1. 저장소 → **Settings → Secrets and variables → Actions → New repository secret**
    - Name: `KOPIS_API_KEY`
-   - Secret: 1단계에서 받은 인증키
+   - Secret: 1단계에서 받은 인증키 **32자리만** (문서 전체를 붙여 넣지 않기)
    - **Add secret**
 2. 저장소 → **Settings → Actions → General**
    - Actions permissions: **Allow all actions and reusable workflows**
@@ -88,15 +88,19 @@ git push -u origin main
 - 사이트당 파일 2만 개, 파일당 25MB. 현재 약 140개 파일입니다.
 - 트래픽 요금이 따로 붙지 않습니다.
 - 캐시 설정은 저장소 루트의 `_headers` 파일에 있습니다(공연 데이터 1분, 글꼴 1년).
+- `/concert/` 하위 경로 처리는 `_redirects` 파일에 있습니다.
 
-## 5단계. 도메인 연결 (선택)
+## 5단계. 도메인 연결 — concert.forrestlive.com
 
-예: `shows.forrestlive.com`
-1. Cloudflare Pages 프로젝트 → **Custom domains** → **Set up a custom domain** → `shows.forrestlive.com` 입력.
-2. forrestlive.com의 DNS가 Cloudflare에 있으면 자동으로 설정됩니다.
-   DNS가 다른 곳(가비아, 카페24 등)에 있으면 그곳 DNS 설정에 추가합니다.
-   - `CNAME`, 이름 `shows`, 값 `<프로젝트 이름>.pages.dev`
-3. Cloudflare 화면에 **Active**가 뜨면 끝입니다. HTTPS 인증서는 자동입니다.
+forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사이트는 하위 도메인에 둡니다. (검토 내용은 `설정_순서.md` 맨 아래 ‘도메인 검토 결과’)
+
+1. Cloudflare Pages 프로젝트 → **Custom domains** → **Set up a custom domain** → `concert.forrestlive.com` → **My DNS provider** (CNAME 설정)
+2. 가비아 DNS 관리 → forrestlive.com → 레코드 수정 → 레코드 추가
+   - 타입 `CNAME`, 호스트 `concert`, 값 `forrestlive.pages.dev.` → 확인 → 저장
+3. Cloudflare에서 **Check DNS records**. **Active**가 되면 HTTPS까지 자동입니다.
+4. 프레이머 Site Settings → Redirects: `/concert` → `https://concert.forrestlive.com` 추가 후 **Publish**
+
+사이트는 `/concert/` 경로로 들어와도 같은 페이지를 보여 줍니다(`_redirects`). 나중에 프레이머 Advanced Hosting의 외부 리라이트(`/concert/*` → `https://forrestlive.pages.dev/concert/`)로 바꾸면 주소를 forrestlive.com/concert 로 유지할 수 있습니다.
 
 ---
 

@@ -2,6 +2,9 @@
 
 숲세권 라이브가 기획한 공연을 모아 보여 주는 정적 웹사이트입니다. 빌드 과정 없이 그대로 배포합니다.
 
+- 주소: https://concert.forrestlive.com (forrestlive.com/concert 에서 이동)
+- 호스팅: Cloudflare Pages (`forrestlive.pages.dev`)
+
 ## 구성
 
 | 파일 | 내용 |
@@ -11,6 +14,7 @@
 | `DEPLOY.md` | GitHub·Cloudflare Pages 세팅과 운영 방법 |
 | `설정_순서.md` | 처음 설정할 때 따라 하는 순서 |
 | `_headers` | Cloudflare Pages 캐시 설정 |
+| `_redirects` | `/concert/` 하위 경로로 들어와도 같은 페이지를 보여 주는 설정 |
 | `docs/KOPIS_API.md` | KOPIS OPEN API 정리(인증키 포함, 저장소에는 올라가지 않음) |
 | `tests/test_sync.py` | 동기화 스크립트 점검(네트워크 불필요) |
 | `styles.css` | 디자인 토큰과 공통 구성 요소 |
