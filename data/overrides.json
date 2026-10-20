@@ -1,0 +1,6 @@
+{
+ "_설명": "KOPIS에 없는 값을 직접 적는 곳입니다. 키는 공연 ID(KOPIS ID 예: PF303815, 또는 shows.json의 id). 적은 값이 KOPIS 값보다 우선합니다. openAt=예매 오픈 시각(예: 2026-11-02T20:00), soldOut=매진, intro=소개글.",
+ "shows": {
+  "PF303911": { "openAt": "2026-10-19T20:00" }
+ }
+}

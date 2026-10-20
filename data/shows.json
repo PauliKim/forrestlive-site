@@ -1,0 +1,4669 @@
+{
+ "updated": "2026-10-20T15:55",
+ "source": "공연예술통합전산망(KOPIS)",
+ "shows": [
+  {
+   "id": "pf195215",
+   "kopisId": "PF195215",
+   "date": "2022-08-13",
+   "endDate": "2022-08-13",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195215_220726_135202.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195215_220726_0152020.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207128"
+    }
+   ],
+   "kopisUpdated": "2022-07-26 15:00:00",
+   "source": "KOPIS",
+   "title": "anemone",
+   "artist": "엔분의일",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf195598",
+   "kopisId": "PF195598",
+   "date": "2022-08-20",
+   "endDate": "2022-08-20",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195598_220802_111244.PNG",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195598_220802_1112440.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207159"
+    }
+   ],
+   "kopisUpdated": "2022-08-02 15:00:00",
+   "source": "KOPIS",
+   "title": "Rosemary",
+   "artist": "마리슈",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf195985",
+   "kopisId": "PF195985",
+   "date": "2022-08-27",
+   "endDate": "2022-08-27",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "전유동"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195985_220810_095333.PNG",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195985_220810_0953330.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207184"
+    }
+   ],
+   "kopisUpdated": "2022-08-10 15:00:00",
+   "source": "KOPIS",
+   "title": "Platanus",
+   "artist": "전유동",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf197288",
+   "kopisId": "PF197288",
+   "date": "2022-09-17",
+   "endDate": "2022-09-17",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "조소정 등"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF197288_220830_143858.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF197288_220830_0238580.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207231"
+    }
+   ],
+   "kopisUpdated": "2022-08-30 15:00:00",
+   "source": "KOPIS",
+   "title": "Lily of the valley",
+   "artist": "조소정",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf198535",
+   "kopisId": "PF198535",
+   "date": "2022-10-08",
+   "endDate": "2022-10-08",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF198535_220921_114520.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF198535_220921_1145200.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207321"
+    }
+   ],
+   "kopisUpdated": "2022-09-21 15:00:00",
+   "source": "KOPIS",
+   "title": "Clover",
+   "artist": "슈야",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf198882",
+   "kopisId": "PF198882",
+   "date": "2022-10-15",
+   "endDate": "2022-10-15",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF198882_220927_112721.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF198882_220927_1127210.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207334"
+    }
+   ],
+   "kopisUpdated": "2022-09-27 15:00:00",
+   "source": "KOPIS",
+   "title": "Rose Of Sharon",
+   "artist": "펜텐",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf199454",
+   "kopisId": "PF199454",
+   "date": "2022-10-22",
+   "endDate": "2022-10-22",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF199454_221005_140046.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF199454_221005_0200460.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207375"
+    }
+   ],
+   "kopisUpdated": "2022-10-05 15:00:00",
+   "source": "KOPIS",
+   "title": "Gerbera",
+   "artist": "서온",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf199830",
+   "kopisId": "PF199830",
+   "date": "2022-10-29",
+   "endDate": "2022-10-29",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF199830_221012_110338.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF199830_221012_1103380.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207387"
+    }
+   ],
+   "kopisUpdated": "2022-10-12 15:00:00",
+   "source": "KOPIS",
+   "title": "Sunflower",
+   "artist": "맥거핀",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf200347",
+   "kopisId": "PF200347",
+   "date": "2022-11-05",
+   "endDate": "2022-11-05",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF200347_221019_112607.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF200347_221019_1126070.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207409"
+    }
+   ],
+   "kopisUpdated": "2022-10-19 15:00:00",
+   "source": "KOPIS",
+   "title": "Ginkgo",
+   "artist": "허드",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf202177",
+   "kopisId": "PF202177",
+   "date": "2022-12-03",
+   "endDate": "2022-12-03",
+   "time": "15:00",
+   "timeNote": "",
+   "times": "토요일(15:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 35,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF202177_221115_112732.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF202177_221115_1127320.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207519"
+    }
+   ],
+   "kopisUpdated": "2022-11-15 15:00:00",
+   "source": "KOPIS",
+   "title": "forget me not",
+   "artist": "이서",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf203248",
+   "kopisId": "PF203248",
+   "date": "2022-12-17",
+   "endDate": "2022-12-17",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 33,000원",
+   "runtime": "2시간",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF203248_221129_141412.jfif",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF203248_221129_0218270.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=207601"
+    }
+   ],
+   "kopisUpdated": "2022-11-29 15:00:00",
+   "source": "KOPIS",
+   "title": "겨울잠",
+   "artist": "정새벽 · 슈야 · 라디오 파라다이스",
+   "subtitle": "포근한 겨울밤",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf251163",
+   "kopisId": "PF251163",
+   "date": "2024-10-27",
+   "endDate": "2024-10-27",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "other",
+   "venueName": "대구 한영아트센터",
+   "price": "전석 77,000원",
+   "runtime": "2시간 10분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "강하림",
+    "윤종훈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF251163_241014_132516.jfif",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF251163_241014_0125480.JPG"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=210476"
+    }
+   ],
+   "kopisUpdated": "2024-10-14 15:00:00",
+   "source": "KOPIS",
+   "title": "대구 콘서트",
+   "artist": "모브닝 X 윤딴딴",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "subtitle": "",
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf252350",
+   "kopisId": "PF252350",
+   "date": "2024-11-09",
+   "endDate": "2024-11-10",
+   "time": "18:00",
+   "timeNote": "토 오후 6시, 일 오후 5시",
+   "times": "토요일(18:00), 일요일(17:00)",
+   "venue": "other",
+   "venueName": "예스24 원더로크홀",
+   "price": "전석 77,000원",
+   "runtime": "2시간 30분",
+   "age": "만 11세 이상",
+   "lineup": [
+    "백해인",
+    "조한겸",
+    "신성규",
+    "소순우",
+    "최훈",
+    "김예현",
+    "김명수 등"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF252350_241028_170742.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF252350_241028_0507421.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF252350_241028_0507420.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "예스24",
+     "url": "https://ticket.yes24.com/Perf/51443"
+    }
+   ],
+   "kopisUpdated": "2024-10-28 18:00:00",
+   "source": "KOPIS",
+   "title": "숲세권 콘서트",
+   "artist": "굿덕과 함께하는",
+   "subtitle": "GOODDUCK X 숲세권 라이브",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf269668",
+   "kopisId": "PF269668",
+   "date": "2025-08-02",
+   "endDate": "2025-08-03",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일 ~ 일요일(18:00)",
+   "venue": "other",
+   "venueName": "주말극장",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF269668_250717_102008.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF269668_202507171020081200.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211654"
+    }
+   ],
+   "kopisUpdated": "2025-07-17 15:00:00",
+   "source": "KOPIS",
+   "title": "라벤더",
+   "artist": "기프트",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf272917",
+   "kopisId": "PF272917",
+   "date": "2025-09-15",
+   "endDate": "2025-09-15",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이준행",
+    "이동건",
+    "김슬웅 등"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF272917_250829_103011.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF272917_202508291030119490.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211868"
+    }
+   ],
+   "kopisUpdated": "2025-08-29 15:00:00",
+   "source": "KOPIS",
+   "title": "벤치위레오",
+   "artist": "벤치위레오",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf273351",
+   "kopisId": "PF273351",
+   "date": "2025-09-22",
+   "endDate": "2025-09-22",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "other",
+   "venueName": "주말극장",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF273351_250904_112228.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF273351_202509041122286040.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211899"
+    }
+   ],
+   "kopisUpdated": "2025-09-04 15:00:00",
+   "source": "KOPIS",
+   "title": "시인을 위하여",
+   "artist": "시인을 위하여",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf273862",
+   "kopisId": "PF273862",
+   "date": "2025-09-29",
+   "endDate": "2025-09-29",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "other",
+   "venueName": "주말극장",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF273862_250911_130254.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF273862_202509110102547130.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211920"
+    }
+   ],
+   "kopisUpdated": "2025-09-11 15:00:00",
+   "source": "KOPIS",
+   "title": "버둥",
+   "artist": "버둥",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf274364",
+   "kopisId": "PF274364",
+   "date": "2025-09-30",
+   "endDate": "2025-09-30",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "화요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "공예빈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF274364_250918_095537.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF274364_202509180955379550.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211937"
+    }
+   ],
+   "kopisUpdated": "2025-09-18 15:00:00",
+   "source": "KOPIS",
+   "title": "예빛",
+   "artist": "예빛",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf274595",
+   "kopisId": "PF274595",
+   "date": "2025-10-11",
+   "endDate": "2025-10-11",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF274595_250922_111431.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF274595_202509221114310290.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=211966"
+    }
+   ],
+   "kopisUpdated": "2025-09-22 15:00:00",
+   "source": "KOPIS",
+   "title": "코스모스",
+   "artist": "엔분의일",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "m212019",
+   "title": "조슈아 나무",
+   "artist": "위시",
+   "subtitle": "단독 공연",
+   "date": "2025-10-18",
+   "endDate": "2025-10-18",
+   "time": "",
+   "timeNote": "",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "series": "숲세권 라이브",
+   "price": "",
+   "runtime": "",
+   "openAt": "",
+   "poster": "https://cdnticket.melon.co.kr/resource/image/upload/product/2025/09/20250922163609722d9c63-c0dc-419e-8187-79ea214a958e.jpg",
+   "lineup": [
+    "위시"
+   ],
+   "age": "",
+   "soldOut": false,
+   "intro": "",
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212019"
+    }
+   ],
+   "kopisId": "",
+   "source": "멜론티켓"
+  },
+  {
+   "id": "pf275597",
+   "kopisId": "PF275597",
+   "date": "2025-10-24",
+   "endDate": "2025-10-24",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 33,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275597_251002_144634.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275597_202510020246341520.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212050"
+    }
+   ],
+   "kopisUpdated": "2025-10-02 15:00:00",
+   "source": "KOPIS",
+   "title": "Trumpet Vine",
+   "artist": "에이다인",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf275699",
+   "kopisId": "PF275699",
+   "date": "2025-10-25",
+   "endDate": "2025-10-25",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "추화정"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275699_251010_122509.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275699_202510101225093850.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212049"
+    }
+   ],
+   "kopisUpdated": "2025-10-10 15:00:00",
+   "source": "KOPIS",
+   "title": "늘푸름: 소나무",
+   "artist": "추화정",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf275822",
+   "kopisId": "PF275822",
+   "date": "2025-10-26",
+   "endDate": "2025-10-26",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "정유진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275822_251010_175336.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275822_202510100553369140.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212042"
+    }
+   ],
+   "kopisUpdated": "2025-10-10 18:00:00",
+   "source": "KOPIS",
+   "title": "Freesia",
+   "artist": "정유진",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf276682",
+   "kopisId": "PF276682",
+   "date": "2025-11-08",
+   "endDate": "2025-11-08",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "이승환",
+    "서원"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF276682_251020_111615.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF276682_202510201116150370.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212125"
+    }
+   ],
+   "kopisUpdated": "2025-10-20 15:00:00",
+   "source": "KOPIS",
+   "title": "Oak Tree",
+   "artist": "온리",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf277118",
+   "kopisId": "PF277118",
+   "date": "2025-11-10",
+   "endDate": "2025-11-10",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277118_251023_125250.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277118_202510231252504570.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212142"
+    }
+   ],
+   "kopisUpdated": "2025-10-23 15:00:00",
+   "source": "KOPIS",
+   "title": "회기본능",
+   "artist": "회기본능",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf277358",
+   "kopisId": "PF277358",
+   "date": "2025-11-11",
+   "endDate": "2025-11-11",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "화요일(20:00)",
+   "venue": "other",
+   "venueName": "주말극장",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277358_251027_125920.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277358_202510271259208320.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212162"
+    }
+   ],
+   "kopisUpdated": "2025-10-27 15:00:00",
+   "source": "KOPIS",
+   "title": "차세대",
+   "artist": "차세대",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf277291",
+   "kopisId": "PF277291",
+   "date": "2025-11-13",
+   "endDate": "2025-11-13",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277291_251024_155847.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277291_202510240358470250.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212151"
+    }
+   ],
+   "kopisUpdated": "2025-10-24 18:00:00",
+   "source": "KOPIS",
+   "title": "숨비",
+   "artist": "숨비",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf277997",
+   "kopisId": "PF277997",
+   "date": "2025-11-22",
+   "endDate": "2025-11-22",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277997_251103_133214.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277997_202511030132143850.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212220"
+    }
+   ],
+   "kopisUpdated": "2025-11-03 15:00:00",
+   "source": "KOPIS",
+   "title": "더더바라기: 해바라기",
+   "artist": "더더",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf278343",
+   "kopisId": "PF278343",
+   "date": "2025-11-24",
+   "endDate": "2025-11-24",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF278343_251106_110825.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF278343_202511061108251560.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212224"
+    }
+   ],
+   "kopisUpdated": "2025-11-06 15:00:00",
+   "source": "KOPIS",
+   "title": "맥거핀",
+   "artist": "맥거핀",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf279323",
+   "kopisId": "PF279323",
+   "date": "2025-11-30",
+   "endDate": "2025-11-30",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 33,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "구본하"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279323_251117_154628.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279323_202511170346280080.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212329"
+    }
+   ],
+   "kopisUpdated": "2025-11-17 18:00:00",
+   "source": "KOPIS",
+   "title": "테라리움 이끼",
+   "artist": "본하",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf279814",
+   "kopisId": "PF279814",
+   "date": "2025-12-08",
+   "endDate": "2025-12-08",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김휘",
+    "정종범",
+    "임진화",
+    "김규목"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279814_251121_133827.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279814_202511210138272140.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212337"
+    }
+   ],
+   "kopisUpdated": "2025-11-21 15:00:00",
+   "source": "KOPIS",
+   "title": "호아",
+   "artist": "호아",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280884",
+   "kopisId": "PF280884",
+   "date": "2025-12-13",
+   "endDate": "2025-12-13",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "VIP석 121,000원, R석(현장판매) 108,000원, R석(사전예약) 98,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "송하예"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280884_251204_110848.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280884_202512041108484272.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280884_202512041108484201.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280884_202512041108484050.png"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-12-04 15:00:00",
+   "source": "KOPIS",
+   "title": "데이지",
+   "artist": "송하예",
+   "subtitle": "숲세권 라이브 X Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf279974",
+   "kopisId": "PF279974",
+   "date": "2025-12-14",
+   "endDate": "2025-12-14",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 20분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "김은지"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279974_251124_135233.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279974_202511240152336850.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212367"
+    }
+   ],
+   "kopisUpdated": "2025-11-24 15:00:00",
+   "source": "KOPIS",
+   "title": "Poinsettia",
+   "artist": "모트",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280312",
+   "kopisId": "PF280312",
+   "date": "2025-12-15",
+   "endDate": "2025-12-15",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280312_251127_104411.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280312_202511271044110130.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212379"
+    }
+   ],
+   "kopisUpdated": "2025-11-27 15:00:00",
+   "source": "KOPIS",
+   "title": "ddbb",
+   "artist": "ddbb",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280601",
+   "kopisId": "PF280601",
+   "date": "2025-12-17",
+   "endDate": "2025-12-17",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "유환주",
+    "김호진",
+    "이강산"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280601_251201_145703.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280601_202512010257035700.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212401"
+    }
+   ],
+   "kopisUpdated": "2025-12-01 15:00:00",
+   "source": "KOPIS",
+   "title": "화노",
+   "artist": "화노",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280426",
+   "kopisId": "PF280426",
+   "date": "2025-12-18",
+   "endDate": "2025-12-18",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280426_251128_113201.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280426_202511281132011450.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212386"
+    }
+   ],
+   "kopisUpdated": "2025-11-28 15:00:00",
+   "source": "KOPIS",
+   "title": "선 앤 메어(Sun & Mer)",
+   "artist": "선 앤 메어(Sun & Mer)",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280290",
+   "kopisId": "PF280290",
+   "date": "2025-12-20",
+   "endDate": "2025-12-20",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "정홍일"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280290_251127_101020.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280290_202511271010202420.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212417"
+    }
+   ],
+   "kopisUpdated": "2025-11-27 15:00:00",
+   "source": "KOPIS",
+   "title": "Clover",
+   "artist": "정홍일 with 럭키클로버",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf281122",
+   "kopisId": "PF281122",
+   "date": "2025-12-22",
+   "endDate": "2025-12-22",
+   "time": "19:30",
+   "timeNote": "",
+   "times": "월요일(19:30)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281122_251208_134258.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281122_202512080142585041.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281122_202512080144179090.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281122_202512080142584850.png"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-12-09 18:00:00",
+   "source": "KOPIS",
+   "title": "The Gift Concert",
+   "artist": "A Hilo",
+   "subtitle": "숲세권 라이브 X Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280453",
+   "kopisId": "PF280453",
+   "date": "2025-12-25",
+   "endDate": "2025-12-25",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "HOL(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280453_251128_133733.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337913.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337872.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337831.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337680.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-11-28 15:00:00",
+   "source": "KOPIS",
+   "title": "Mistletoe",
+   "artist": "취향상점",
+   "subtitle": "숲세권 라이브 X Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf281118",
+   "kopisId": "PF281118",
+   "date": "2025-12-26",
+   "endDate": "2025-12-26",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 46,000원, 사전예약 42,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이상웅"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281118_251208_133609.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281118_202512080136093662.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281118_202512080136093571.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281118_202512080136093410.png"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-12-08 15:00:00",
+   "source": "KOPIS",
+   "title": "jujube",
+   "artist": "이상웅",
+   "subtitle": "숲세권 라이브 X Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf280578",
+   "kopisId": "PF280578",
+   "date": "2025-12-27",
+   "endDate": "2025-12-27",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280578_251201_135209.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280578_202512010152095422.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280578_202512010152095381.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280578_202512010152095300.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-12-01 15:00:00",
+   "source": "KOPIS",
+   "title": "snowdrop",
+   "artist": "우나",
+   "subtitle": "숲세권 라이브 X Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf281655",
+   "kopisId": "PF281655",
+   "date": "2025-12-28",
+   "endDate": "2025-12-28",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 60,000원, 사전예약 55,000원",
+   "runtime": "1시간 10분",
+   "age": "전체 관람가",
+   "lineup": [
+    "박현규"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281655_251216_112317.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175453.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175392.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175261.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175220.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2025-12-16 15:00:00",
+   "source": "KOPIS",
+   "title": "아이리스",
+   "artist": "박현규",
+   "subtitle": "박현규의 재연 · Urban Tune Forest",
+   "series": "Urban Tune Forest",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf282296",
+   "kopisId": "PF282296",
+   "date": "2026-01-10",
+   "endDate": "2026-01-10",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "천유경"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282296_251229_114158.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282296_202512291141583160.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212548"
+    }
+   ],
+   "kopisUpdated": "2025-12-29 15:00:00",
+   "source": "KOPIS",
+   "title": "Delphinium",
+   "artist": "키코(Kik5o)",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf282560",
+   "kopisId": "PF282560",
+   "date": "2026-01-22",
+   "endDate": "2026-01-22",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282560_260105_111458.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282560_202601051114588720.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212557"
+    }
+   ],
+   "kopisUpdated": "2026-01-05 14:51:00",
+   "source": "KOPIS",
+   "title": "정튠",
+   "artist": "정튠",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf282771",
+   "kopisId": "PF282771",
+   "date": "2026-01-24",
+   "endDate": "2026-01-24",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "박성욱",
+    "고수영",
+    "강규현"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282771_260108_105523.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282771_202601081055232980.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212609"
+    }
+   ],
+   "kopisUpdated": "2026-01-08 15:00:00",
+   "source": "KOPIS",
+   "title": "Rosemary",
+   "artist": "마리슈",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf282964",
+   "kopisId": "PF282964",
+   "date": "2026-01-31",
+   "endDate": "2026-01-31",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "2시간",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282964_260112_132514.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282964_202601120125142910.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212628"
+    }
+   ],
+   "kopisUpdated": "2026-01-12 15:00:00",
+   "source": "KOPIS",
+   "title": "Baobob Tree",
+   "artist": "유인원",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf283419",
+   "kopisId": "PF283419",
+   "date": "2026-02-07",
+   "endDate": "2026-02-07",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 38,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "공현수"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283419_260119_124101.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283419_202601191241016100.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212660"
+    }
+   ],
+   "kopisUpdated": "2026-01-19 15:00:00",
+   "source": "KOPIS",
+   "title": "Forget-me-not",
+   "artist": "슈야",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf283509",
+   "kopisId": "PF283509",
+   "date": "2026-02-08",
+   "endDate": "2026-02-08",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283509_260120_105100.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283509_202601201051008630.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212668"
+    }
+   ],
+   "kopisUpdated": "2026-01-20 15:00:00",
+   "source": "KOPIS",
+   "title": "Bluebell",
+   "artist": "언오피셜",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 펼쳐지는 언오피셜 단독 공연.",
+   "openAt": ""
+  },
+  {
+   "id": "pf283734",
+   "kopisId": "PF283734",
+   "date": "2026-02-09",
+   "endDate": "2026-02-09",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 10분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김결"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283734_260123_111158.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283734_202601231111585080.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212673"
+    }
+   ],
+   "kopisUpdated": "2026-01-23 15:00:00",
+   "source": "KOPIS",
+   "title": "김결",
+   "artist": "김결",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf283927",
+   "kopisId": "PF283927",
+   "date": "2026-02-14",
+   "endDate": "2026-02-14",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 77,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [
+    "정예인"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283927_260127_125226.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283927_202601271252269640.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212719"
+    }
+   ],
+   "kopisUpdated": "2026-01-27 15:00:00",
+   "source": "KOPIS",
+   "title": "Calendula",
+   "artist": "정예인",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf284294",
+   "kopisId": "PF284294",
+   "date": "2026-02-21",
+   "endDate": "2026-02-21",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "강하림"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF284294_260202_152437.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF284294_202602020324373390.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212737"
+    }
+   ],
+   "kopisUpdated": "2026-02-02 18:00:00",
+   "source": "KOPIS",
+   "title": "Globe Amaranth",
+   "artist": "모브닝",
+   "subtitle": "어쿠스틱 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf284181",
+   "kopisId": "PF284181",
+   "date": "2026-02-22",
+   "endDate": "2026-02-22",
+   "time": "15:00",
+   "timeNote": "오후 3시 · 오후 7시",
+   "times": "일요일(15:00,19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "차수정"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF284181_260130_150911.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF284181_202601300309110950.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212717"
+    }
+   ],
+   "kopisUpdated": "2026-01-30 18:00:00",
+   "source": "KOPIS",
+   "title": "Crystal Tea Time Vol.3",
+   "artist": "크리스탈 티",
+   "subtitle": "인간선언회",
+   "series": "먼데이프로젝트 공동기획",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285402",
+   "kopisId": "PF285402",
+   "date": "2026-02-28",
+   "endDate": "2026-02-28",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [
+    "염철훈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285402_260219_173113.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285402_202602190531139890.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212797"
+    }
+   ],
+   "kopisUpdated": "2026-02-19 18:00:00",
+   "source": "KOPIS",
+   "title": "Daylily",
+   "artist": "블라",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285000",
+   "kopisId": "PF285000",
+   "date": "2026-03-02",
+   "endDate": "2026-03-02",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "월요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이소정",
+    "임수연",
+    "임유리"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285000_260212_101416.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285000_202602121014170140.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212799"
+    }
+   ],
+   "kopisUpdated": "2026-02-12 15:00:00",
+   "source": "KOPIS",
+   "title": "오아베(O.A.Be)",
+   "artist": "오아베(O.A.Be)",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285288",
+   "kopisId": "PF285288",
+   "date": "2026-03-07",
+   "endDate": "2026-03-07",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 40,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285288_260219_113352.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285288_202602191133527841.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285288_202602191133527310.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-02-20 18:00:00",
+   "source": "KOPIS",
+   "title": "Ranunculus",
+   "artist": "첼로가 노래하는 진스",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285350",
+   "kopisId": "PF285350",
+   "date": "2026-03-08",
+   "endDate": "2026-03-08",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이연우"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285350_260219_144401.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285350_202602190244019060.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-02-19 15:00:00",
+   "source": "KOPIS",
+   "title": "선인장 (Cactus)",
+   "artist": "연우",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285632",
+   "kopisId": "PF285632",
+   "date": "2026-03-14",
+   "endDate": "2026-03-14",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 60,000원, 사전예약 55,000원",
+   "runtime": "1시간 50분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김위수",
+    "손효진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285632_260223_163047.jpeg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285632_202602230430476981.jpeg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285632_202602230430476850.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-02-23 18:00:00",
+   "source": "KOPIS",
+   "title": "나를 살린 여성의 목소리",
+   "artist": "위수 · 손효진",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "subtitle": "",
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285589",
+   "kopisId": "PF285589",
+   "date": "2026-03-15",
+   "endDate": "2026-03-15",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 60,000원",
+   "runtime": "1시간 50분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이설아",
+    "한그린"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285589_260223_144822.jpeg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285589_202602230248226270.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-02-23 18:00:00",
+   "source": "KOPIS",
+   "title": "나를 살린 여성의 목소리",
+   "artist": "이설아 · 한그린",
+   "subtitle": "Lab CHASM X 숲세권 라이브",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf285849",
+   "kopisId": "PF285849",
+   "date": "2026-03-16",
+   "endDate": "2026-03-16",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 33,000원",
+   "runtime": "2시간",
+   "age": "전체 관람가",
+   "lineup": [
+    "한상훈",
+    "김은비",
+    "이봉규",
+    "박성준",
+    "정다운"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285849_260226_112137.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285849_202602261121371320.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212830"
+    }
+   ],
+   "kopisUpdated": "2026-02-26 15:00:00",
+   "source": "KOPIS",
+   "title": "시나 쓰는 앨리스",
+   "artist": "시나 쓰는 앨리스",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286097",
+   "kopisId": "PF286097",
+   "date": "2026-03-20",
+   "endDate": "2026-03-20",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 60,000원, 사전예약 50,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김선국",
+    "우명제",
+    "우선제"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286097_260303_133539.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286097_202603030135394181.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286097_202603030135394120.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-03-03 15:00:00",
+   "source": "KOPIS",
+   "title": "Cosmos",
+   "artist": "안녕바다",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286690",
+   "kopisId": "PF286690",
+   "date": "2026-03-21",
+   "endDate": "2026-03-21",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 90,000원, 사전예약 88,000원",
+   "runtime": "1시간 30분",
+   "age": "만 12세 이상",
+   "lineup": [
+    "조혜리"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286690_260309_165507.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286690_202603090455077331.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286690_202603090455077260.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-03-09 18:00:00",
+   "source": "KOPIS",
+   "title": "3579",
+   "artist": "왁스",
+   "subtitle": "봄의 문턱, 우리의 프롤로그",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286639",
+   "kopisId": "PF286639",
+   "date": "2026-03-23",
+   "endDate": "2026-03-23",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이정환"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286639_260309_152701.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286639_202603090327016630.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212857"
+    }
+   ],
+   "kopisUpdated": "2026-03-09 18:00:00",
+   "source": "KOPIS",
+   "title": "스트레이",
+   "artist": "스트레이",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286940",
+   "kopisId": "PF286940",
+   "date": "2026-03-25",
+   "endDate": "2026-03-25",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "박태욱"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286940_260312_152619.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286940_202603120326197560.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212859"
+    }
+   ],
+   "kopisUpdated": "2026-03-12 18:00:00",
+   "source": "KOPIS",
+   "title": "박태욱",
+   "artist": "박태욱",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286688",
+   "kopisId": "PF286688",
+   "date": "2026-03-26",
+   "endDate": "2026-03-26",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "안희수"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286688_260309_164855.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286688_202603090448556220.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212864"
+    }
+   ],
+   "kopisUpdated": "2026-03-09 18:00:00",
+   "source": "KOPIS",
+   "title": "안희수",
+   "artist": "안희수",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286633",
+   "kopisId": "PF286633",
+   "date": "2026-03-28",
+   "endDate": "2026-03-28",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "R석 70,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "박은비"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286633_260309_151959.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286633_202603090319229611.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286633_202603090319229380.jpeg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-03-10 15:00:00",
+   "source": "KOPIS",
+   "title": "강아지 풀",
+   "artist": "별은",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286945",
+   "kopisId": "PF286945",
+   "date": "2026-03-29",
+   "endDate": "2026-03-29",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 20분",
+   "age": "전체 관람가",
+   "lineup": [
+    "남소현"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286945_260312_153431.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286945_202603120334315010.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212834"
+    }
+   ],
+   "kopisUpdated": "2026-03-12 18:00:00",
+   "source": "KOPIS",
+   "title": "MRI",
+   "artist": "쿠잉",
+   "subtitle": "March Romantic Invitation",
+   "series": "먼데이프로젝트 공동기획",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf286943",
+   "kopisId": "PF286943",
+   "date": "2026-03-30",
+   "endDate": "2026-03-30",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "정서현",
+    "윤새한",
+    "이철민",
+    "김창원"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286943_260312_153401.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286943_202603120334019690.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212890"
+    }
+   ],
+   "kopisUpdated": "2026-03-12 18:00:00",
+   "source": "KOPIS",
+   "title": "예람",
+   "artist": "예람",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf287493",
+   "kopisId": "PF287493",
+   "date": "2026-04-07",
+   "endDate": "2026-04-07",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "화요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287493_260319_121958.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287493_202603191219583070.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212939"
+    }
+   ],
+   "kopisUpdated": "2026-03-19 15:00:00",
+   "source": "KOPIS",
+   "title": "디폴트(DEFAULT.)",
+   "artist": "디폴트(DEFAULT.)",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf287829",
+   "kopisId": "PF287829",
+   "date": "2026-04-09",
+   "endDate": "2026-04-09",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "2시간",
+   "age": "전체 관람가",
+   "lineup": [
+    "문정후"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287829_260323_165726.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287829_202603230457261470.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212941"
+    }
+   ],
+   "kopisUpdated": "2026-03-23 18:00:00",
+   "source": "KOPIS",
+   "title": "뷰렛",
+   "artist": "뷰렛",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf287796",
+   "kopisId": "PF287796",
+   "date": "2026-04-10",
+   "endDate": "2026-04-10",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 40분",
+   "age": "만 12세 이상",
+   "lineup": [
+    "추화정"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287796_260323_154956.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287796_202603230349569261.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287796_202603230349569180.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-03-23 18:00:00",
+   "source": "KOPIS",
+   "title": "백합",
+   "artist": "추화정",
+   "subtitle": "순수한 순간",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf288087",
+   "kopisId": "PF288087",
+   "date": "2026-04-11",
+   "endDate": "2026-04-11",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김준태"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288087_260326_134351.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288087_202603260145550990.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288087_202603260143510500.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-03-26 15:00:00",
+   "source": "KOPIS",
+   "title": "은방울꽃",
+   "artist": "준태",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf288025",
+   "kopisId": "PF288025",
+   "date": "2026-04-13",
+   "endDate": "2026-04-13",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "전유동"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288025_260326_102601.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288025_202603261026013060.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=212985"
+    }
+   ],
+   "kopisUpdated": "2026-03-26 18:00:00",
+   "source": "KOPIS",
+   "title": "전유동",
+   "artist": "전유동",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf288402",
+   "kopisId": "PF288402",
+   "date": "2026-04-18",
+   "endDate": "2026-04-18",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 40,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "정예원"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288402_260401_102015.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020154093.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020153832.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020153771.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020153580.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-01 15:00:00",
+   "source": "KOPIS",
+   "title": "레몬트리",
+   "artist": "정예원",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "봄의 시작을 알리는 특별한 무대 정예원의 단독 공연 <레몬트리>가 열립니다. 작은 공간에서 더욱 가까이, 더 선명하게 울리는 목소리 지금이 아니면 다시 만나기 어려운 순간, 이번 공연을 놓치지 마세요.",
+   "openAt": ""
+  },
+  {
+   "id": "pf288492",
+   "kopisId": "PF288492",
+   "date": "2026-04-20",
+   "endDate": "2026-04-20",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 20분",
+   "age": "전체 관람가",
+   "lineup": [
+    "성해빈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288492_260402_111113.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288492_202604021111134870.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213006"
+    }
+   ],
+   "kopisUpdated": "2026-04-02 15:00:00",
+   "source": "KOPIS",
+   "title": "성해빈",
+   "artist": "성해빈",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf288704",
+   "kopisId": "PF288704",
+   "date": "2026-04-24",
+   "endDate": "2026-04-24",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "손진욱",
+    "정광현",
+    "전혜림",
+    "박성경",
+    "정지원"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288704_260406_130726.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288704_202604060107261311.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288704_202604060107261240.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-06 15:00:00",
+   "source": "KOPIS",
+   "title": "REEL",
+   "artist": "피어",
+   "subtitle": "No Rewind",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf288395",
+   "kopisId": "PF288395",
+   "date": "2026-04-25",
+   "endDate": "2026-04-25",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 40,000원, 사전예약 38,000원",
+   "runtime": "1시간 10분",
+   "age": "전체 관람가",
+   "lineup": [
+    "박형률"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288395_260401_095721.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288395_202604010957218220.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-01 15:00:00",
+   "source": "KOPIS",
+   "title": "능소화",
+   "artist": "RYUL",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "조용히 피어나 오래 남는 것들처럼, RYUL의 음악은 장르를 넘어 하나의 결로 이어집니다. R&B, 팝, 드럼 앤 베이스까지 다양한 스펙트럼 위에서 만들어진 사운드는 이번 공연에서 더욱 솔직하고 입체적인 순간으로 펼쳐집니다. <능소화>는 시간이 지나도 잊히지 않는 감정처럼, RYUL이 쌓아온 음악과 지금의 감각이 만나는 자리입니다. 숲세권 라이브의 가장 가까운 거리에서, 그 변화의 순간을 함께 마주해 주세요.",
+   "openAt": ""
+  },
+  {
+   "id": "pf289051",
+   "kopisId": "PF289051",
+   "date": "2026-04-27",
+   "endDate": "2026-04-27",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289051_260410_104553.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289051_202604101045532720.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213034"
+    }
+   ],
+   "kopisUpdated": "2026-04-10 15:00:00",
+   "source": "KOPIS",
+   "title": "나타샤",
+   "artist": "나타샤",
+   "subtitle": "MONDAY:SOOP 단독 콘서트, 우리를 지탱해주는 감정들에 대하여",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289034",
+   "kopisId": "PF289034",
+   "date": "2026-04-29",
+   "endDate": "2026-04-29",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "오소연"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289034_260410_100937.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289034_202604101009375210.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213045"
+    }
+   ],
+   "kopisUpdated": "2026-04-10 15:00:00",
+   "source": "KOPIS",
+   "title": "담담",
+   "artist": "담담",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289382",
+   "kopisId": "PF289382",
+   "date": "2026-04-30",
+   "endDate": "2026-04-30",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 77,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김재현"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289382_260415_111005.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289382_202604151110053450.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213089"
+    }
+   ],
+   "kopisUpdated": "2026-04-15 15:00:00",
+   "source": "KOPIS",
+   "title": "베리(VARI)",
+   "artist": "베리(VARI)",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289177",
+   "kopisId": "PF289177",
+   "date": "2026-05-02",
+   "endDate": "2026-05-02",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "오예린",
+    "차가운",
+    "이영은",
+    "박진현",
+    "김현정"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289177_260413_110414.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289177_202604131104146870.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-13 15:00:00",
+   "source": "KOPIS",
+   "title": "민들레",
+   "artist": "오예린밴드",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289625",
+   "kopisId": "PF289625",
+   "date": "2026-05-03",
+   "endDate": "2026-05-03",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "안현준",
+    "김상현",
+    "박현진",
+    "임진언"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289625_260417_132049.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289625_202604170120495781.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289625_202604170120495680.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-17 15:00:00",
+   "source": "KOPIS",
+   "title": "다다다와 콩나무",
+   "artist": "다다다",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289475",
+   "kopisId": "PF289475",
+   "date": "2026-05-04",
+   "endDate": "2026-05-04",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김민성"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289475_260416_102332.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289475_202604161023326440.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213087"
+    }
+   ],
+   "kopisUpdated": "2026-04-16 15:00:00",
+   "source": "KOPIS",
+   "title": "김민성",
+   "artist": "김민성",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289544",
+   "kopisId": "PF289544",
+   "date": "2026-05-05",
+   "endDate": "2026-05-05",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "화요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 60,000원, 사전예약 55,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289544_260416_141019.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289544_202604160210194861.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289544_202604160210194580.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-16 15:00:00",
+   "source": "KOPIS",
+   "title": "개화",
+   "artist": "오오오",
+   "subtitle": "Floraison",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf289164",
+   "kopisId": "PF289164",
+   "date": "2026-05-09",
+   "endDate": "2026-05-09",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 40,000원, 현장판매 45,000원",
+   "runtime": "2시간",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289164_260413_103933.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289164_202604131039335201.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289164_202604131039335130.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213060"
+    }
+   ],
+   "kopisUpdated": "2026-04-13 15:00:00",
+   "source": "KOPIS",
+   "title": "in Zip : Our Home",
+   "artist": "규도",
+   "series": "대관 공연",
+   "soldOut": false,
+   "subtitle": "",
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf290089",
+   "kopisId": "PF290089",
+   "date": "2026-05-13",
+   "endDate": "2026-05-13",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김택우"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290089_260424_140123.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290089_202604240201239170.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213129"
+    }
+   ],
+   "kopisUpdated": "2026-04-24 15:00:00",
+   "source": "KOPIS",
+   "title": "택우",
+   "artist": "택우",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf290160",
+   "kopisId": "PF290160",
+   "date": "2026-05-16",
+   "endDate": "2026-05-16",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 88,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김규종"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290160_260427_130239.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290160_202604270102391791.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290160_202604270102391700.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-04-27 15:00:00",
+   "source": "KOPIS",
+   "title": "애니시다",
+   "artist": "김규종",
+   "subtitle": "ScotchBroom 쇼케이스",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf290540",
+   "kopisId": "PF290540",
+   "date": "2026-05-23",
+   "endDate": "2026-05-23",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김미진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290540_260504_132805.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290540_202605040128052780.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-05-04 15:00:00",
+   "source": "KOPIS",
+   "title": "칠자화나무",
+   "artist": "미지니",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf291002",
+   "kopisId": "PF291002",
+   "date": "2026-05-28",
+   "endDate": "2026-05-28",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김현산",
+    "김규식",
+    "김주혁"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291002_260511_101845.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291002_202605111018453660.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213198"
+    }
+   ],
+   "kopisUpdated": "2026-05-11 15:00:00",
+   "source": "KOPIS",
+   "title": "아사달",
+   "artist": "아사달",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf290825",
+   "kopisId": "PF290825",
+   "date": "2026-05-31",
+   "endDate": "2026-05-31",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 95,000원, 사전예약 88,000원",
+   "runtime": "2시간",
+   "age": "전체 관람가",
+   "lineup": [
+    "박장현"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290825_260507_134224.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290825_202605070142247370.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-05-07 15:00:00",
+   "source": "KOPIS",
+   "title": "고사리꽃",
+   "artist": "박장현",
+   "subtitle": "Fern Flower",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf291459",
+   "kopisId": "PF291459",
+   "date": "2026-06-01",
+   "endDate": "2026-06-01",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291459_260515_104720.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291459_202605151047208950.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213213"
+    }
+   ],
+   "kopisUpdated": "2026-05-15 15:00:00",
+   "source": "KOPIS",
+   "title": "루아멜(LUAMEL)",
+   "artist": "루아멜(LUAMEL)",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf291202",
+   "kopisId": "PF291202",
+   "date": "2026-06-06",
+   "endDate": "2026-06-06",
+   "time": "16:00",
+   "timeNote": "오후 4시 · 오후 7시",
+   "times": "토요일(16:00,19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "R석 99,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김동현"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291202_260512_131155.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291202_202605120111555601.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291202_202605120111555500.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-05-12 15:00:00",
+   "source": "KOPIS",
+   "title": "동숲 Dong Forest",
+   "artist": "김동현",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf292165",
+   "kopisId": "PF292165",
+   "date": "2026-06-07",
+   "endDate": "2026-06-07",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 38,000원, 현장판매 40,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF292165_260526_121324.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292165_202605261213245131.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292165_202605261213244570.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-05-26 15:00:00",
+   "source": "KOPIS",
+   "title": "사이프러스",
+   "artist": "제니스",
+   "subtitle": "CYPRESS",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf291380",
+   "kopisId": "PF291380",
+   "date": "2026-06-10",
+   "endDate": "2026-06-12",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일 ~ 금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 10분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291380_260514_125334.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291380_202605141253343580.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213231"
+    }
+   ],
+   "kopisUpdated": "2026-05-14 15:00:00",
+   "source": "KOPIS",
+   "title": "여기 평온한 거리에",
+   "artist": "UmYull",
+   "subtitle": "소극장 콘서트 (평일)",
+   "series": "대관 공연",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf291521",
+   "kopisId": "PF291521",
+   "date": "2026-06-13",
+   "endDate": "2026-06-14",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "토요일 ~ 일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 77,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "최인철",
+    "최주영"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291521_260515_143225.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291521_202605150232254920.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213232"
+    }
+   ],
+   "kopisUpdated": "2026-05-15 15:00:00",
+   "source": "KOPIS",
+   "title": "여기 평온한 거리에",
+   "artist": "UmYull",
+   "subtitle": "소극장 콘서트 (주말)",
+   "series": "대관 공연",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf292648",
+   "kopisId": "PF292648",
+   "date": "2026-06-21",
+   "endDate": "2026-06-21",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 40,000원, 사전예약 38,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이상훈",
+    "이종훈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF292648_260601_134100.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292648_202606010141008311.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292648_202606010141008210.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-06-01 15:00:00",
+   "source": "KOPIS",
+   "title": "초록 주의보",
+   "artist": "훈스",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf293173",
+   "kopisId": "PF293173",
+   "date": "2026-06-27",
+   "endDate": "2026-06-28",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일 ~ 일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 38,000원, 현장판매 40,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "신아영",
+    "서채훈",
+    "김윤수",
+    "조유익",
+    "신재진",
+    "한예진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF293173_260609_095900.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293173_202606090959003482.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293173_202606090959003201.png",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293173_202606090959002980.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-06-09 15:00:00",
+   "source": "KOPIS",
+   "title": "의외의 곳에서",
+   "artist": "이파란",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf293814",
+   "kopisId": "PF293814",
+   "date": "2026-07-04",
+   "endDate": "2026-07-04",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 38,000원, 현장판매 40,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김태빈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF293814_260616_112643.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293814_202606161126433341.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293814_202606161126433200.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-06-16 15:00:00",
+   "source": "KOPIS",
+   "title": "프리지아",
+   "artist": "태비",
+   "subtitle": "Freesia",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf294131",
+   "kopisId": "PF294131",
+   "date": "2026-07-06",
+   "endDate": "2026-07-06",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "월요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 77,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "이지함"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF294131_260619_131921.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294131_202606190119220050.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213401"
+    }
+   ],
+   "kopisUpdated": "2026-06-19 15:00:00",
+   "source": "KOPIS",
+   "title": "이지함",
+   "artist": "이지함",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf294309",
+   "kopisId": "PF294309",
+   "date": "2026-07-11",
+   "endDate": "2026-07-11",
+   "time": "15:00",
+   "timeNote": "오후 3시 · 오후 7시",
+   "times": "토요일(15:00,19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원, 사전예약 44,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "주성근"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF294309_260622_141120.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294309_202606220211204591.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294309_202606220211204530.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-06-22 15:00:00",
+   "source": "KOPIS",
+   "title": "숫자와 숫자들",
+   "artist": "1415",
+   "subtitle": "EP 선공개 라이브 음감회",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295402",
+   "kopisId": "PF295402",
+   "date": "2026-07-18",
+   "endDate": "2026-07-18",
+   "time": "15:00",
+   "timeNote": "오후 3시 · 오후 7시",
+   "times": "토요일(15:00,19:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "송유찬",
+    "정지섭",
+    "박준영",
+    "정지섭 등"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295402_260706_141519.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215198134.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215198093.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215197922.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215197651.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215197300.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-06 15:00:00",
+   "source": "KOPIS",
+   "title": "라임나무",
+   "artist": "보이드",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295266",
+   "kopisId": "PF295266",
+   "date": "2026-07-19",
+   "endDate": "2026-07-19",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 40,000원, 사전예약 38,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "최광렬"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295266_260703_124806.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295266_202607031248063460.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-03 15:00:00",
+   "source": "KOPIS",
+   "title": "주목",
+   "artist": "칸토",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295152",
+   "kopisId": "PF295152",
+   "date": "2026-07-21",
+   "endDate": "2026-07-21",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "화요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295152_260702_141702.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295152_202607020217023470.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213481"
+    }
+   ],
+   "kopisUpdated": "2026-07-02 15:00:00",
+   "source": "KOPIS",
+   "title": "모허",
+   "artist": "모허",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295161",
+   "kopisId": "PF295161",
+   "date": "2026-07-23",
+   "endDate": "2026-07-23",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김슬기"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295161_260702_143353.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295161_202607020233537910.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213473"
+    }
+   ],
+   "kopisUpdated": "2026-07-02 15:00:00",
+   "source": "KOPIS",
+   "title": "이오늘",
+   "artist": "이오늘",
+   "subtitle": "MONDAY:SOOP 단독 콘서트",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295498",
+   "kopisId": "PF295498",
+   "date": "2026-07-25",
+   "endDate": "2026-07-25",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 40,000원, 사전예약 38,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "안형주"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295498_260707_114805.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295498_202607071148050570.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-07 15:00:00",
+   "source": "KOPIS",
+   "title": "능소화",
+   "artist": "줍에이",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295900",
+   "kopisId": "PF295900",
+   "date": "2026-07-26",
+   "endDate": "2026-07-26",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 60,000원, 사전예약 55,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "정유진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295900_260713_134831.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295900_202607130148315270.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-13 15:00:00",
+   "source": "KOPIS",
+   "title": "달맞이꽃",
+   "artist": "정유진",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf295843",
+   "kopisId": "PF295843",
+   "date": "2026-08-01",
+   "endDate": "2026-08-01",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 66,000원, 사전예약 55,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "정효빈"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295843_260713_103759.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295843_202607131037598870.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-13 15:00:00",
+   "source": "KOPIS",
+   "title": "Delphinium",
+   "artist": "정효빈",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf296547",
+   "kopisId": "PF296547",
+   "date": "2026-08-02",
+   "endDate": "2026-08-02",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 40,000원, 사전예약 38,000원",
+   "runtime": "1시간",
+   "age": "전체 관람가",
+   "lineup": [
+    "석준호",
+    "정지영",
+    "양희교",
+    "황진석",
+    "도민규"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296547_260721_134352.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296547_202607210143527400.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-21 15:00:00",
+   "source": "KOPIS",
+   "title": "리시안셔스",
+   "artist": "더씬드롬",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "리시안셔스는 겹겹이 피어나는 꽃입니다. 한 겹만 봐도 예쁜데, 두 겹 세 겹 들여다보면 더 예쁜 꽃. 더씬드롬의 음악도 그렇습니다. 다섯 멤버가 만들어내는 소리가 겹겹이 쌓여 당신 마음속에서 조용히, 그러나 깊게 번져갑니다. 더씬드롬이 피워낼 리시안셔스를 만나보세요.",
+   "openAt": ""
+  },
+  {
+   "id": "pf296223",
+   "kopisId": "PF296223",
+   "date": "2026-08-07",
+   "endDate": "2026-08-07",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 40,000원, 사전예약 33,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "최찬영",
+    "서상동",
+    "강형기",
+    "이기은"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296223_260716_113534.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296223_202607161135344801.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296223_202607161135344730.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-16 15:00:00",
+   "source": "KOPIS",
+   "title": "cosmos",
+   "artist": "노아코스트",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf296420",
+   "kopisId": "PF296420",
+   "date": "2026-08-08",
+   "endDate": "2026-08-08",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 70,000원, 사전예약 66,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [
+    "김수아"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296420_260720_153357.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296420_202607200333576830.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-20 18:00:00",
+   "source": "KOPIS",
+   "title": "쿠루쿠마",
+   "artist": "쿠모",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf296950",
+   "kopisId": "PF296950",
+   "date": "2026-08-09",
+   "endDate": "2026-08-09",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "사전예약 40,000원, 현장판매 44,000원",
+   "runtime": "1시간 10분",
+   "age": "전체 관람가",
+   "lineup": [
+    "전호연"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296950_260727_104914.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296950_202607271047366201.jpg",
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296950_202607271047366120.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-07-27 15:00:00",
+   "source": "KOPIS",
+   "title": "Blue Rose",
+   "artist": "블루디",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf296992",
+   "kopisId": "PF296992",
+   "date": "2026-08-12",
+   "endDate": "2026-08-12",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "수요일(20:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "전체 관람가",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296992_260727_130014.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296992_202607270100146980.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213606"
+    }
+   ],
+   "kopisUpdated": "2026-07-27 15:00:00",
+   "source": "KOPIS",
+   "title": "이글루베이",
+   "artist": "이글루베이",
+   "subtitle": "MONDAY:SOOP 단독 콘서트, 초록환상",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf296327",
+   "kopisId": "PF296327",
+   "date": "2026-08-16",
+   "endDate": "2026-08-16",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "오예림"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296327_260720_120555.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296327_202607201205557000.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213564"
+    }
+   ],
+   "kopisUpdated": "2026-07-20 15:00:00",
+   "source": "KOPIS",
+   "title": "숲속의 메아리들",
+   "artist": "리메이",
+   "subtitle": "1st 팬콘서트",
+   "series": "대관 공연",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf297369",
+   "kopisId": "PF297369",
+   "date": "2026-08-17",
+   "endDate": "2026-08-17",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "월요일(18:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "권나무"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF297369_260731_112148.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297369_202607311121480210.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213634"
+    }
+   ],
+   "kopisUpdated": "2026-07-31 15:00:00",
+   "source": "KOPIS",
+   "title": "권나무",
+   "artist": "권나무",
+   "subtitle": "MONDAY:SOOP 단독 콘서트, 너는 밝은 숲을 칠했지",
+   "series": "MONDAY:SOOP",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf298934",
+   "kopisId": "PF298934",
+   "date": "2026-09-12",
+   "endDate": "2026-09-12",
+   "time": "16:00",
+   "timeNote": "",
+   "times": "토요일(16:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 40,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF298934_260820_123106.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF298934_202608201231066440.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213777"
+    }
+   ],
+   "kopisUpdated": "2026-08-20 15:00:00",
+   "source": "KOPIS",
+   "title": "Palm Tree",
+   "artist": "한빈 (TEMPEST)",
+   "subtitle": "RELEASE AFTER PARTY",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf299237",
+   "kopisId": "PF299237",
+   "date": "2026-09-19",
+   "endDate": "2026-09-19",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "토요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 70,000원, 사전예약 66,000원",
+   "runtime": "1시간 30분",
+   "age": "전체 관람가",
+   "lineup": [
+    "정소연"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF299237_260824_143916.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299237_202608240239160390.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-08-24 15:00:00",
+   "source": "KOPIS",
+   "title": "은방울꽃",
+   "artist": "정소연",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf300235",
+   "kopisId": "PF300235",
+   "date": "2026-09-20",
+   "endDate": "2026-09-20",
+   "time": "15:00",
+   "timeNote": "오후 3시 · 오후 7시",
+   "times": "일요일(15:00,19:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 77,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [
+    "이경서"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300235_260907_114515.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300235_202609071145154620.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213838"
+    }
+   ],
+   "kopisUpdated": "2026-09-07 15:00:00",
+   "source": "KOPIS",
+   "title": "별꽃",
+   "artist": "경서",
+   "subtitle": "‘별이 떨어질 때’ 음감회",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf300076",
+   "kopisId": "PF300076",
+   "date": "2026-09-20",
+   "endDate": "2026-09-20",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 20분",
+   "age": "전체 관람가",
+   "lineup": [
+    "임지우"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300076_260903_141725.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300076_202609030217256310.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "네이버 예약",
+     "url": "https://booking.naver.com/booking/12/bizes/1535586"
+    }
+   ],
+   "kopisUpdated": "2026-09-03 15:00:00",
+   "source": "KOPIS",
+   "title": "카틀레야",
+   "artist": "임지우",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "pf300937",
+   "kopisId": "PF300937",
+   "date": "2026-10-04",
+   "endDate": "2026-10-04",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "임세희"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300937_260915_103729.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300937_202609151037296420.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213859"
+    }
+   ],
+   "kopisUpdated": "2026-09-15 15:00:00",
+   "source": "KOPIS",
+   "title": "코스모스",
+   "artist": "임세모",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "soldOut": false,
+   "intro": "",
+   "openAt": ""
+  },
+  {
+   "id": "m213900",
+   "title": "프리지아",
+   "artist": "양정훈",
+   "subtitle": "첫 팬 콘서트",
+   "date": "2026-10-10",
+   "endDate": "2026-10-10",
+   "time": "",
+   "timeNote": "",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "series": "숲세권 라이브",
+   "price": "",
+   "runtime": "",
+   "openAt": "",
+   "poster": "https://cdnticket.melon.co.kr/resource/image/upload/product/2026/09/202609141832290081b778-00c2-4708-8eb7-45ea034e9dd5.jpg",
+   "lineup": [
+    "양정훈"
+   ],
+   "age": "",
+   "soldOut": false,
+   "intro": "",
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213900"
+    }
+   ],
+   "kopisId": "",
+   "source": "멜론티켓"
+  },
+  {
+   "id": "pf301786",
+   "kopisId": "PF301786",
+   "date": "2026-10-11",
+   "endDate": "2026-10-11",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 68,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "임영민"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301786_260928_134423.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301786_202609280144234450.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213924"
+    }
+   ],
+   "kopisUpdated": "2026-09-28 15:00:00",
+   "source": "KOPIS",
+   "title": "POINSETTIA",
+   "artist": "임영민",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "openAt": "2026-09-23T20:00",
+   "soldOut": false,
+   "intro": ""
+  },
+  {
+   "id": "pf301591",
+   "kopisId": "PF301591",
+   "date": "2026-10-17",
+   "endDate": "2026-10-17",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 44,000원",
+   "runtime": "2시간",
+   "age": "만 7세 이상",
+   "lineup": [
+    "김영조"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301591_260922_144248.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301591_202609220242486840.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213905"
+    }
+   ],
+   "kopisUpdated": "2026-09-22 15:00:00",
+   "source": "KOPIS",
+   "title": "ROSARIUM",
+   "artist": "김영조",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "openAt": "2026-09-21T20:00",
+   "soldOut": false,
+   "intro": ""
+  },
+  {
+   "id": "pf301973",
+   "kopisId": "PF301973",
+   "date": "2026-10-18",
+   "endDate": "2026-10-18",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "곽은재",
+    "조효찬",
+    "이광호"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301973_260929_134200.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301973_202609290142009160.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213957"
+    }
+   ],
+   "kopisUpdated": "2026-09-29 15:00:00",
+   "source": "KOPIS",
+   "title": "BLU Forest",
+   "artist": "블루화",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "openAt": "2026-09-28T20:00",
+   "soldOut": false,
+   "intro": ""
+  },
+  {
+   "id": "pf302730",
+   "kopisId": "PF302730",
+   "date": "2026-10-25",
+   "endDate": "2026-10-25",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "mullae",
+   "venueName": "문래점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302730_261007_141952.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302730_202610070219521380.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=213992"
+    }
+   ],
+   "kopisUpdated": "2026-10-07 15:00:00",
+   "source": "KOPIS",
+   "title": "Moonflower",
+   "artist": "로키드 (Lokid)",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 로키드 단독 공연 〈Moonflower〉입니다.",
+   "openAt": "2026-10-06T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf303815",
+   "kopisId": "PF303815",
+   "date": "2026-10-30",
+   "endDate": "2026-10-30",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 55,000원",
+   "runtime": "1시간",
+   "age": "만 7세 이상",
+   "lineup": [
+    "박준일"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303815_261019_160924.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303815_202610190409243910.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214092"
+    }
+   ],
+   "kopisUpdated": "2026-10-19 18:00:00",
+   "source": "KOPIS",
+   "title": "은방울꽃",
+   "artist": "박준일",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 박준일 단독 공연 〈은방울꽃〉입니다.",
+   "openAt": "2026-10-16T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf302996",
+   "kopisId": "PF302996",
+   "date": "2026-10-31",
+   "endDate": "2026-10-31",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "토요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "한성일"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302996_261012_153950.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302996_202610120339507680.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214032"
+    }
+   ],
+   "kopisUpdated": "2026-10-12 18:00:00",
+   "source": "KOPIS",
+   "title": "들꽃",
+   "artist": "한성일",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 한성일 단독 공연 〈들꽃〉입니다.",
+   "openAt": "2026-10-09T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf303433",
+   "kopisId": "PF303433",
+   "date": "2026-11-06",
+   "endDate": "2026-11-06",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "이한희",
+    "채화린",
+    "서윤"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303433_261015_130859.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303433_202610150108594220.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214081"
+    }
+   ],
+   "kopisUpdated": "2026-10-15 15:00:00",
+   "source": "KOPIS",
+   "title": "LILAC",
+   "artist": "한희(hanhee) with 채화린 · 휘나",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 한희 단독 공연 〈LILAC〉입니다.",
+   "openAt": "2026-10-14T20:00",
+   "soldOut": false,
+   "subtitle": ""
+  },
+  {
+   "id": "pf303630",
+   "kopisId": "PF303630",
+   "date": "2026-11-07",
+   "endDate": "2026-11-07",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "토요일(18:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 38,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "류진"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303630_261016_145346.png",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303630_202610160253462000.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214080"
+    }
+   ],
+   "kopisUpdated": "2026-10-16 15:00:00",
+   "source": "KOPIS",
+   "title": "버드나무",
+   "artist": "개똥 (류진)",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 개똥 단독 공연 〈버드나무〉입니다.",
+   "openAt": "2026-10-15T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf303791",
+   "kopisId": "PF303791",
+   "date": "2026-11-08",
+   "endDate": "2026-11-08",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "일요일(20:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "박헌서"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303791_261019_152530.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303791_202610190325303110.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214087"
+    }
+   ],
+   "kopisUpdated": "2026-10-19 18:00:00",
+   "source": "KOPIS",
+   "title": "해바라기",
+   "artist": "Heon Seo (헌서)",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 헌서 단독 공연 〈해바라기〉입니다.",
+   "openAt": "2026-10-16T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf303911",
+   "kopisId": "PF303911",
+   "date": "2026-11-15",
+   "endDate": "2026-11-15",
+   "time": "18:00",
+   "timeNote": "",
+   "times": "일요일(18:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 38,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "이윤지"
+   ],
+   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303911_261020_144102.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303911_202610200241026740.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214094"
+    }
+   ],
+   "kopisUpdated": "2026-10-20 15:00:00",
+   "source": "KOPIS",
+   "title": "Ways of Seeing",
+   "artist": "더픽스 린지",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 린지 단독 공연 〈Ways of Seeing〉입니다.",
+   "openAt": "2026-10-19T20:00",
+   "soldOut": false
+  }
+ ]
+}

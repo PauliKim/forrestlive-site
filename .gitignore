@@ -1,0 +1,6 @@
+.preview/
+.DS_Store
+.env
+docs/KOPIS_API.md
+__pycache__/
+*.pyc

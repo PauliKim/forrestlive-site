@@ -1,0 +1,57 @@
+# 공연예술통합전산망(KOPIS)에서 숲세권 라이브 공연을 가져와 data/shows.json을 갱신한다.
+# - 5분마다 변경분을 확인하고, KOPIS에서 수정된 지 15분이 지난 공연만 반영한다.
+# - 매일 04:10(한국 시간)에 전체 기간을 다시 맞춘다.
+# - 바뀐 내용이 있으면 커밋하고, Cloudflare Pages가 그 커밋을 받아 자동으로 배포한다.
+name: KOPIS 공연 동기화
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+    - cron: "10 19 * * *"   # UTC 19:10 = 한국 04:10, 전체 동기화
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "전체 기간 다시 맞추기"
+        type: boolean
+        default: false
+      no_hold:
+        description: "15분 대기 없이 바로 반영"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kopis-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow==10.4.0
+      - name: KOPIS에서 공연 가져오기
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.schedule }}" = "10 19 * * *" ] || [ "${{ inputs.full }}" = "true" ]; then ARGS="$ARGS --full"; fi
+          if [ "${{ inputs.no_hold }}" = "true" ]; then ARGS="$ARGS --no-hold"; fi
+          python scripts/sync_kopis.py $ARGS
+      - name: 바뀐 내용 커밋
+        run: |
+          if [ -n "$(git status --porcelain data assets/posters)" ]; then
+            git config user.name "forrestlive-bot"
+            git config user.email "forrestlive-bot@users.noreply.github.com"
+            git add data assets/posters
+            git commit -m "공연 정보 갱신 (KOPIS)"
+            git push
+          else
+            echo "변경 없음"
+          fi
