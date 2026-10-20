@@ -26,6 +26,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -38,7 +39,7 @@ DATA = ROOT / "data" / "shows.json"
 VENUES_FILE = ROOT / "data" / "venues.json"
 OVERRIDES = ROOT / "data" / "overrides.json"
 POSTERS = ROOT / "assets" / "posters"
-BASE = "https://www.kopis.or.kr/openApi/restful"
+BASE = os.environ.get("KOPIS_BASE", "https://kopis.or.kr/openApi/restful")
 
 HOLD = timedelta(minutes=15)
 WINDOW = 31                       # 공연목록 한 번에 조회 가능한 최대 일수
@@ -58,15 +59,27 @@ def now_kst() -> datetime:
 
 
 # ---------- HTTP ----------
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36 forrestlive-sync/2.1")
+
+
 def fetch(url: str, retries: int = 3) -> bytes:
     last = None
     for i in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "forrestlive-sync/2.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/xml,text/xml,*/*"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 body = r.read()
             time.sleep(REQUEST_GAP)
             return body
+        except urllib.error.HTTPError as e:
+            snippet = ""
+            try:
+                snippet = e.read()[:300].decode("utf-8", "replace")
+            except Exception:
+                pass
+            last = f"HTTP {e.code} {e.reason} | {snippet}"
+            time.sleep(2 * (i + 1))
         except Exception as e:
             last = e
             time.sleep(2 * (i + 1))
@@ -371,7 +384,10 @@ def main() -> int:
         print("KOPIS_API_KEY가 없습니다. GitHub 저장소 Settings > Secrets에 등록하세요.", file=sys.stderr)
         return 1
     if args.full:
-        sync_venues()
+        try:
+            sync_venues()
+        except Exception as e:  # 지점 정보는 실패해도 공연 동기화는 계속
+            print(f"지점 정보 갱신 건너뜀: {e}", file=sys.stderr)
     ids = list_ids(args.full)
     print(f"KOPIS 후보 {len(ids)}건 ({'전체' if args.full else '변경분'})")
     return sync(ids, detail, args.full, args.no_hold, download=True)

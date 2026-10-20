@@ -2,6 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>
+/* forrestlive.com/concert 처럼 끝에 / 가 없이 들어오면 /concert/ 로 맞춘다 (상대 경로 파일을 제대로 읽기 위해) */
+(function (p) { if (p.length > 1 && !p.endsWith("/") && !/\.[a-z0-9]+$/i.test(p)) location.replace(p + "/" + location.search + location.hash); })(location.pathname);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>숲세권 라이브 공연</title>
 <meta name="claude:viewport-fit-sides" content="cover">
