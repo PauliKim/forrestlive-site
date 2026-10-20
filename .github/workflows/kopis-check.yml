@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 실행 서버 위치
-        run: curl -s https://ipinfo.io/json | grep -E '"(ip|city|country|org)"' | sed 's/"ip".*/"ip": "(숨김)",/'
+        run: |
+          curl -s https://ipinfo.io/json | grep -E '"(city|country|org)"'
       - name: KOPIS 응답 비교
         env:
           KEY: ${{ secrets.KOPIS_API_KEY }}
