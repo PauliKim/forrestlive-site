@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T15:55",
+ "updated": "2026-10-20T17:39",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -16,7 +16,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195215_220726_135202.jpg",
+   "poster": "assets/posters/PF195215.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195215_220726_0152020.jpg"
    ],
@@ -50,7 +50,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195598_220802_111244.PNG",
+   "poster": "assets/posters/PF195598.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195598_220802_1112440.jpg"
    ],
@@ -86,7 +86,7 @@
    "lineup": [
     "전유동"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF195985_220810_095333.PNG",
+   "poster": "assets/posters/PF195985.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF195985_220810_0953330.jpg"
    ],
@@ -122,7 +122,7 @@
    "lineup": [
     "조소정 등"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF197288_220830_143858.jpg",
+   "poster": "assets/posters/PF197288.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF197288_220830_0238580.jpg"
    ],
@@ -156,7 +156,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF198535_220921_114520.jpg",
+   "poster": "assets/posters/PF198535.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF198535_220921_1145200.jpg"
    ],
@@ -190,7 +190,7 @@
    "runtime": "1시간 20분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF198882_220927_112721.jpg",
+   "poster": "assets/posters/PF198882.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF198882_220927_1127210.jpg"
    ],
@@ -224,7 +224,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF199454_221005_140046.jpg",
+   "poster": "assets/posters/PF199454.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF199454_221005_0200460.jpg"
    ],
@@ -258,7 +258,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF199830_221012_110338.jpg",
+   "poster": "assets/posters/PF199830.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF199830_221012_1103380.jpg"
    ],
@@ -292,7 +292,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF200347_221019_112607.jpg",
+   "poster": "assets/posters/PF200347.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF200347_221019_1126070.jpg"
    ],
@@ -326,7 +326,7 @@
    "runtime": "1시간 20분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF202177_221115_112732.jpg",
+   "poster": "assets/posters/PF202177.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF202177_221115_1127320.jpg"
    ],
@@ -360,7 +360,7 @@
    "runtime": "2시간",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF203248_221129_141412.jfif",
+   "poster": "assets/posters/PF203248.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF203248_221129_0218270.jpg"
    ],
@@ -397,7 +397,7 @@
     "강하림",
     "윤종훈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF251163_241014_132516.jfif",
+   "poster": "assets/posters/PF251163.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF251163_241014_0125480.JPG"
    ],
@@ -439,7 +439,7 @@
     "김예현",
     "김명수 등"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF252350_241028_170742.jpg",
+   "poster": "assets/posters/PF252350.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF252350_241028_0507421.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF252350_241028_0507420.jpg"
@@ -474,7 +474,7 @@
    "runtime": "1시간 40분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF269668_250717_102008.jpg",
+   "poster": "assets/posters/PF269668.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF269668_202507171020081200.jpg"
    ],
@@ -484,7 +484,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211654"
     }
    ],
-   "kopisUpdated": "2025-07-17 15:00:00",
+   "kopisUpdated": "2025-07-17 15:00:00.054173",
    "source": "KOPIS",
    "title": "라벤더",
    "artist": "기프트",
@@ -512,7 +512,7 @@
     "이동건",
     "김슬웅 등"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF272917_250829_103011.jpg",
+   "poster": "assets/posters/PF272917.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF272917_202508291030119490.jpg"
    ],
@@ -522,7 +522,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211868"
     }
    ],
-   "kopisUpdated": "2025-08-29 15:00:00",
+   "kopisUpdated": "2025-08-29 15:00:03.093009",
    "source": "KOPIS",
    "title": "벤치위레오",
    "artist": "벤치위레오",
@@ -546,7 +546,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF273351_250904_112228.jpg",
+   "poster": "assets/posters/PF273351.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF273351_202509041122286040.jpg"
    ],
@@ -556,7 +556,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211899"
     }
    ],
-   "kopisUpdated": "2025-09-04 15:00:00",
+   "kopisUpdated": "2025-09-04 15:00:03.208195",
    "source": "KOPIS",
    "title": "시인을 위하여",
    "artist": "시인을 위하여",
@@ -580,7 +580,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF273862_250911_130254.jpg",
+   "poster": "assets/posters/PF273862.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF273862_202509110102547130.jpg"
    ],
@@ -590,7 +590,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211920"
     }
    ],
-   "kopisUpdated": "2025-09-11 15:00:00",
+   "kopisUpdated": "2025-09-11 15:00:03.068114",
    "source": "KOPIS",
    "title": "버둥",
    "artist": "버둥",
@@ -616,7 +616,7 @@
    "lineup": [
     "공예빈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF274364_250918_095537.jpg",
+   "poster": "assets/posters/PF274364.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF274364_202509180955379550.jpg"
    ],
@@ -626,7 +626,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211937"
     }
    ],
-   "kopisUpdated": "2025-09-18 15:00:00",
+   "kopisUpdated": "2025-09-18 15:00:03.076096",
    "source": "KOPIS",
    "title": "예빛",
    "artist": "예빛",
@@ -650,7 +650,7 @@
    "runtime": "1시간 40분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF274595_250922_111431.jpg",
+   "poster": "assets/posters/PF274595.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF274595_202509221114310290.jpg"
    ],
@@ -660,7 +660,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=211966"
     }
    ],
-   "kopisUpdated": "2025-09-22 15:00:00",
+   "kopisUpdated": "2025-09-22 15:00:03.076721",
    "source": "KOPIS",
    "title": "코스모스",
    "artist": "엔분의일",
@@ -715,7 +715,7 @@
    "runtime": "1시간",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275597_251002_144634.jpg",
+   "poster": "assets/posters/PF275597.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275597_202510020246341520.jpg"
    ],
@@ -725,7 +725,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212050"
     }
    ],
-   "kopisUpdated": "2025-10-02 15:00:00",
+   "kopisUpdated": "2025-10-02 15:00:04.183402",
    "source": "KOPIS",
    "title": "Trumpet Vine",
    "artist": "에이다인",
@@ -751,7 +751,7 @@
    "lineup": [
     "추화정"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275699_251010_122509.jpg",
+   "poster": "assets/posters/PF275699.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275699_202510101225093850.jpg"
    ],
@@ -761,7 +761,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212049"
     }
    ],
-   "kopisUpdated": "2025-10-10 15:00:00",
+   "kopisUpdated": "2025-10-10 15:00:04.087786",
    "source": "KOPIS",
    "title": "늘푸름: 소나무",
    "artist": "추화정",
@@ -787,7 +787,7 @@
    "lineup": [
     "정유진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF275822_251010_175336.png",
+   "poster": "assets/posters/PF275822.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF275822_202510100553369140.png"
    ],
@@ -797,7 +797,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212042"
     }
    ],
-   "kopisUpdated": "2025-10-10 18:00:00",
+   "kopisUpdated": "2025-10-10 18:00:04.166005",
    "source": "KOPIS",
    "title": "Freesia",
    "artist": "정유진",
@@ -824,7 +824,7 @@
     "이승환",
     "서원"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF276682_251020_111615.jpg",
+   "poster": "assets/posters/PF276682.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF276682_202510201116150370.jpg"
    ],
@@ -834,7 +834,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212125"
     }
    ],
-   "kopisUpdated": "2025-10-20 15:00:00",
+   "kopisUpdated": "2025-10-20 15:00:04.070098",
    "source": "KOPIS",
    "title": "Oak Tree",
    "artist": "온리",
@@ -858,7 +858,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277118_251023_125250.jpg",
+   "poster": "assets/posters/PF277118.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277118_202510231252504570.jpg"
    ],
@@ -868,7 +868,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212142"
     }
    ],
-   "kopisUpdated": "2025-10-23 15:00:00",
+   "kopisUpdated": "2025-10-23 15:00:04.078761",
    "source": "KOPIS",
    "title": "회기본능",
    "artist": "회기본능",
@@ -892,7 +892,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277358_251027_125920.jpg",
+   "poster": "assets/posters/PF277358.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277358_202510271259208320.jpg"
    ],
@@ -902,7 +902,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212162"
     }
    ],
-   "kopisUpdated": "2025-10-27 15:00:00",
+   "kopisUpdated": "2025-10-27 15:00:04.130147",
    "source": "KOPIS",
    "title": "차세대",
    "artist": "차세대",
@@ -926,7 +926,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277291_251024_155847.jpg",
+   "poster": "assets/posters/PF277291.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277291_202510240358470250.jpg"
    ],
@@ -936,7 +936,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212151"
     }
    ],
-   "kopisUpdated": "2025-10-24 18:00:00",
+   "kopisUpdated": "2025-10-24 18:00:04.22161",
    "source": "KOPIS",
    "title": "숨비",
    "artist": "숨비",
@@ -960,7 +960,7 @@
    "runtime": "1시간 40분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF277997_251103_133214.jpg",
+   "poster": "assets/posters/PF277997.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF277997_202511030132143850.jpg"
    ],
@@ -970,7 +970,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212220"
     }
    ],
-   "kopisUpdated": "2025-11-03 15:00:00",
+   "kopisUpdated": "2025-11-03 15:00:04.181684",
    "source": "KOPIS",
    "title": "더더바라기: 해바라기",
    "artist": "더더",
@@ -994,7 +994,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF278343_251106_110825.jpg",
+   "poster": "assets/posters/PF278343.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF278343_202511061108251560.jpg"
    ],
@@ -1004,7 +1004,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212224"
     }
    ],
-   "kopisUpdated": "2025-11-06 15:00:00",
+   "kopisUpdated": "2025-11-06 15:00:04.154974",
    "source": "KOPIS",
    "title": "맥거핀",
    "artist": "맥거핀",
@@ -1030,7 +1030,7 @@
    "lineup": [
     "구본하"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279323_251117_154628.jpg",
+   "poster": "assets/posters/PF279323.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279323_202511170346280080.jpg"
    ],
@@ -1040,7 +1040,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212329"
     }
    ],
-   "kopisUpdated": "2025-11-17 18:00:00",
+   "kopisUpdated": "2025-11-17 18:00:04.140825",
    "source": "KOPIS",
    "title": "테라리움 이끼",
    "artist": "본하",
@@ -1069,7 +1069,7 @@
     "임진화",
     "김규목"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279814_251121_133827.jpg",
+   "poster": "assets/posters/PF279814.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279814_202511210138272140.jpg"
    ],
@@ -1079,7 +1079,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212337"
     }
    ],
-   "kopisUpdated": "2025-11-21 15:00:00",
+   "kopisUpdated": "2025-11-21 15:00:04.157406",
    "source": "KOPIS",
    "title": "호아",
    "artist": "호아",
@@ -1105,7 +1105,7 @@
    "lineup": [
     "송하예"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280884_251204_110848.png",
+   "poster": "assets/posters/PF280884.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280884_202512041108484272.png",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280884_202512041108484201.png",
@@ -1117,7 +1117,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-12-04 15:00:00",
+   "kopisUpdated": "2025-12-04 15:00:03.162777",
    "source": "KOPIS",
    "title": "데이지",
    "artist": "송하예",
@@ -1143,7 +1143,7 @@
    "lineup": [
     "김은지"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF279974_251124_135233.jpg",
+   "poster": "assets/posters/PF279974.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF279974_202511240152336850.jpg"
    ],
@@ -1153,7 +1153,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212367"
     }
    ],
-   "kopisUpdated": "2025-11-24 15:00:00",
+   "kopisUpdated": "2025-11-24 15:00:04.141461",
    "source": "KOPIS",
    "title": "Poinsettia",
    "artist": "모트",
@@ -1177,7 +1177,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280312_251127_104411.jpg",
+   "poster": "assets/posters/PF280312.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280312_202511271044110130.jpg"
    ],
@@ -1187,7 +1187,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212379"
     }
    ],
-   "kopisUpdated": "2025-11-27 15:00:00",
+   "kopisUpdated": "2025-11-27 15:00:04.052767",
    "source": "KOPIS",
    "title": "ddbb",
    "artist": "ddbb",
@@ -1215,7 +1215,7 @@
     "김호진",
     "이강산"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280601_251201_145703.jpg",
+   "poster": "assets/posters/PF280601.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280601_202512010257035700.jpg"
    ],
@@ -1225,7 +1225,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212401"
     }
    ],
-   "kopisUpdated": "2025-12-01 15:00:00",
+   "kopisUpdated": "2025-12-01 15:00:03.075402",
    "source": "KOPIS",
    "title": "화노",
    "artist": "화노",
@@ -1249,7 +1249,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280426_251128_113201.jpg",
+   "poster": "assets/posters/PF280426.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280426_202511281132011450.jpg"
    ],
@@ -1259,7 +1259,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212386"
     }
    ],
-   "kopisUpdated": "2025-11-28 15:00:00",
+   "kopisUpdated": "2025-11-28 15:00:04.121847",
    "source": "KOPIS",
    "title": "선 앤 메어(Sun & Mer)",
    "artist": "선 앤 메어(Sun & Mer)",
@@ -1285,7 +1285,7 @@
    "lineup": [
     "정홍일"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280290_251127_101020.jpg",
+   "poster": "assets/posters/PF280290.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280290_202511271010202420.jpg"
    ],
@@ -1295,7 +1295,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212417"
     }
    ],
-   "kopisUpdated": "2025-11-27 15:00:00",
+   "kopisUpdated": "2025-11-27 15:00:04.052767",
    "source": "KOPIS",
    "title": "Clover",
    "artist": "정홍일 with 럭키클로버",
@@ -1319,7 +1319,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281122_251208_134258.png",
+   "poster": "assets/posters/PF281122.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281122_202512080142585041.png",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281122_202512080144179090.jpg",
@@ -1331,7 +1331,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-12-09 18:00:00",
+   "kopisUpdated": "2025-12-09 18:00:03.097841",
    "source": "KOPIS",
    "title": "The Gift Concert",
    "artist": "A Hilo",
@@ -1355,7 +1355,7 @@
    "runtime": "1시간 40분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280453_251128_133733.jpg",
+   "poster": "assets/posters/PF280453.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337913.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280453_202511280137337872.jpg",
@@ -1368,7 +1368,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-11-28 15:00:00",
+   "kopisUpdated": "2025-11-28 15:00:04.121847",
    "source": "KOPIS",
    "title": "Mistletoe",
    "artist": "취향상점",
@@ -1394,7 +1394,7 @@
    "lineup": [
     "이상웅"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281118_251208_133609.png",
+   "poster": "assets/posters/PF281118.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281118_202512080136093662.png",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281118_202512080136093571.png",
@@ -1406,7 +1406,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-12-08 15:00:00",
+   "kopisUpdated": "2025-12-08 15:00:03.132452",
    "source": "KOPIS",
    "title": "jujube",
    "artist": "이상웅",
@@ -1430,7 +1430,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF280578_251201_135209.jpg",
+   "poster": "assets/posters/PF280578.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280578_202512010152095422.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF280578_202512010152095381.jpg",
@@ -1442,7 +1442,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-12-01 15:00:00",
+   "kopisUpdated": "2025-12-01 15:00:03.075402",
    "source": "KOPIS",
    "title": "snowdrop",
    "artist": "우나",
@@ -1468,7 +1468,7 @@
    "lineup": [
     "박현규"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF281655_251216_112317.png",
+   "poster": "assets/posters/PF281655.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175453.png",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF281655_202512161123175392.png",
@@ -1481,7 +1481,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2025-12-16 15:00:00",
+   "kopisUpdated": "2025-12-16 15:00:03.244574",
    "source": "KOPIS",
    "title": "아이리스",
    "artist": "박현규",
@@ -1507,7 +1507,7 @@
    "lineup": [
     "천유경"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282296_251229_114158.png",
+   "poster": "assets/posters/PF282296.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282296_202512291141583160.jpg"
    ],
@@ -1517,7 +1517,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212548"
     }
    ],
-   "kopisUpdated": "2025-12-29 15:00:00",
+   "kopisUpdated": "2025-12-29 15:00:03.197038",
    "source": "KOPIS",
    "title": "Delphinium",
    "artist": "키코(Kik5o)",
@@ -1541,7 +1541,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282560_260105_111458.jpg",
+   "poster": "assets/posters/PF282560.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282560_202601051114588720.jpg"
    ],
@@ -1551,7 +1551,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212557"
     }
    ],
-   "kopisUpdated": "2026-01-05 14:51:00",
+   "kopisUpdated": "2026-01-05 14:51:47.72972",
    "source": "KOPIS",
    "title": "정튠",
    "artist": "정튠",
@@ -1579,7 +1579,7 @@
     "고수영",
     "강규현"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282771_260108_105523.jpg",
+   "poster": "assets/posters/PF282771.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282771_202601081055232980.jpg"
    ],
@@ -1589,7 +1589,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212609"
     }
    ],
-   "kopisUpdated": "2026-01-08 15:00:00",
+   "kopisUpdated": "2026-01-08 15:00:03.065403",
    "source": "KOPIS",
    "title": "Rosemary",
    "artist": "마리슈",
@@ -1613,7 +1613,7 @@
    "runtime": "2시간",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF282964_260112_132514.jpg",
+   "poster": "assets/posters/PF282964.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF282964_202601120125142910.jpg"
    ],
@@ -1623,7 +1623,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212628"
     }
    ],
-   "kopisUpdated": "2026-01-12 15:00:00",
+   "kopisUpdated": "2026-01-12 15:00:03.263302",
    "source": "KOPIS",
    "title": "Baobob Tree",
    "artist": "유인원",
@@ -1649,7 +1649,7 @@
    "lineup": [
     "공현수"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283419_260119_124101.jpg",
+   "poster": "assets/posters/PF283419.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283419_202601191241016100.jpg"
    ],
@@ -1659,7 +1659,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212660"
     }
    ],
-   "kopisUpdated": "2026-01-19 15:00:00",
+   "kopisUpdated": "2026-01-19 15:00:04.212547",
    "source": "KOPIS",
    "title": "Forget-me-not",
    "artist": "슈야",
@@ -1683,7 +1683,7 @@
    "runtime": "1시간 40분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283509_260120_105100.jpg",
+   "poster": "assets/posters/PF283509.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283509_202601201051008630.jpg"
    ],
@@ -1693,14 +1693,14 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212668"
     }
    ],
-   "kopisUpdated": "2026-01-20 15:00:00",
+   "kopisUpdated": "2026-01-20 15:00:04.108725",
    "source": "KOPIS",
    "title": "Bluebell",
    "artist": "언오피셜",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
-   "soldOut": false,
    "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 펼쳐지는 언오피셜 단독 공연.",
+   "soldOut": false,
    "openAt": ""
   },
   {
@@ -1719,7 +1719,7 @@
    "lineup": [
     "김결"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283734_260123_111158.jpg",
+   "poster": "assets/posters/PF283734.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283734_202601231111585080.jpg"
    ],
@@ -1729,7 +1729,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212673"
     }
    ],
-   "kopisUpdated": "2026-01-23 15:00:00",
+   "kopisUpdated": "2026-01-23 15:00:04.101904",
    "source": "KOPIS",
    "title": "김결",
    "artist": "김결",
@@ -1755,7 +1755,7 @@
    "lineup": [
     "정예인"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF283927_260127_125226.jpg",
+   "poster": "assets/posters/PF283927.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF283927_202601271252269640.jpg"
    ],
@@ -1765,7 +1765,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212719"
     }
    ],
-   "kopisUpdated": "2026-01-27 15:00:00",
+   "kopisUpdated": "2026-01-27 15:00:04.137587",
    "source": "KOPIS",
    "title": "Calendula",
    "artist": "정예인",
@@ -1791,7 +1791,7 @@
    "lineup": [
     "강하림"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF284294_260202_152437.jpg",
+   "poster": "assets/posters/PF284294.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF284294_202602020324373390.jpg"
    ],
@@ -1801,7 +1801,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212737"
     }
    ],
-   "kopisUpdated": "2026-02-02 18:00:00",
+   "kopisUpdated": "2026-02-02 18:00:04.080783",
    "source": "KOPIS",
    "title": "Globe Amaranth",
    "artist": "모브닝",
@@ -1827,7 +1827,7 @@
    "lineup": [
     "차수정"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF284181_260130_150911.png",
+   "poster": "assets/posters/PF284181.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF284181_202601300309110950.png"
    ],
@@ -1837,7 +1837,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212717"
     }
    ],
-   "kopisUpdated": "2026-01-30 18:00:00",
+   "kopisUpdated": "2026-01-30 18:00:04.082361",
    "source": "KOPIS",
    "title": "Crystal Tea Time Vol.3",
    "artist": "크리스탈 티",
@@ -1863,7 +1863,7 @@
    "lineup": [
     "염철훈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285402_260219_173113.jpg",
+   "poster": "assets/posters/PF285402.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285402_202602190531139890.jpg"
    ],
@@ -1873,7 +1873,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212797"
     }
    ],
-   "kopisUpdated": "2026-02-19 18:00:00",
+   "kopisUpdated": "2026-02-19 18:00:04.104907",
    "source": "KOPIS",
    "title": "Daylily",
    "artist": "블라",
@@ -1901,7 +1901,7 @@
     "임수연",
     "임유리"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285000_260212_101416.jpg",
+   "poster": "assets/posters/PF285000.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285000_202602121014170140.jpg"
    ],
@@ -1911,7 +1911,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212799"
     }
    ],
-   "kopisUpdated": "2026-02-12 15:00:00",
+   "kopisUpdated": "2026-02-12 15:00:04.139625",
    "source": "KOPIS",
    "title": "오아베(O.A.Be)",
    "artist": "오아베(O.A.Be)",
@@ -1935,7 +1935,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285288_260219_113352.jpg",
+   "poster": "assets/posters/PF285288.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285288_202602191133527841.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285288_202602191133527310.jpg"
@@ -1946,7 +1946,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-02-20 18:00:00",
+   "kopisUpdated": "2026-02-20 18:00:04.081006",
    "source": "KOPIS",
    "title": "Ranunculus",
    "artist": "첼로가 노래하는 진스",
@@ -1972,7 +1972,7 @@
    "lineup": [
     "이연우"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285350_260219_144401.jpg",
+   "poster": "assets/posters/PF285350.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285350_202602190244019060.jpg"
    ],
@@ -1982,7 +1982,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-02-19 15:00:00",
+   "kopisUpdated": "2026-02-19 15:00:04.127454",
    "source": "KOPIS",
    "title": "선인장 (Cactus)",
    "artist": "연우",
@@ -2009,7 +2009,7 @@
     "김위수",
     "손효진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285632_260223_163047.jpeg",
+   "poster": "assets/posters/PF285632.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285632_202602230430476981.jpeg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285632_202602230430476850.jpg"
@@ -2020,7 +2020,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-02-23 18:00:00",
+   "kopisUpdated": "2026-02-23 18:00:04.06952",
    "source": "KOPIS",
    "title": "나를 살린 여성의 목소리",
    "artist": "위수 · 손효진",
@@ -2047,7 +2047,7 @@
     "이설아",
     "한그린"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285589_260223_144822.jpeg",
+   "poster": "assets/posters/PF285589.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285589_202602230248226270.jpg"
    ],
@@ -2057,7 +2057,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-02-23 18:00:00",
+   "kopisUpdated": "2026-02-23 18:00:04.06952",
    "source": "KOPIS",
    "title": "나를 살린 여성의 목소리",
    "artist": "이설아 · 한그린",
@@ -2087,7 +2087,7 @@
     "박성준",
     "정다운"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285849_260226_112137.jpg",
+   "poster": "assets/posters/PF285849.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF285849_202602261121371320.jpg"
    ],
@@ -2097,7 +2097,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212830"
     }
    ],
-   "kopisUpdated": "2026-02-26 15:00:00",
+   "kopisUpdated": "2026-02-26 15:00:04.067636",
    "source": "KOPIS",
    "title": "시나 쓰는 앨리스",
    "artist": "시나 쓰는 앨리스",
@@ -2125,7 +2125,7 @@
     "우명제",
     "우선제"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286097_260303_133539.jpg",
+   "poster": "assets/posters/PF286097.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286097_202603030135394181.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286097_202603030135394120.jpg"
@@ -2136,7 +2136,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-03-03 15:00:00",
+   "kopisUpdated": "2026-03-03 15:00:04.060861",
    "source": "KOPIS",
    "title": "Cosmos",
    "artist": "안녕바다",
@@ -2162,7 +2162,7 @@
    "lineup": [
     "조혜리"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286690_260309_165507.jpg",
+   "poster": "assets/posters/PF286690.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286690_202603090455077331.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286690_202603090455077260.jpg"
@@ -2173,7 +2173,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-03-09 18:00:00",
+   "kopisUpdated": "2026-03-09 18:00:04.057481",
    "source": "KOPIS",
    "title": "3579",
    "artist": "왁스",
@@ -2199,7 +2199,7 @@
    "lineup": [
     "이정환"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286639_260309_152701.jpg",
+   "poster": "assets/posters/PF286639.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286639_202603090327016630.jpg"
    ],
@@ -2209,7 +2209,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212857"
     }
    ],
-   "kopisUpdated": "2026-03-09 18:00:00",
+   "kopisUpdated": "2026-03-09 18:00:04.057481",
    "source": "KOPIS",
    "title": "스트레이",
    "artist": "스트레이",
@@ -2235,7 +2235,7 @@
    "lineup": [
     "박태욱"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286940_260312_152619.jpg",
+   "poster": "assets/posters/PF286940.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286940_202603120326197560.jpg"
    ],
@@ -2245,7 +2245,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212859"
     }
    ],
-   "kopisUpdated": "2026-03-12 18:00:00",
+   "kopisUpdated": "2026-03-12 18:00:04.149533",
    "source": "KOPIS",
    "title": "박태욱",
    "artist": "박태욱",
@@ -2271,7 +2271,7 @@
    "lineup": [
     "안희수"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286688_260309_164855.jpg",
+   "poster": "assets/posters/PF286688.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286688_202603090448556220.jpg"
    ],
@@ -2281,7 +2281,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212864"
     }
    ],
-   "kopisUpdated": "2026-03-09 18:00:00",
+   "kopisUpdated": "2026-03-09 18:00:04.057481",
    "source": "KOPIS",
    "title": "안희수",
    "artist": "안희수",
@@ -2307,7 +2307,7 @@
    "lineup": [
     "박은비"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286633_260309_151959.jpg",
+   "poster": "assets/posters/PF286633.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286633_202603090319229611.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286633_202603090319229380.jpeg"
@@ -2318,7 +2318,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-03-10 15:00:00",
+   "kopisUpdated": "2026-03-10 15:00:04.118516",
    "source": "KOPIS",
    "title": "강아지 풀",
    "artist": "별은",
@@ -2344,7 +2344,7 @@
    "lineup": [
     "남소현"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286945_260312_153431.png",
+   "poster": "assets/posters/PF286945.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286945_202603120334315010.png"
    ],
@@ -2354,7 +2354,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212834"
     }
    ],
-   "kopisUpdated": "2026-03-12 18:00:00",
+   "kopisUpdated": "2026-03-12 18:00:04.149533",
    "source": "KOPIS",
    "title": "MRI",
    "artist": "쿠잉",
@@ -2383,7 +2383,7 @@
     "이철민",
     "김창원"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF286943_260312_153401.jpg",
+   "poster": "assets/posters/PF286943.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF286943_202603120334019690.jpg"
    ],
@@ -2393,7 +2393,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212890"
     }
    ],
-   "kopisUpdated": "2026-03-12 18:00:00",
+   "kopisUpdated": "2026-03-12 18:00:04.149533",
    "source": "KOPIS",
    "title": "예람",
    "artist": "예람",
@@ -2417,7 +2417,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287493_260319_121958.jpg",
+   "poster": "assets/posters/PF287493.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287493_202603191219583070.jpg"
    ],
@@ -2427,7 +2427,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212939"
     }
    ],
-   "kopisUpdated": "2026-03-19 15:00:00",
+   "kopisUpdated": "2026-03-19 15:00:04.21966",
    "source": "KOPIS",
    "title": "디폴트(DEFAULT.)",
    "artist": "디폴트(DEFAULT.)",
@@ -2453,7 +2453,7 @@
    "lineup": [
     "문정후"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287829_260323_165726.png",
+   "poster": "assets/posters/PF287829.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287829_202603230457261470.png"
    ],
@@ -2463,7 +2463,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212941"
     }
    ],
-   "kopisUpdated": "2026-03-23 18:00:00",
+   "kopisUpdated": "2026-03-23 18:00:04.068446",
    "source": "KOPIS",
    "title": "뷰렛",
    "artist": "뷰렛",
@@ -2489,7 +2489,7 @@
    "lineup": [
     "추화정"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF287796_260323_154956.jpg",
+   "poster": "assets/posters/PF287796.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287796_202603230349569261.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF287796_202603230349569180.jpg"
@@ -2500,7 +2500,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-03-23 18:00:00",
+   "kopisUpdated": "2026-03-23 18:00:04.068446",
    "source": "KOPIS",
    "title": "백합",
    "artist": "추화정",
@@ -2526,7 +2526,7 @@
    "lineup": [
     "김준태"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288087_260326_134351.jpg",
+   "poster": "assets/posters/PF288087.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288087_202603260145550990.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288087_202603260143510500.jpg"
@@ -2537,7 +2537,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-03-26 15:00:00",
+   "kopisUpdated": "2026-03-26 15:00:04.141875",
    "source": "KOPIS",
    "title": "은방울꽃",
    "artist": "준태",
@@ -2563,7 +2563,7 @@
    "lineup": [
     "전유동"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288025_260326_102601.jpg",
+   "poster": "assets/posters/PF288025.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288025_202603261026013060.jpg"
    ],
@@ -2573,7 +2573,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=212985"
     }
    ],
-   "kopisUpdated": "2026-03-26 18:00:00",
+   "kopisUpdated": "2026-03-26 18:00:04.122352",
    "source": "KOPIS",
    "title": "전유동",
    "artist": "전유동",
@@ -2599,7 +2599,7 @@
    "lineup": [
     "정예원"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288402_260401_102015.jpg",
+   "poster": "assets/posters/PF288402.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020154093.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288402_202604011020153832.jpg",
@@ -2612,14 +2612,14 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-01 15:00:00",
+   "kopisUpdated": "2026-04-01 15:00:01.109521",
    "source": "KOPIS",
    "title": "레몬트리",
    "artist": "정예원",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
-   "soldOut": false,
    "intro": "봄의 시작을 알리는 특별한 무대 정예원의 단독 공연 <레몬트리>가 열립니다. 작은 공간에서 더욱 가까이, 더 선명하게 울리는 목소리 지금이 아니면 다시 만나기 어려운 순간, 이번 공연을 놓치지 마세요.",
+   "soldOut": false,
    "openAt": ""
   },
   {
@@ -2638,7 +2638,7 @@
    "lineup": [
     "성해빈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288492_260402_111113.jpg",
+   "poster": "assets/posters/PF288492.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288492_202604021111134870.jpg"
    ],
@@ -2648,7 +2648,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213006"
     }
    ],
-   "kopisUpdated": "2026-04-02 15:00:00",
+   "kopisUpdated": "2026-04-02 15:00:01.194716",
    "source": "KOPIS",
    "title": "성해빈",
    "artist": "성해빈",
@@ -2678,7 +2678,7 @@
     "박성경",
     "정지원"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288704_260406_130726.jpg",
+   "poster": "assets/posters/PF288704.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288704_202604060107261311.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288704_202604060107261240.jpg"
@@ -2689,7 +2689,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-06 15:00:00",
+   "kopisUpdated": "2026-04-06 15:00:04.190915",
    "source": "KOPIS",
    "title": "REEL",
    "artist": "피어",
@@ -2715,7 +2715,7 @@
    "lineup": [
     "박형률"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF288395_260401_095721.jpg",
+   "poster": "assets/posters/PF288395.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF288395_202604010957218220.jpg"
    ],
@@ -2725,14 +2725,14 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-01 15:00:00",
+   "kopisUpdated": "2026-04-01 15:00:01.109521",
    "source": "KOPIS",
    "title": "능소화",
    "artist": "RYUL",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
-   "soldOut": false,
    "intro": "조용히 피어나 오래 남는 것들처럼, RYUL의 음악은 장르를 넘어 하나의 결로 이어집니다. R&B, 팝, 드럼 앤 베이스까지 다양한 스펙트럼 위에서 만들어진 사운드는 이번 공연에서 더욱 솔직하고 입체적인 순간으로 펼쳐집니다. <능소화>는 시간이 지나도 잊히지 않는 감정처럼, RYUL이 쌓아온 음악과 지금의 감각이 만나는 자리입니다. 숲세권 라이브의 가장 가까운 거리에서, 그 변화의 순간을 함께 마주해 주세요.",
+   "soldOut": false,
    "openAt": ""
   },
   {
@@ -2749,7 +2749,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289051_260410_104553.jpg",
+   "poster": "assets/posters/PF289051.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289051_202604101045532720.jpg"
    ],
@@ -2759,7 +2759,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213034"
     }
    ],
-   "kopisUpdated": "2026-04-10 15:00:00",
+   "kopisUpdated": "2026-04-10 15:00:04.276452",
    "source": "KOPIS",
    "title": "나타샤",
    "artist": "나타샤",
@@ -2785,7 +2785,7 @@
    "lineup": [
     "오소연"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289034_260410_100937.jpg",
+   "poster": "assets/posters/PF289034.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289034_202604101009375210.jpg"
    ],
@@ -2795,7 +2795,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213045"
     }
    ],
-   "kopisUpdated": "2026-04-10 15:00:00",
+   "kopisUpdated": "2026-04-10 15:00:04.276452",
    "source": "KOPIS",
    "title": "담담",
    "artist": "담담",
@@ -2821,7 +2821,7 @@
    "lineup": [
     "김재현"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289382_260415_111005.jpg",
+   "poster": "assets/posters/PF289382.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289382_202604151110053450.jpg"
    ],
@@ -2831,7 +2831,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213089"
     }
    ],
-   "kopisUpdated": "2026-04-15 15:00:00",
+   "kopisUpdated": "2026-04-15 15:00:04.065012",
    "source": "KOPIS",
    "title": "베리(VARI)",
    "artist": "베리(VARI)",
@@ -2861,7 +2861,7 @@
     "박진현",
     "김현정"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289177_260413_110414.jpg",
+   "poster": "assets/posters/PF289177.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289177_202604131104146870.jpg"
    ],
@@ -2871,7 +2871,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-13 15:00:00",
+   "kopisUpdated": "2026-04-13 15:00:04.262418",
    "source": "KOPIS",
    "title": "민들레",
    "artist": "오예린밴드",
@@ -2900,7 +2900,7 @@
     "박현진",
     "임진언"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289625_260417_132049.jpg",
+   "poster": "assets/posters/PF289625.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289625_202604170120495781.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289625_202604170120495680.jpg"
@@ -2911,7 +2911,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-17 15:00:00",
+   "kopisUpdated": "2026-04-17 15:00:04.12244",
    "source": "KOPIS",
    "title": "다다다와 콩나무",
    "artist": "다다다",
@@ -2937,7 +2937,7 @@
    "lineup": [
     "김민성"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289475_260416_102332.jpg",
+   "poster": "assets/posters/PF289475.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289475_202604161023326440.jpg"
    ],
@@ -2947,7 +2947,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213087"
     }
    ],
-   "kopisUpdated": "2026-04-16 15:00:00",
+   "kopisUpdated": "2026-04-16 15:00:04.159344",
    "source": "KOPIS",
    "title": "김민성",
    "artist": "김민성",
@@ -2971,7 +2971,7 @@
    "runtime": "1시간 40분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289544_260416_141019.jpg",
+   "poster": "assets/posters/PF289544.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289544_202604160210194861.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289544_202604160210194580.jpg"
@@ -2982,7 +2982,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-16 15:00:00",
+   "kopisUpdated": "2026-04-16 15:00:04.159344",
    "source": "KOPIS",
    "title": "개화",
    "artist": "오오오",
@@ -3006,7 +3006,7 @@
    "runtime": "2시간",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF289164_260413_103933.jpg",
+   "poster": "assets/posters/PF289164.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289164_202604131039335201.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF289164_202604131039335130.jpg"
@@ -3017,7 +3017,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213060"
     }
    ],
-   "kopisUpdated": "2026-04-13 15:00:00",
+   "kopisUpdated": "2026-04-13 15:00:04.262418",
    "source": "KOPIS",
    "title": "in Zip : Our Home",
    "artist": "규도",
@@ -3043,7 +3043,7 @@
    "lineup": [
     "김택우"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290089_260424_140123.jpg",
+   "poster": "assets/posters/PF290089.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290089_202604240201239170.jpg"
    ],
@@ -3053,7 +3053,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213129"
     }
    ],
-   "kopisUpdated": "2026-04-24 15:00:00",
+   "kopisUpdated": "2026-04-24 15:00:04.187325",
    "source": "KOPIS",
    "title": "택우",
    "artist": "택우",
@@ -3079,7 +3079,7 @@
    "lineup": [
     "김규종"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290160_260427_130239.jpg",
+   "poster": "assets/posters/PF290160.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290160_202604270102391791.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290160_202604270102391700.jpg"
@@ -3090,7 +3090,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-04-27 15:00:00",
+   "kopisUpdated": "2026-04-27 15:00:04.140608",
    "source": "KOPIS",
    "title": "애니시다",
    "artist": "김규종",
@@ -3116,7 +3116,7 @@
    "lineup": [
     "김미진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290540_260504_132805.jpg",
+   "poster": "assets/posters/PF290540.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290540_202605040128052780.jpg"
    ],
@@ -3126,7 +3126,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-05-04 15:00:00",
+   "kopisUpdated": "2026-05-04 15:00:04.049824",
    "source": "KOPIS",
    "title": "칠자화나무",
    "artist": "미지니",
@@ -3154,7 +3154,7 @@
     "김규식",
     "김주혁"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291002_260511_101845.jpg",
+   "poster": "assets/posters/PF291002.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291002_202605111018453660.jpg"
    ],
@@ -3164,7 +3164,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213198"
     }
    ],
-   "kopisUpdated": "2026-05-11 15:00:00",
+   "kopisUpdated": "2026-05-11 15:00:04.080652",
    "source": "KOPIS",
    "title": "아사달",
    "artist": "아사달",
@@ -3190,7 +3190,7 @@
    "lineup": [
     "박장현"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF290825_260507_134224.jpg",
+   "poster": "assets/posters/PF290825.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF290825_202605070142247370.jpg"
    ],
@@ -3200,7 +3200,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-05-07 15:00:00",
+   "kopisUpdated": "2026-05-07 15:00:04.122456",
    "source": "KOPIS",
    "title": "고사리꽃",
    "artist": "박장현",
@@ -3224,7 +3224,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291459_260515_104720.jpg",
+   "poster": "assets/posters/PF291459.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291459_202605151047208950.jpg"
    ],
@@ -3234,7 +3234,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213213"
     }
    ],
-   "kopisUpdated": "2026-05-15 15:00:00",
+   "kopisUpdated": "2026-05-15 15:00:04.150425",
    "source": "KOPIS",
    "title": "루아멜(LUAMEL)",
    "artist": "루아멜(LUAMEL)",
@@ -3260,7 +3260,7 @@
    "lineup": [
     "김동현"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291202_260512_131155.jpg",
+   "poster": "assets/posters/PF291202.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291202_202605120111555601.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291202_202605120111555500.jpg"
@@ -3271,7 +3271,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-05-12 15:00:00",
+   "kopisUpdated": "2026-05-12 15:00:04.0829",
    "source": "KOPIS",
    "title": "동숲 Dong Forest",
    "artist": "김동현",
@@ -3295,7 +3295,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF292165_260526_121324.jpg",
+   "poster": "assets/posters/PF292165.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292165_202605261213245131.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292165_202605261213244570.jpg"
@@ -3306,7 +3306,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-05-26 15:00:00",
+   "kopisUpdated": "2026-05-26 15:00:04.095277",
    "source": "KOPIS",
    "title": "사이프러스",
    "artist": "제니스",
@@ -3330,7 +3330,7 @@
    "runtime": "1시간 10분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291380_260514_125334.jpg",
+   "poster": "assets/posters/PF291380.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291380_202605141253343580.jpg"
    ],
@@ -3340,7 +3340,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213231"
     }
    ],
-   "kopisUpdated": "2026-05-14 15:00:00",
+   "kopisUpdated": "2026-05-14 15:00:04.227036",
    "source": "KOPIS",
    "title": "여기 평온한 거리에",
    "artist": "UmYull",
@@ -3367,7 +3367,7 @@
     "최인철",
     "최주영"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF291521_260515_143225.jpg",
+   "poster": "assets/posters/PF291521.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291521_202605150232254920.jpg"
    ],
@@ -3377,7 +3377,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213232"
     }
    ],
-   "kopisUpdated": "2026-05-15 15:00:00",
+   "kopisUpdated": "2026-05-15 15:00:04.150425",
    "source": "KOPIS",
    "title": "여기 평온한 거리에",
    "artist": "UmYull",
@@ -3404,7 +3404,7 @@
     "이상훈",
     "이종훈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF292648_260601_134100.jpg",
+   "poster": "assets/posters/PF292648.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292648_202606010141008311.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292648_202606010141008210.jpg"
@@ -3415,7 +3415,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-06-01 15:00:00",
+   "kopisUpdated": "2026-06-01 15:00:04.064384",
    "source": "KOPIS",
    "title": "초록 주의보",
    "artist": "훈스",
@@ -3446,7 +3446,7 @@
     "신재진",
     "한예진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF293173_260609_095900.jpg",
+   "poster": "assets/posters/PF293173.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293173_202606090959003482.png",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293173_202606090959003201.png",
@@ -3458,7 +3458,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-06-09 15:00:00",
+   "kopisUpdated": "2026-06-09 15:00:04.143914",
    "source": "KOPIS",
    "title": "의외의 곳에서",
    "artist": "이파란",
@@ -3484,7 +3484,7 @@
    "lineup": [
     "김태빈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF293814_260616_112643.jpg",
+   "poster": "assets/posters/PF293814.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293814_202606161126433341.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF293814_202606161126433200.jpg"
@@ -3495,7 +3495,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-06-16 15:00:00",
+   "kopisUpdated": "2026-06-16 15:00:04.21249",
    "source": "KOPIS",
    "title": "프리지아",
    "artist": "태비",
@@ -3521,7 +3521,7 @@
    "lineup": [
     "이지함"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF294131_260619_131921.jpg",
+   "poster": "assets/posters/PF294131.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294131_202606190119220050.jpg"
    ],
@@ -3531,7 +3531,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213401"
     }
    ],
-   "kopisUpdated": "2026-06-19 15:00:00",
+   "kopisUpdated": "2026-06-19 15:00:02.258513",
    "source": "KOPIS",
    "title": "이지함",
    "artist": "이지함",
@@ -3557,7 +3557,7 @@
    "lineup": [
     "주성근"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF294309_260622_141120.jpg",
+   "poster": "assets/posters/PF294309.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294309_202606220211204591.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF294309_202606220211204530.jpg"
@@ -3568,7 +3568,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-06-22 15:00:00",
+   "kopisUpdated": "2026-06-22 15:00:02.056776",
    "source": "KOPIS",
    "title": "숫자와 숫자들",
    "artist": "1415",
@@ -3597,7 +3597,7 @@
     "박준영",
     "정지섭 등"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295402_260706_141519.jpg",
+   "poster": "assets/posters/PF295402.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215198134.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295402_202607060215198093.jpg",
@@ -3611,7 +3611,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-06 15:00:00",
+   "kopisUpdated": "2026-07-06 15:00:02.066327",
    "source": "KOPIS",
    "title": "라임나무",
    "artist": "보이드",
@@ -3637,7 +3637,7 @@
    "lineup": [
     "최광렬"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295266_260703_124806.jpg",
+   "poster": "assets/posters/PF295266.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295266_202607031248063460.jpg"
    ],
@@ -3647,7 +3647,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-03 15:00:00",
+   "kopisUpdated": "2026-07-03 15:00:02.068649",
    "source": "KOPIS",
    "title": "주목",
    "artist": "칸토",
@@ -3671,7 +3671,7 @@
    "runtime": "1시간 30분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295152_260702_141702.jpg",
+   "poster": "assets/posters/PF295152.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295152_202607020217023470.jpg"
    ],
@@ -3681,7 +3681,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213481"
     }
    ],
-   "kopisUpdated": "2026-07-02 15:00:00",
+   "kopisUpdated": "2026-07-02 15:00:02.021177",
    "source": "KOPIS",
    "title": "모허",
    "artist": "모허",
@@ -3707,7 +3707,7 @@
    "lineup": [
     "김슬기"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295161_260702_143353.jpg",
+   "poster": "assets/posters/PF295161.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295161_202607020233537910.jpg"
    ],
@@ -3717,7 +3717,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213473"
     }
    ],
-   "kopisUpdated": "2026-07-02 15:00:00",
+   "kopisUpdated": "2026-07-02 15:00:02.021177",
    "source": "KOPIS",
    "title": "이오늘",
    "artist": "이오늘",
@@ -3743,7 +3743,7 @@
    "lineup": [
     "안형주"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295498_260707_114805.jpg",
+   "poster": "assets/posters/PF295498.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295498_202607071148050570.jpg"
    ],
@@ -3753,7 +3753,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-07 15:00:00",
+   "kopisUpdated": "2026-07-07 15:00:02.090833",
    "source": "KOPIS",
    "title": "능소화",
    "artist": "줍에이",
@@ -3779,7 +3779,7 @@
    "lineup": [
     "정유진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295900_260713_134831.jpg",
+   "poster": "assets/posters/PF295900.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295900_202607130148315270.jpg"
    ],
@@ -3789,7 +3789,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-13 15:00:00",
+   "kopisUpdated": "2026-07-13 15:00:02.055955",
    "source": "KOPIS",
    "title": "달맞이꽃",
    "artist": "정유진",
@@ -3815,7 +3815,7 @@
    "lineup": [
     "정효빈"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295843_260713_103759.jpg",
+   "poster": "assets/posters/PF295843.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295843_202607131037598870.jpg"
    ],
@@ -3825,7 +3825,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-13 15:00:00",
+   "kopisUpdated": "2026-07-13 15:00:02.055955",
    "source": "KOPIS",
    "title": "Delphinium",
    "artist": "정효빈",
@@ -3855,7 +3855,7 @@
     "황진석",
     "도민규"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296547_260721_134352.jpg",
+   "poster": "assets/posters/PF296547.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296547_202607210143527400.jpg"
    ],
@@ -3865,14 +3865,14 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-21 15:00:00",
+   "kopisUpdated": "2026-07-21 15:00:02.062544",
    "source": "KOPIS",
    "title": "리시안셔스",
    "artist": "더씬드롬",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
-   "soldOut": false,
    "intro": "리시안셔스는 겹겹이 피어나는 꽃입니다. 한 겹만 봐도 예쁜데, 두 겹 세 겹 들여다보면 더 예쁜 꽃. 더씬드롬의 음악도 그렇습니다. 다섯 멤버가 만들어내는 소리가 겹겹이 쌓여 당신 마음속에서 조용히, 그러나 깊게 번져갑니다. 더씬드롬이 피워낼 리시안셔스를 만나보세요.",
+   "soldOut": false,
    "openAt": ""
   },
   {
@@ -3894,7 +3894,7 @@
     "강형기",
     "이기은"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296223_260716_113534.jpg",
+   "poster": "assets/posters/PF296223.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296223_202607161135344801.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296223_202607161135344730.jpg"
@@ -3905,7 +3905,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-16 15:00:00",
+   "kopisUpdated": "2026-07-16 15:00:02.199245",
    "source": "KOPIS",
    "title": "cosmos",
    "artist": "노아코스트",
@@ -3931,7 +3931,7 @@
    "lineup": [
     "김수아"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296420_260720_153357.jpg",
+   "poster": "assets/posters/PF296420.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296420_202607200333576830.jpg"
    ],
@@ -3941,7 +3941,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-20 18:00:00",
+   "kopisUpdated": "2026-07-20 18:00:02.045912",
    "source": "KOPIS",
    "title": "쿠루쿠마",
    "artist": "쿠모",
@@ -3967,7 +3967,7 @@
    "lineup": [
     "전호연"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296950_260727_104914.jpg",
+   "poster": "assets/posters/PF296950.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296950_202607271047366201.jpg",
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296950_202607271047366120.jpg"
@@ -3978,7 +3978,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-07-27 15:00:00",
+   "kopisUpdated": "2026-07-27 15:00:02.115667",
    "source": "KOPIS",
    "title": "Blue Rose",
    "artist": "블루디",
@@ -4002,7 +4002,7 @@
    "runtime": "1시간 40분",
    "age": "전체 관람가",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296992_260727_130014.jpg",
+   "poster": "assets/posters/PF296992.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296992_202607270100146980.jpg"
    ],
@@ -4012,7 +4012,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213606"
     }
    ],
-   "kopisUpdated": "2026-07-27 15:00:00",
+   "kopisUpdated": "2026-07-27 15:00:02.115667",
    "source": "KOPIS",
    "title": "이글루베이",
    "artist": "이글루베이",
@@ -4038,7 +4038,7 @@
    "lineup": [
     "오예림"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF296327_260720_120555.jpg",
+   "poster": "assets/posters/PF296327.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296327_202607201205557000.jpg"
    ],
@@ -4048,7 +4048,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213564"
     }
    ],
-   "kopisUpdated": "2026-07-20 15:00:00",
+   "kopisUpdated": "2026-07-20 15:00:02.123543",
    "source": "KOPIS",
    "title": "숲속의 메아리들",
    "artist": "리메이",
@@ -4074,7 +4074,7 @@
    "lineup": [
     "권나무"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF297369_260731_112148.jpg",
+   "poster": "assets/posters/PF297369.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297369_202607311121480210.jpg"
    ],
@@ -4084,7 +4084,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213634"
     }
    ],
-   "kopisUpdated": "2026-07-31 15:00:00",
+   "kopisUpdated": "2026-07-31 15:00:02.121142",
    "source": "KOPIS",
    "title": "권나무",
    "artist": "권나무",
@@ -4108,7 +4108,7 @@
    "runtime": "1시간",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF298934_260820_123106.jpg",
+   "poster": "assets/posters/PF298934.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF298934_202608201231066440.jpg"
    ],
@@ -4118,7 +4118,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213777"
     }
    ],
-   "kopisUpdated": "2026-08-20 15:00:00",
+   "kopisUpdated": "2026-08-20 15:00:00.079918",
    "source": "KOPIS",
    "title": "Palm Tree",
    "artist": "한빈 (TEMPEST)",
@@ -4144,7 +4144,7 @@
    "lineup": [
     "정소연"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF299237_260824_143916.jpg",
+   "poster": "assets/posters/PF299237.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299237_202608240239160390.jpg"
    ],
@@ -4154,7 +4154,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-08-24 15:00:00",
+   "kopisUpdated": "2026-08-24 15:00:00.078237",
    "source": "KOPIS",
    "title": "은방울꽃",
    "artist": "정소연",
@@ -4180,7 +4180,7 @@
    "lineup": [
     "이경서"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300235_260907_114515.png",
+   "poster": "assets/posters/PF300235.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300235_202609071145154620.png"
    ],
@@ -4190,7 +4190,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213838"
     }
    ],
-   "kopisUpdated": "2026-09-07 15:00:00",
+   "kopisUpdated": "2026-09-07 15:00:00.180583",
    "source": "KOPIS",
    "title": "별꽃",
    "artist": "경서",
@@ -4216,7 +4216,7 @@
    "lineup": [
     "임지우"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300076_260903_141725.jpg",
+   "poster": "assets/posters/PF300076.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300076_202609030217256310.jpg"
    ],
@@ -4226,7 +4226,7 @@
      "url": "https://booking.naver.com/booking/12/bizes/1535586"
     }
    ],
-   "kopisUpdated": "2026-09-03 15:00:00",
+   "kopisUpdated": "2026-09-03 15:00:00.027783",
    "source": "KOPIS",
    "title": "카틀레야",
    "artist": "임지우",
@@ -4252,7 +4252,7 @@
    "lineup": [
     "임세희"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300937_260915_103729.jpg",
+   "poster": "assets/posters/PF300937.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300937_202609151037296420.jpg"
    ],
@@ -4262,7 +4262,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213859"
     }
    ],
-   "kopisUpdated": "2026-09-15 15:00:00",
+   "kopisUpdated": "2026-09-15 15:00:00.072101",
    "source": "KOPIS",
    "title": "코스모스",
    "artist": "임세모",
@@ -4319,7 +4319,7 @@
    "lineup": [
     "임영민"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301786_260928_134423.jpg",
+   "poster": "assets/posters/PF301786.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301786_202609280144234450.jpg"
    ],
@@ -4329,7 +4329,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213924"
     }
    ],
-   "kopisUpdated": "2026-09-28 15:00:00",
+   "kopisUpdated": "2026-09-28 15:00:00.05876",
    "source": "KOPIS",
    "title": "POINSETTIA",
    "artist": "임영민",
@@ -4355,7 +4355,7 @@
    "lineup": [
     "김영조"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301591_260922_144248.png",
+   "poster": "assets/posters/PF301591.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301591_202609220242486840.png"
    ],
@@ -4365,7 +4365,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213905"
     }
    ],
-   "kopisUpdated": "2026-09-22 15:00:00",
+   "kopisUpdated": "2026-09-22 15:00:00.046131",
    "source": "KOPIS",
    "title": "ROSARIUM",
    "artist": "김영조",
@@ -4393,7 +4393,7 @@
     "조효찬",
     "이광호"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301973_260929_134200.jpg",
+   "poster": "assets/posters/PF301973.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301973_202609290142009160.jpg"
    ],
@@ -4403,7 +4403,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213957"
     }
    ],
-   "kopisUpdated": "2026-09-29 15:00:00",
+   "kopisUpdated": "2026-09-29 15:00:00.178521",
    "source": "KOPIS",
    "title": "BLU Forest",
    "artist": "블루화",
@@ -4427,7 +4427,7 @@
    "runtime": "1시간 40분",
    "age": "만 7세 이상",
    "lineup": [],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302730_261007_141952.jpg",
+   "poster": "assets/posters/PF302730.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302730_202610070219521380.jpg"
    ],
@@ -4437,7 +4437,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=213992"
     }
    ],
-   "kopisUpdated": "2026-10-07 15:00:00",
+   "kopisUpdated": "2026-10-07 15:00:00.086823",
    "source": "KOPIS",
    "title": "Moonflower",
    "artist": "로키드 (Lokid)",
@@ -4463,7 +4463,7 @@
    "lineup": [
     "박준일"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303815_261019_160924.jpg",
+   "poster": "assets/posters/PF303815.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303815_202610190409243910.jpg"
    ],
@@ -4473,7 +4473,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214092"
     }
    ],
-   "kopisUpdated": "2026-10-19 18:00:00",
+   "kopisUpdated": "2026-10-19 18:00:00.095087",
    "source": "KOPIS",
    "title": "은방울꽃",
    "artist": "박준일",
@@ -4499,7 +4499,7 @@
    "lineup": [
     "한성일"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302996_261012_153950.jpg",
+   "poster": "assets/posters/PF302996.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302996_202610120339507680.jpg"
    ],
@@ -4509,7 +4509,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214032"
     }
    ],
-   "kopisUpdated": "2026-10-12 18:00:00",
+   "kopisUpdated": "2026-10-12 18:00:00.115528",
    "source": "KOPIS",
    "title": "들꽃",
    "artist": "한성일",
@@ -4537,7 +4537,7 @@
     "채화린",
     "서윤"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303433_261015_130859.jpg",
+   "poster": "assets/posters/PF303433.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303433_202610150108594220.jpg"
    ],
@@ -4547,7 +4547,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214081"
     }
    ],
-   "kopisUpdated": "2026-10-15 15:00:00",
+   "kopisUpdated": "2026-10-15 15:00:00.138748",
    "source": "KOPIS",
    "title": "LILAC",
    "artist": "한희(hanhee) with 채화린 · 휘나",
@@ -4573,7 +4573,7 @@
    "lineup": [
     "류진"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303630_261016_145346.png",
+   "poster": "assets/posters/PF303630.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303630_202610160253462000.png"
    ],
@@ -4583,7 +4583,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214080"
     }
    ],
-   "kopisUpdated": "2026-10-16 15:00:00",
+   "kopisUpdated": "2026-10-16 15:00:00.152684",
    "source": "KOPIS",
    "title": "버드나무",
    "artist": "개똥 (류진)",
@@ -4609,7 +4609,7 @@
    "lineup": [
     "박헌서"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303791_261019_152530.jpg",
+   "poster": "assets/posters/PF303791.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303791_202610190325303110.jpg"
    ],
@@ -4619,7 +4619,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214087"
     }
    ],
-   "kopisUpdated": "2026-10-19 18:00:00",
+   "kopisUpdated": "2026-10-19 18:00:00.095087",
    "source": "KOPIS",
    "title": "해바라기",
    "artist": "Heon Seo (헌서)",
@@ -4645,7 +4645,7 @@
    "lineup": [
     "이윤지"
    ],
-   "poster": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303911_261020_144102.jpg",
+   "poster": "assets/posters/PF303911.jpg",
    "introImages": [
     "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF303911_202610200241026740.jpg"
    ],
@@ -4655,7 +4655,7 @@
      "url": "https://ticket.melon.com/performance/index.htm?prodId=214094"
     }
    ],
-   "kopisUpdated": "2026-10-20 15:00:00",
+   "kopisUpdated": "2026-10-20 15:00:00.107706",
    "source": "KOPIS",
    "title": "Ways of Seeing",
    "artist": "더픽스 린지",
