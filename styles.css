@@ -97,7 +97,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   font-family: var(--font-ui); font-weight: 600; font-size: var(--t-15); line-height: 1; min-height: 42px; padding: 12px 22px; border-radius: var(--radius-pill);
   text-decoration: none; cursor: pointer; border: 1px solid transparent; white-space: nowrap;
 }
-.btn-sm { min-height: 38px; padding: 10px 18px; font-size: var(--t-13); }
+.btn-sm { min-height: 0; padding: 7px 14px; font-size: var(--t-13); }
 .btn-book { background: var(--accent); color: var(--on-accent); }
 .btn-book:hover { background: var(--forest); }
 .btn-line { background: transparent; color: var(--accent); border-color: currentColor; }
