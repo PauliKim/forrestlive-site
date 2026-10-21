@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>문구 관리 · 숲세권 라이브</title>
+<link rel="icon" href="../assets/logo/emblem-forest.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-title">
+    <img src="../assets/logo/wordmark-forest.png" alt="숲세권 라이브">
+    <span>문구 관리</span>
+  </div>
+  <p class="bar-status" id="status" role="status">불러오는 중</p>
+  <div class="bar-actions">
+    <span class="who" id="who"></span>
+    <button class="btn btn-line btn-sm" type="button" id="revert-all" disabled>모두 되돌리기</button>
+    <button class="btn btn-book" type="button" id="save" disabled>저장하고 게시</button>
+  </div>
+</header>
+
+<p class="notice" id="notice" hidden></p>
+
+<main class="layout">
+  <section class="editor" aria-label="문구 편집">
+    <div class="editor-top">
+      <label class="search"><span class="sr">문구 찾기</span><input type="search" id="search" placeholder="문구나 번호로 찾기"></label>
+      <label class="only-changed"><input type="checkbox" id="only-changed"> 바뀐 문구만</label>
+      <nav class="groups" id="group-nav" aria-label="구역"></nav>
+    </div>
+    <div class="fields" id="fields"></div>
+  </section>
+
+  <section class="preview" aria-label="미리보기">
+    <div class="preview-bar">
+      <div class="seg" role="group" aria-label="화면 크기" id="seg-device">
+        <button type="button" data-device="pc" aria-pressed="true">PC</button>
+        <button type="button" data-device="mobile" aria-pressed="false">모바일</button>
+        <button type="button" data-device="all" aria-pressed="false">4화면</button>
+      </div>
+      <div class="seg" role="group" aria-label="테마" id="seg-theme">
+        <button type="button" data-theme-btn="light" aria-pressed="true">라이트</button>
+        <button type="button" data-theme-btn="dark" aria-pressed="false">다크</button>
+      </div>
+      <a class="open-live" href="../" target="_blank" rel="noopener">운영 사이트 열기</a>
+    </div>
+    <div class="stage" id="stage"></div>
+    <p class="preview-help">문구 칸을 누르면 미리보기에서 그 문구가 있는 곳으로 이동합니다. 미리보기는 저장 전 문구로 보여 주며, 저장하기 전에는 운영 사이트에 나가지 않습니다.</p>
+  </section>
+</main>
+
+<dialog class="confirm" id="confirm" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <h2 id="confirm-title">바뀐 문구를 저장할까요?</h2>
+    <p class="confirm-sub">저장하면 바로 운영 사이트에 반영됩니다(1~2분).</p>
+    <ol class="diff" id="diff"></ol>
+    <div class="confirm-actions">
+      <button class="btn btn-line" value="cancel">취소</button>
+      <button class="btn btn-book" value="ok" id="confirm-ok">저장하고 게시</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="admin.js"></script>
+</body>
+</html>

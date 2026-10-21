@@ -104,6 +104,54 @@ forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사�
 
 ---
 
+## 6단계. 문구 관리 화면(/admin) 켜기
+
+`https://concert.forrestlive.com/admin/` 에서 고정 문구를 고치고 미리 본 뒤 저장하면, 서버(`functions/api/copy.js`)가 `data/copy.json`과 `index.html`을 main에 커밋합니다. 처음 한 번 아래 세 가지를 설정해야 저장이 됩니다. 설정 전에도 화면은 열리고 미리보기는 되지만 저장 버튼은 꺼져 있습니다.
+
+### 6-1. GitHub 토큰 만들기 (저장소 쓰기 권한)
+
+1. GitHub → 오른쪽 위 프로필 → **Settings** → 맨 아래 **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**
+2. Token name `forrestlive-admin`, Expiration은 1년(만료 전에 다시 만들어 6-3의 값을 바꿉니다)
+3. Repository access: **Only select repositories** → `forrestlive-site`
+4. Permissions → Repository permissions → **Contents: Read and write** (Metadata: Read-only는 자동)
+5. **Generate token** → 나온 값(`github_pat_…`)을 복사. 이 창을 닫으면 다시 볼 수 없습니다. 메신저나 문서에 붙여 넣지 말고 6-3에 바로 넣습니다.
+
+### 6-2. Cloudflare Access로 로그인 걸기
+
+1. Cloudflare 대시보드 왼쪽 **Zero Trust**. 처음이면 팀 이름(예: `forrestlive`)을 정하고 **Free** 요금제를 고릅니다(50명까지 무료. 결제 수단 등록을 요구할 수 있지만 무료 요금제는 청구되지 않습니다). 팀 주소는 `forrestlive.cloudflareaccess.com` 같은 모양입니다.
+2. **Access → Applications → Add an application → Self-hosted**
+   - Application name: `숲세권 문구 관리`, Session duration: `24 hours`
+   - Application domain: `concert.forrestlive.com`, Path: `admin`
+   - **Add domain**으로 한 줄 더: `concert.forrestlive.com`, Path: `api/copy`
+3. 로그인 방법은 기본값 **One-time PIN**(이메일로 받은 숫자 입력)이면 충분합니다.
+4. Policy: Action **Allow**, Include → **Emails** → 문구를 고칠 사람들의 이메일
+5. 저장 후 애플리케이션 목록에서 방금 만든 항목 → **Overview**의 **Application Audience (AUD) Tag** 값을 복사합니다.
+
+### 6-3. Cloudflare Pages에 값 넣기
+
+**Workers & Pages → forrestlive → Settings → Variables and Secrets** → Production에 추가:
+
+| 이름 | 값 | 종류 |
+|---|---|---|
+| `GITHUB_TOKEN` | 6-1의 토큰 | Secret(암호화) |
+| `ACCESS_TEAM_DOMAIN` | 6-2의 팀 주소, 예: `forrestlive.cloudflareaccess.com` | Text |
+| `ACCESS_AUD` | 6-2의 AUD Tag | Text |
+| `ADMIN_EMAILS` (선택) | 허용 이메일을 쉼표로. Access 정책에 더해 한 번 더 확인 | Text |
+
+값은 다음 배포부터 적용됩니다. **Deployments** → 맨 위 배포 → **Retry deployment**로 다시 배포합니다.
+
+### 6-4. 확인
+
+1. `https://concert.forrestlive.com/admin/` → 이메일 입력 → 받은 숫자 입력
+2. 오른쪽 위에 로그인한 이메일이 보이고 경고 줄이 없으면 준비 완료
+3. 문구 하나를 고쳐 **저장하고 게시** → GitHub 커밋 목록에 `문구 수정: …`(작성자 forrestlive-admin)이 생기고 1~2분 뒤 사이트에 반영
+
+### 보안 메모
+
+- 저장 서버는 Cloudflare Access가 넘겨준 로그인 토큰의 서명·대상(AUD)·만료를 직접 검증합니다. 설정값이 없거나 토큰이 맞지 않으면 저장하지 않습니다. 그래서 `forrestlive.pages.dev/admin`처럼 Access가 걸리지 않은 주소에서는 미리보기만 됩니다.
+- 토큰은 이 저장소의 파일 읽기·쓰기만 할 수 있습니다. 유출이 의심되면 GitHub에서 토큰을 삭제하고 새로 만들어 `GITHUB_TOKEN`을 바꿉니다.
+- 잠긴 문구(슬로건 B-05, KOPIS 출처 G-09)와 정의되지 않은 자리표시는 서버에서도 거부합니다.
+
 ## 운영하면서
 
 ### KOPIS에 없는 정보 넣기

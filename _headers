@@ -12,3 +12,10 @@
   X-Robots-Tag: noindex
 /tests/*
   X-Robots-Tag: noindex
+
+# 문구 관리 화면: 검색에 노출하지 않고, 늘 새 파일을 받는다
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/functions/*
+  X-Robots-Tag: noindex
