@@ -35,7 +35,7 @@
     if (s.openAt) { const [d, t] = s.openAt.split("T"); if (kst(d, t) > now) return "soon"; }
     return "on";
   }
-  const STATE = { on: ["state-on", "예매중"], soon: ["state-soon", "오픈 예정"], out: ["state-out", "매진"], past: ["state-past", "지난 공연"] };
+  const STATE = { on: ["state-on", "예매 중"], soon: ["state-soon", "예매 오픈 전"], out: ["state-out", "매진"], past: ["state-past", "지난 공연"] };
   const stateTag = (st) => `<span class="state ${STATE[st][0]}">${STATE[st][1]}</span>`;
 
   const longDate = (date) => { const p = parts(date); return `${p.m + 1}월 ${p.d}일 ${WD[p.w]}요일`; };
@@ -55,7 +55,7 @@
   function bookButton(s, st) {
     const t = mainTicket(s);
     if (st === "on") return `<a class="btn btn-book" href="${esc(t.url)}" target="_blank" rel="noopener">예매하기</a>`;
-    if (st === "soon") return `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)}에서 보기</a>`;
+    if (st === "soon") return `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">예매처 보기</a>`;
     if (st === "out") return `<span class="btn" aria-disabled="true">매진</span>`;
     return "";
   }
@@ -69,8 +69,8 @@
   function upcoming() { return DATA.filter((s) => status(s, now) !== "past").sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time)); }
 
   function renderFilters(list) {
-    const venues = [["all", "모든 지점"], ...Object.entries(VENUES).map(([k, v]) => [k, v.name])];
-    const months = [["all", "모든 달"], ...[...new Set(list.map((s) => s.date.slice(0, 7)))].map((ym) => [ym, `${Number(ym.slice(5))}월`])];
+    const venues = [["all", "전체 지점"], ...Object.entries(VENUES).map(([k, v]) => [k, v.name])];
+    const months = [["all", "전체 기간"], ...[...new Set(list.map((s) => s.date.slice(0, 7)))].map((ym) => [ym, `${Number(ym.slice(5))}월`])];
     $("#f-venue").innerHTML = venues.map(([k, l]) => `<button class="chip" type="button" data-k="venue" data-v="${k}" aria-pressed="${filter.venue === k}">${l}</button>`).join("");
     $("#f-month").innerHTML = months.map(([k, l]) => `<button class="chip" type="button" data-k="month" data-v="${k}" aria-pressed="${filter.month === k}">${l}</button>`).join("");
   }
@@ -79,12 +79,12 @@
     const all = upcoming();
     renderFilters(all);
     const list = all.filter((s) => (filter.venue === "all" || s.venue === filter.venue) && (filter.month === "all" || s.date.startsWith(filter.month)));
-    $("#up-sub").textContent = list.length ? `가까운 날짜부터 ${list.length}개의 공연이 기다리고 있습니다.` : "";
+    $("#up-sub").textContent = list.length ? `가까운 날짜순으로 공연 ${list.length}개를 모았습니다.` : "";
     // 카드: 포스터 → 일시 → 공연명 → 아티스트 · 지점. 가격은 상세 시트에서만 보여 준다.
     // 예매중은 기본이라 표시하지 않고, 오픈 예정과 매진만 포스터 위 배지로 알린다.
     const card = (s) => {
       const st = status(s, now);
-      const badge = st === "soon" ? `<span class="badge">${openShort(s.openAt)} 오픈</span>` : st === "out" ? `<span class="badge">매진</span>` : "";
+      const badge = st === "soon" ? `<span class="badge">${openShort(s.openAt)} 예매 오픈</span>` : st === "out" ? `<span class="badge">매진</span>` : "";
       return `<article class="show">
         <div class="poster-frame">${poster(s)}${badge}</div>
         <p class="when">${esc(when(s))}</p>
@@ -98,10 +98,10 @@
     $("#shows").innerHTML = list.length ? months.map((ym) => {
       const inMonth = list.filter((s) => s.date.startsWith(ym));
       return `<section class="month-group" aria-label="${Number(ym.slice(5))}월 공연">
-        <div class="month"><h3>${Number(ym.slice(5))}월</h3><span>${inMonth.length}개 공연</span></div>
+        <div class="month"><h3>${Number(ym.slice(5))}월</h3><span>공연 ${inMonth.length}개</span></div>
         <div class="shows">${inMonth.map(card).join("")}</div>
       </section>`;
-    }).join("") : `<div class="empty"><img src="assets/img/mini-piano-sm.jpg" alt=""><div><p><strong>이 조건에 맞는 공연은 아직 없습니다.</strong></p><p class="meta">다른 지점이나 달을 골라 보세요.</p></div></div>`;
+    }).join("") : `<div class="empty"><img src="assets/img/mini-piano-sm.jpg" alt=""><div><p><strong>고른 지점과 기간에는 아직 공연이 없습니다.</strong></p><p class="meta">다른 지점이나 기간을 골라 보세요.</p></div></div>`;
   }
 
   function renderNext() {
@@ -109,7 +109,7 @@
     if (!s) { el.hidden = true; return; }
     const st = status(s, now);
     el.innerHTML = `<span class="label">다음 공연</span><div><b>${esc(s.title)}</b><span class="who">${esc(byline(s))}</span></div><p class="when">${longDate(s.date)} ${hm(s.time)}<br>${esc(s.venueName)}</p>
-      <div class="actions">${st === "on" ? bookButton(s, st) : ""}<button class="btn btn-line" type="button" data-open="${s.id}">공연 정보</button></div>`;
+      <div class="actions">${st === "on" ? bookButton(s, st) : ""}<button class="btn btn-line" type="button" data-open="${s.id}">자세히 보기</button></div>`;
     el.hidden = false;
   }
 
@@ -119,8 +119,8 @@
     const years = [...new Set(past.map((s) => s.date.slice(0, 4)))];
     if (!year) year = years[0];
     const first = past.length ? past[past.length - 1].date : "";
-    $("#ar-sub").textContent = past.length ? `${first.slice(0, 4)}년 ${Number(first.slice(5, 7))}월 첫 무대부터 지금까지 ${past.length}번의 공연이 있었습니다.` : "";
-    $("#years").innerHTML = years.map((y) => `<button class="chip" type="button" data-year="${y}" aria-pressed="${y === year}">${y}년 <span class="meta">${past.filter((s) => s.date.startsWith(y)).length}</span></button>`).join("");
+    $("#ar-sub").textContent = past.length ? `${first.slice(0, 4)}년 ${Number(first.slice(5, 7))}월부터 지금까지 공연 ${past.length}회를 기록했습니다.` : "";
+    $("#years").innerHTML = years.map((y) => `<button class="chip" type="button" data-year="${y}" aria-pressed="${y === year}">${y}년 <span class="meta">${past.filter((s) => s.date.startsWith(y)).length}회</span></button>`).join("");
     const list = past.filter((s) => s.date.startsWith(year));
     const shown = showAll ? list : list.slice(0, 12);
     $("#archive-list").innerHTML = shown.map((s) => `<li><a href="#${s.id}" data-open="${s.id}">
@@ -129,7 +129,7 @@
         <span class="a">${esc(byline(s))}</span>
         <span class="s">${esc(s.series)}, ${esc(s.venueName)}</span></a></li>`).join("");
     const more = $("#more"); more.hidden = list.length <= 12;
-    more.textContent = showAll ? "접기" : `${year}년 공연 ${list.length - 12}개 더 보기`;
+    more.textContent = showAll ? "접기" : `공연 ${list.length - 12}개 더 보기`;
   }
 
   // ---------- 기획 시리즈 ----------
@@ -138,11 +138,11 @@
     const rows = [
       [count((s) => s.series === "숲세권 라이브"), "숲세권 라이브 단독 공연", "공연마다 꽃이나 나무 이름을 하나씩 붙입니다"],
       [count((s) => s.series === "MONDAY:SOOP" || s.series === "먼데이프로젝트 공동기획"), "MONDAY:SOOP", "먼데이프로젝트와 함께 여는 월요일 밤"],
-      [count((s) => s.series === "Urban Tune Forest"), "Urban Tune Forest", "2025년 크리스마스 주간의 겨울 공연"],
-      [count((s) => s.venue !== "other"), "숲에서 열린 공연", "문래점과 카인드스퀘어점"]
+      [count((s) => s.series === "Urban Tune Forest"), "Urban Tune Forest", "2025년 크리스마스 주간에 연 겨울 공연"],
+      [count((s) => s.venue !== "other"), "두 지점에서 연 공연 전체", "문래점과 카인드스퀘어점"]
     ];
     $("#series").innerHTML = rows.map(([n, t, d]) => `<li><b>${t}</b><small>${d}</small><span>${n}회</span></li>`).join("");
-    $("#series-sub").textContent = `지금까지 ${DATA.length}번의 공연을 만들었고, 200팀이 넘는 아티스트가 이 숲에서 노래했습니다.`;
+    $("#series-sub").textContent = `예정된 공연까지 모두 ${DATA.length}회를 만들었고, 200팀 넘는 아티스트가 이 숲에서 노래했습니다.`;
   }
 
   // ---------- 상세 시트 ----------
@@ -154,17 +154,17 @@
       ["일시", when(s)],
       ["장소", v ? `${v.name}, ${v.address}${v.floor && v.floor !== "카인드스퀘어" ? ` ${v.floor}` : ""}` : s.venueName],
       s.lineup?.length ? ["출연", s.lineup.join(", ")] : null,
-      s.runtime ? ["러닝타임", s.runtime] : null,
+      s.runtime ? ["공연 시간", s.runtime] : null,
       s.price ? ["가격", s.price] : null,
-      s.age ? ["관람 등급", s.age] : null,
+      s.age ? ["관람 연령", s.age] : null,
       tickets(s).length ? ["예매처", tickets(s).map((t) => t.site).join(", ")] : null
     ].filter(Boolean);
     const list = tickets(s);
     let book = "";
-    if (st === "on") book = list.map((t, i) => `<a class="btn ${i ? "btn-line" : "btn-book"}" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)}에서 예매하기</a>`).join("") + `<small>예매는 ${list.map((t) => esc(t.site)).join(", ")}에서 진행됩니다.</small>`;
-    else if (st === "soon") book = `<p><strong>${openLabel(s.openAt)}</strong></p>` + list.map((t) => `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)} 공연 페이지 보기</a>`).join("") + `<small>오픈 시각에 같은 페이지에서 예매할 수 있습니다.</small>`;
+    if (st === "on") book = list.map((t, i) => `<a class="btn ${i ? "btn-line" : "btn-book"}" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)}에서 예매하기</a>`).join("") + `<small>예매 페이지는 새 창으로 열립니다.</small>`;
+    else if (st === "soon") book = `<p><strong>${openLabel(s.openAt)}</strong></p>` + list.map((t) => `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)} 공연 페이지 보기</a>`).join("") + `<small>예매가 열리면 같은 페이지에서 예매할 수 있습니다.</small>`;
     else if (st === "out") book = `<span class="btn" aria-disabled="true">매진</span>`;
-    else book = list.map((t) => `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)} 공연 기록 보기</a>`).join("");
+    else book = list.map((t) => `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)} 공연 페이지 보기</a>`).join("");
     const intros = (s.introImages || []).filter(Boolean);
     sheet.innerHTML = `<div class="sheet-inner">
       <div class="sheet-top">${stateTag(st)}<button class="close" type="button" data-close>닫기</button></div>
@@ -174,7 +174,7 @@
       <div class="book">${book}</div>
       ${intros.length ? `<details class="intro-images"><summary>공연 소개 이미지 ${intros.length}장 보기</summary>${intros.map((u, i) => `<img src="${esc(u)}" alt="${esc(s.title)} 소개 이미지 ${i + 1}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`).join("")}</details>` : ""}
       <div class="share-row">
-        ${v ? `<a class="btn btn-line" href="${mapUrl(v)}" target="_blank" rel="noopener">지도에서 보기</a>` : ""}
+        ${v ? `<a class="btn btn-line" href="${mapUrl(v)}" target="_blank" rel="noopener">지도 보기</a>` : ""}
         <button class="btn btn-line" type="button" data-share="${s.id}">링크 복사</button>
         <span class="note" role="status" id="share-note"></span>
       </div>
@@ -188,7 +188,7 @@
 
   async function copy(text, noteEl, okMsg) {
     try { await navigator.clipboard.writeText(text); noteEl.textContent = okMsg; }
-    catch (err) { noteEl.textContent = `복사하지 못했습니다. 주소를 직접 선택해 복사하세요: ${text}`; }
+    catch (err) { noteEl.textContent = `복사하지 못했습니다. 길게 눌러 직접 복사해 주세요: ${text}`; }
   }
 
   document.addEventListener("click", (e) => {
@@ -197,7 +197,7 @@
     const y = e.target.closest("[data-year]"); if (y) { year = y.dataset.year; showAll = false; renderArchive(); return; }
     if (e.target.closest("#more")) { showAll = !showAll; renderArchive(); return; }
     const sh = e.target.closest("[data-share]");
-    if (sh) { const url = location.href.split("#")[0] + "#" + sh.dataset.share; copy(url, $("#share-note"), "링크를 복사했습니다. 카카오톡이나 메시지에 붙여 넣어 공유하세요."); return; }
+    if (sh) { const url = location.href.split("#")[0] + "#" + sh.dataset.share; copy(url, $("#share-note"), "링크를 복사했습니다. 카카오톡이나 메시지에 붙여 넣어 보내 보세요."); return; }
     if (e.target.closest("#copy-mail")) copy($("#mail-addr").textContent, $("#mail-note"), "메일 주소를 복사했습니다.");
   });
   window.addEventListener("hashchange", () => { const id = location.hash.slice(1); if (DATA.some((s) => s.id === id)) openSheet(id, false); });
@@ -220,11 +220,11 @@
 
   fetch("data/shows.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((json) => {
     DATA = json.shows;
-    if (json.updated) { const u = $("#updated"); if (u) u.textContent = `(${json.updated.replace("T", " ").slice(0, 16)} 기준)`; }
+    if (json.updated) { const u = $("#updated"); if (u) { const [d, t] = json.updated.split("T"); u.textContent = `(${Number(d.slice(0, 4))}년 ${Number(d.slice(5, 7))}월 ${Number(d.slice(8, 10))}일 ${t.slice(0, 5)} 기준)`; } }
     renderAll();
     const id = location.hash.slice(1); if (DATA.some((s) => s.id === id)) openSheet(id, false);
     setInterval(renderAll, 60000);
   }).catch(() => {
-    $("#shows").innerHTML = `<p class="empty" style="grid-column:1/-1">공연 정보를 불러오지 못했습니다. 페이지를 새로 고쳐 주세요. 계속 안 되면 eddie@pondmakers.com으로 알려 주세요.</p>`;
+    $("#shows").innerHTML = `<p class="empty" style="grid-column:1/-1">공연 정보를 불러오지 못했습니다. 페이지를 새로고침해 주세요. 그래도 안 되면 eddie@pondmakers.com으로 알려 주세요.</p>`;
   });
 })();
