@@ -4,3 +4,5 @@
 docs/KOPIS_API.md
 __pycache__/
 *.pyc
+.claude/settings.local.json
+CLAUDE.local.md
