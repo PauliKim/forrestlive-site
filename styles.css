@@ -31,8 +31,19 @@
 
   --t-13: 0.8125rem; --t-15: 0.9375rem; --t-17: 1.0625rem; --t-21: 1.3125rem;
   --t-26: 1.625rem; --t-34: 2.125rem; --t-44: 2.75rem; --t-56: 3.5rem;
+  --t-display: clamp(2.5rem, 6.8vw, 5.5rem);
+  --s-1: 4px; --s-2: 8px; --s-3: 14px; --s-4: 16px; --s-5: 28px; --s-6: 40px; --s-7: 64px; --s-8: 112px;
   --radius: 6px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
   --max: 1160px;
+  --tap: 44px;
+}
+/* 밤 구역: 공연 목록처럼 포스터가 주인공인 곳은 깊은 숲 바탕에 둔다. 테마와 상관없이 같다. */
+.night {
+  --bg: var(--deep); --surface: #143222; --text: #e7ece5; --muted: #a3b3a7; --line: #24402f;
+  --heading: #f2f5f0; --chip: #1a3526; --sage-line: #719c91; --focus: var(--bulb);
+  background: var(--bg); color: var(--text); color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -72,7 +83,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; }
 .site-header .logo img { height: 24px; width: auto; }
 .site-nav { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
-.site-nav a { text-decoration: none; font-size: var(--t-15); padding: 6px 10px; border-radius: var(--radius); opacity: .88; }
+.site-nav a { text-decoration: none; font-size: var(--t-15); padding: 6px 10px; min-height: var(--tap); display: inline-flex; align-items: center; border-radius: var(--radius); opacity: .88; }
 .site-nav a:hover { opacity: 1; background: rgba(255,255,255,.1); }
 
 /* 버튼 */
@@ -88,7 +99,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .btn[aria-disabled="true"] { background: var(--chip); color: var(--muted); cursor: default; }
 
 /* 상태 표시: 글자와 모양으로 구분 */
-.state { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-13); font-weight: 600; line-height: 1.4; padding: 3px 10px 3px 8px; border-radius: 999px; }
+.state { display: inline-flex; align-items: center; gap: 6px; font-size: var(--t-13); font-weight: 600; line-height: 1.4; padding: 3px 10px 3px 8px; border-radius: var(--radius-pill); }
 .state::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 .state-on { background: rgba(234,196,107,.3); color: var(--text); }
 .state-on::before { background: var(--bulb); box-shadow: 0 0 0 3px rgba(234,196,107,.35); }
@@ -100,7 +111,9 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* 칩 */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip { font-weight: 500; font-size: var(--t-15); line-height: 1; padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; }
+.chip { font-weight: 500; font-size: var(--t-15); line-height: 1; min-height: 40px; padding: 9px 16px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; }
+.chip:hover { border-color: var(--sage-line); }
+.night .chip[aria-pressed="true"] { background: var(--on-forest); color: var(--deep); border-color: var(--on-forest); }
 .chip[aria-pressed="true"] { background: var(--forest); color: var(--on-forest); border-color: var(--forest); }
 
 /* 포스터 + 날짜 레이어 */

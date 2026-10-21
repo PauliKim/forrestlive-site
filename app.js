@@ -76,26 +76,36 @@
     renderFilters(all);
     const list = all.filter((s) => (filter.venue === "all" || s.venue === filter.venue) && (filter.month === "all" || s.date.startsWith(filter.month)));
     $("#up-sub").textContent = list.length ? `가까운 날짜부터 ${list.length}개의 공연이 기다리고 있습니다.` : "";
-    $("#shows").innerHTML = list.length ? list.map((s) => {
+    const card = (s) => {
       const st = status(s, now);
       return `<article class="show">
         <button class="poster-wrap" type="button" data-open="${s.id}" aria-label="${esc(s.title)} 상세 보기">${poster(s)}</button>
         <div class="body">
-          <h3><button type="button" data-open="${s.id}">${esc(s.title)}</button></h3>
+          <p class="when-text" aria-hidden="true">${longDate(s.date)}<span>${[s.timeNote || hm(s.time), s.venueName].filter(Boolean).map(esc).join(", ")}</span></p>
+          <h4><button type="button" data-open="${s.id}">${esc(s.title)}</button></h4>
           <p class="artist">${esc(byline(s))}</p>
           ${s.price ? `<p class="meta">${esc(s.price)}</p>` : ""}
           ${st === "soon" ? `<p class="meta"><strong>${openLabel(s.openAt)}</strong></p>` : ""}
           <div class="foot">${stateTag(st)}${bookButton(s, st, "small")}</div>
         </div>
       </article>`;
-    }).join("") : `<div class="empty" style="grid-column:1/-1"><img src="assets/img/mini-piano-sm.jpg" alt=""><div><p><strong>이 조건에 맞는 공연은 아직 없습니다.</strong></p><p class="meta">다른 지점이나 달을 골라 보세요.</p></div></div>`;
+    };
+    // 달마다 묶어서 보여 준다: "10월 · 3개 공연"
+    const months = [...new Set(list.map((s) => s.date.slice(0, 7)))];
+    $("#shows").innerHTML = list.length ? months.map((ym) => {
+      const inMonth = list.filter((s) => s.date.startsWith(ym));
+      return `<section class="month-group" aria-label="${Number(ym.slice(5))}월 공연">
+        <div class="month"><h3>${Number(ym.slice(5))}월</h3><span>${inMonth.length}개 공연</span></div>
+        <div class="shows">${inMonth.map(card).join("")}</div>
+      </section>`;
+    }).join("") : `<div class="empty"><img src="assets/img/mini-piano-sm.jpg" alt=""><div><p><strong>이 조건에 맞는 공연은 아직 없습니다.</strong></p><p class="meta">다른 지점이나 달을 골라 보세요.</p></div></div>`;
   }
 
   function renderNext() {
     const s = upcoming()[0]; const el = $("#next");
     if (!s) { el.hidden = true; return; }
     const st = status(s, now);
-    el.innerHTML = `<div><span class="label">다음 공연</span><b>${esc(s.title)}</b><span class="who">${esc(byline(s))}</span></div><p class="when">${longDate(s.date)} ${hm(s.time)}, ${esc(s.venueName)}</p>
+    el.innerHTML = `<span class="label">다음 공연</span><div><b>${esc(s.title)}</b><span class="who">${esc(byline(s))}</span></div><p class="when">${longDate(s.date)} ${hm(s.time)}<br>${esc(s.venueName)}</p>
       <div class="actions">${st === "on" ? bookButton(s, st) : ""}<button class="btn btn-line" type="button" data-open="${s.id}">공연 정보</button></div>`;
     el.hidden = false;
   }
@@ -128,7 +138,7 @@
       [count((s) => s.series === "Urban Tune Forest"), "Urban Tune Forest", "2025년 크리스마스 주간의 겨울 공연"],
       [count((s) => s.venue !== "other"), "숲에서 열린 공연", "문래점과 카인드스퀘어점"]
     ];
-    $("#series").innerHTML = rows.map(([n, t, d]) => `<div><b>${n}</b><span>${t}</span><small>${d}</small></div>`).join("");
+    $("#series").innerHTML = rows.map(([n, t, d]) => `<li><b>${t}</b><small>${d}</small><span>${n}회</span></li>`).join("");
     $("#series-sub").textContent = `지금까지 ${DATA.length}번의 공연을 만들었고, 200팀이 넘는 아티스트가 이 숲에서 노래했습니다.`;
   }
 
@@ -201,7 +211,7 @@
       if (f === "address") el.textContent = `${x.address}${x.floor && x.floor !== "카인드스퀘어" ? ` ${x.floor}` : ""}`;
       else if (f === "naver") el.href = mapUrl(x);
       else if (f === "kakao") el.href = kakaoUrl(x);
-      else if (f === "tel") { if (x.tel) { el.textContent = x.tel; el.closest("[data-row]")?.removeAttribute("hidden"); } }
+      else if (f === "tel") { if (x.tel) { el.textContent = x.tel; el.parentElement.querySelectorAll("[data-row]").forEach((r) => r.removeAttribute("hidden")); } }
     });
   }).catch(() => {});
 
