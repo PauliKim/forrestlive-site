@@ -25,7 +25,7 @@ forrestlive.com(프레이머 랜딩)과 같은 결로 맞춘다. 랜딩의 색·
 
 ## 글꼴 라이선스
 
-- Noto Serif KR: Google, SIL Open Font License 1.1. Google Fonts에서 불러온다(`index.html`의 `<link>`).
-- Inter: Rasmus Andersson, SIL Open Font License 1.1. Google Fonts에서 불러온다. 섹션 머리말에만 쓴다.
-- 마루 부리(MaruBuri): 이전 제목 글꼴. `assets/fonts/MaruBuri-*.woff2`는 남아 있지만 지금은 쓰지 않는다.
+- Noto Serif KR: Google, SIL Open Font License 1.1. @fontsource/noto-serif-kr 5.3.0의 분할 파일(400, 600)을 `assets/fonts/noto-serif-kr/`에 두고 `assets/fonts/noto-serif-kr.css`로 불러온다. 화면에 나온 글자가 든 조각만 내려받는다.
+- Inter: Rasmus Andersson, SIL Open Font License 1.1. 라틴 분할 파일(500, 600)만 `assets/fonts/inter/`에 둔다. 영문 머리말과 숫자에만 쓴다.
+- 세 글꼴 모두 같은 주소에서 받고 `_headers`로 1년 캐시한다. 외부 글꼴 서비스를 쓰지 않는다.
 - Pretendard: 길형진, SIL Open Font License 1.1(예약 글꼴명 Pretendard). 공식 배포본의 분할 파일(`assets/fonts/pretendard/`)을 수정 없이 사용. 라이선스 전문은 `assets/fonts/pretendard/LICENSE.txt`.

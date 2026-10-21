@@ -26,6 +26,7 @@
     return t + (s.timeNote ? `, ${s.timeNote}` : s.time ? ` ${hm(s.time)}` : "");
   };
   const openLabel = (openAt) => { const [d, t] = openAt.split("T"); return `${dLabel(d)} ${hm(t)} 예매 오픈`; };
+  const openShort = (openAt) => { const p = parts(openAt.slice(0, 10)); return `${p.m + 1}월 ${p.d}일`; };
 
   function status(s, now) {
     const end = kst(s.endDate || s.date, s.time || "23:59");
@@ -37,21 +38,18 @@
   const STATE = { on: ["state-on", "예매중"], soon: ["state-soon", "오픈 예정"], out: ["state-out", "매진"], past: ["state-past", "지난 공연"] };
   const stateTag = (st) => `<span class="state ${STATE[st][0]}">${STATE[st][1]}</span>`;
 
-  // 날짜는 포스터 위에 얹은 텍스트 레이어로: "10월 25일 일요일" / "오후 5시, 문래점"
   const longDate = (date) => { const p = parts(date); return `${p.m + 1}월 ${p.d}일 ${WD[p.w]}요일`; };
-  const dateLayer = (s) => `<div class="date-layer"><b>${longDate(s.date)}${s.endDate && s.endDate !== s.date ? ` ~ ${parts(s.endDate).d}일` : ""}</b><span>${[s.timeNote || hm(s.time), s.venueName].filter(Boolean).map(esc).join(", ")}</span></div>`;
   const poster = (s, opts = {}) => `<div class="poster">
       <div class="blank"><img src="${EMBLEM}" alt=""></div>
       ${s.poster ? `<img src="${esc(s.poster)}" alt="${esc(s.title)} 포스터" ${opts.eager ? "" : 'loading="lazy"'} referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-      ${opts.date === false ? "" : dateLayer(s)}
     </div>`;
   // 공연명과 아티스트명이 같으면(예: MONDAY:SOOP) 아래 줄에는 부제를 쓴다
   const byline = (s) => (s.title === s.artist ? s.subtitle : s.artist);
 
-  function bookButton(s, st, size) {
+  function bookButton(s, st) {
     const t = mainTicket(s);
     if (st === "on") return `<a class="btn btn-book" href="${esc(t.url)}" target="_blank" rel="noopener">예매하기</a>`;
-    if (st === "soon") return `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${size === "small" ? "예매처 보기" : `${esc(t.site)}에서 보기`}</a>`;
+    if (st === "soon") return `<a class="btn btn-line" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.site)}에서 보기</a>`;
     if (st === "out") return `<span class="btn" aria-disabled="true">매진</span>`;
     return "";
   }
@@ -76,18 +74,16 @@
     renderFilters(all);
     const list = all.filter((s) => (filter.venue === "all" || s.venue === filter.venue) && (filter.month === "all" || s.date.startsWith(filter.month)));
     $("#up-sub").textContent = list.length ? `가까운 날짜부터 ${list.length}개의 공연이 기다리고 있습니다.` : "";
+    // 카드: 포스터 → 일시 → 공연명 → 아티스트 · 지점. 가격은 상세 시트에서만 보여 준다.
+    // 예매중은 기본이라 표시하지 않고, 오픈 예정과 매진만 포스터 위 배지로 알린다.
     const card = (s) => {
       const st = status(s, now);
+      const badge = st === "soon" ? `<span class="badge">${openShort(s.openAt)} 오픈</span>` : st === "out" ? `<span class="badge">매진</span>` : "";
       return `<article class="show">
-        <button class="poster-wrap" type="button" data-open="${s.id}" aria-label="${esc(s.title)} 상세 보기">${poster(s)}</button>
-        <div class="body">
-          <p class="when-text" aria-hidden="true">${longDate(s.date)}<span>${[s.timeNote || hm(s.time), s.venueName].filter(Boolean).map(esc).join(", ")}</span></p>
-          <h4><button type="button" data-open="${s.id}">${esc(s.title)}</button></h4>
-          <p class="artist">${esc(byline(s))}</p>
-          ${s.price ? `<p class="meta">${esc(s.price)}</p>` : ""}
-          ${st === "soon" ? `<p class="meta"><strong>${openLabel(s.openAt)}</strong></p>` : ""}
-          <div class="foot">${stateTag(st)}${bookButton(s, st, "small")}</div>
-        </div>
+        <div class="poster-frame">${poster(s)}${badge}</div>
+        <p class="when">${esc(when(s))}</p>
+        <h4><button type="button" data-open="${s.id}">${esc(s.title)}</button></h4>
+        <p class="who">${[byline(s), s.venueName].filter(Boolean).map(esc).join(" · ")}</p>
       </article>`;
     };
     // 달마다 묶어서 보여 준다: "10월 · 3개 공연"
@@ -165,7 +161,7 @@
     const intros = (s.introImages || []).filter(Boolean);
     sheet.innerHTML = `<div class="sheet-inner">
       <div class="sheet-top">${stateTag(st)}<button class="close" type="button" data-close>닫기</button></div>
-      <div class="sheet-hero">${poster(s, { eager: true, date: false })}<div><h2 id="sheet-title">${esc(s.title)}</h2><p class="artist">${esc(byline(s))}</p>${s.subtitle && s.title !== s.artist ? `<p class="meta" style="color:var(--muted)">${esc(s.subtitle)}</p>` : ""}</div></div>
+      <div class="sheet-hero">${poster(s, { eager: true })}<div><h2 id="sheet-title">${esc(s.title)}</h2><p class="artist">${esc(byline(s))}</p>${s.subtitle && s.title !== s.artist ? `<p class="meta" style="color:var(--muted)">${esc(s.subtitle)}</p>` : ""}</div></div>
       ${s.intro ? `<p class="intro">${esc(s.intro)}</p>` : ""}
       <dl class="facts">${facts.map(([k, val]) => `<dt>${k}</dt><dd>${esc(val)}</dd>`).join("")}</dl>
       <div class="book">${book}</div>

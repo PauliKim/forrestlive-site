@@ -20,9 +20,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/logo/emblem-forest.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Noto+Serif+KR:wght@400;600&display=swap">
 <link rel="stylesheet" href="styles.css">
 <style>
 /* 히어로: 랜딩처럼 사진 위 큰 세리프 한 줄 */
@@ -54,18 +51,18 @@
 .month span { font-size: var(--t-15); color: var(--muted); }
 .month-group + .month-group { margin-top: var(--s-7); }
 .shows { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-6) var(--s-5); }
-.show { display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
-.show .poster-wrap { position: relative; display: block; text-decoration: none; padding: 0; border: 0; background: none; cursor: pointer; text-align: left; color: inherit; border-radius: var(--radius-md); }
-.show .body { display: flex; flex-direction: column; gap: 2px; }
-.show .when-text { display: none; }
-.show h4 { font: 600 var(--t-21)/1.35 var(--font-serif); letter-spacing: -0.02em; }
+/* 공연 카드: 포스터 → 일시 → 공연명 → 아티스트 · 지점. 카드 전체가 하나의 버튼 */
+.show { position: relative; display: flex; flex-direction: column; min-width: 0; }
+.poster-frame { position: relative; margin-bottom: var(--s-3); }
+.show .when { font: 600 var(--t-13)/1.4 var(--font-ui); color: var(--accent); letter-spacing: 0.01em; }
+.show h4 { font: 600 var(--t-20)/1.35 var(--font-serif); letter-spacing: -0.02em; margin-top: 6px; }
 .show h4 button { all: unset; cursor: pointer; }
-.show h4 button:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
-.show .artist { font-weight: 500; font-size: var(--t-15); color: var(--text); }
-.show .meta { color: var(--muted); font-size: var(--t-13); }
-.show .foot { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); flex-wrap: wrap; margin-top: auto; padding-top: var(--s-3); }
-.show .foot .btn { min-height: 38px; padding: 10px 18px; font-size: var(--t-13); }
-.show .poster-wrap:hover .poster > img, .show .poster-wrap:focus-visible .poster > img { transform: scale(1.03); }
+.show h4 button::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius-md); }
+.show h4 button:focus-visible { outline: none; }
+.show h4 button:focus-visible::after { outline: 2px solid var(--focus); outline-offset: 4px; }
+.show .who { margin-top: 2px; font-size: var(--t-15); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.show:hover .poster > img { transform: scale(1.03); }
+.show:hover h4 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .empty { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: var(--s-5); align-items: center; padding: var(--s-5); background: var(--surface); border-radius: var(--radius-lg); }
 .empty img { border-radius: var(--radius-md); aspect-ratio: 1; object-fit: cover; }
 
@@ -174,14 +171,13 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
 }
 @media (max-width: 560px) {
   /* 휴대폰: 포스터 옆에 정보를 두는 목록형 */
-  .shows { grid-template-columns: minmax(0, 1fr); gap: var(--s-5); }
-  .show { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: var(--s-4); align-items: start; }
+  .shows { grid-template-columns: minmax(0, 1fr); gap: var(--s-4); }
+  .show { display: grid; grid-template-columns: 96px minmax(0, 1fr); grid-template-rows: auto auto 1fr; column-gap: var(--s-4); align-content: start; }
+  .poster-frame { grid-row: 1 / span 3; margin: 0; }
   .show .poster { border-radius: var(--radius-sm); }
-  .show .date-layer { display: none; }
-  .show .when-text { display: block; font: 600 var(--t-15)/1.4 var(--font-serif); color: var(--accent); }
-  .show .when-text span { display: block; font: 500 var(--t-13)/1.5 var(--font-ui); color: var(--muted); }
-  .show h4 { font-size: var(--t-20); margin-top: var(--s-2); }
-  .show .foot { padding-top: var(--s-2); justify-content: flex-start; }
+  .show .when { padding-top: 4px; }
+  .show .who { white-space: normal; }
+  .badge { top: 6px; left: 6px; padding: 5px 8px; }
   .month h3 { font-size: var(--t-21); }
   .site-header .wrap { min-height: 60px; gap: var(--s-2); }
   .site-header .logo img { height: 20px; }
@@ -219,7 +215,7 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
     <div class="wrap">
       <div>
         <h1 id="hero-title">도시 속 작은 울림을<br>전하는 숲</h1>
-        <p class="lede">2021년 여름, 문래동 지하에 작은 숲을 들여놓고 공연을 시작했습니다. 지금은 독립문 카인드스퀘어에도 숲이 하나 더 있습니다.</p>
+        <p class="lede">2021년 여름, 문래동 지하에 작은 숲을 들여놓고 공연을 시작했습니다. 지금은 독립문 카인드스퀘어에서도 숲이 자라나고 있습니다.</p>
       </div>
       <div class="next" id="next" hidden></div>
     </div>
@@ -321,8 +317,8 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <div class="wrap contact" id="contact">
     <div>
       <span class="label">Contact</span>
-      <h2>무대에 서고 싶거나,<br>공간이 필요하다면</h2>
-      <p>출연, 대관, 브랜드 협업 모두 메일로 이야기 나눕니다. 생각하는 날짜와 지점을 함께 적어 주시면 답이 빠릅니다.</p>
+      <h2>무대에 서고 싶거나,<br>함께 공연을 만들고 싶다면</h2>
+      <p>출연, 공연 기획, 브랜드 협업 모두 메일로 이야기 나눕니다. 숲세권 라이브는 꽃과 나무 이름을 붙인 단독 공연과 MONDAY:SOOP 같은 시리즈를 직접 기획합니다. 함께 만들고 싶은 공연이 있다면 생각하는 날짜와 지점을 적어 보내 주세요.</p>
     </div>
     <div class="mail">
       <code id="mail-addr">eddie@pondmakers.com</code>
