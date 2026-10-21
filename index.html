@@ -61,6 +61,8 @@
 .show h4 button:focus-visible { outline: none; }
 .show h4 button:focus-visible::after { outline: 2px solid var(--focus); outline-offset: 4px; }
 .show .who { margin-top: 2px; font-size: var(--t-15); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* 예매 버튼은 카드 전체를 덮는 버튼보다 위에 둔다 */
+.card-book { position: relative; z-index: 1; margin-top: var(--s-3); }
 .show:hover .poster > img { transform: scale(1.03); }
 .show:hover h4 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .empty { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: var(--s-5); align-items: center; padding: var(--s-5); background: var(--surface); border-radius: var(--radius-lg); }
@@ -172,11 +174,12 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
 @media (max-width: 560px) {
   /* 휴대폰: 포스터 옆에 정보를 두는 목록형 */
   .shows { grid-template-columns: minmax(0, 1fr); gap: var(--s-4); }
-  .show { display: grid; grid-template-columns: 96px minmax(0, 1fr); grid-template-rows: auto auto 1fr; column-gap: var(--s-4); align-content: start; }
-  .poster-frame { grid-row: 1 / span 3; margin: 0; }
+  .show { display: grid; grid-template-columns: 96px minmax(0, 1fr); grid-template-rows: auto auto auto auto 1fr; column-gap: var(--s-4); align-content: start; }
+  .poster-frame { grid-row: 1 / span 5; margin: 0; }
   .show .poster { border-radius: var(--radius-sm); }
   .show .when { padding-top: 4px; }
   .show .who { white-space: normal; }
+  .card-book { margin-top: var(--s-2); }
   .badge { top: 6px; left: 6px; padding: 5px 8px; }
   .month h3 { font-size: var(--t-21); }
   .site-header .wrap { min-height: 60px; gap: var(--s-2); }

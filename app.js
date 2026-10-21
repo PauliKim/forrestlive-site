@@ -46,6 +46,12 @@
   // 공연명과 아티스트명이 같으면(예: MONDAY:SOOP) 아래 줄에는 부제를 쓴다
   const byline = (s) => (s.title === s.artist ? s.subtitle : s.artist);
 
+  // 카드 안의 작은 버튼: 예매중이면 예매하기, 오픈 예정이면 예매처 보기. 매진은 배지로만 알린다.
+  function cardBook(s, st) {
+    const t = mainTicket(s);
+    const label = st === "on" ? "예매하기" : "예매처 보기";
+    return `<a class="btn btn-sm ${st === "on" ? "btn-book" : "btn-line"}" href="${esc(t.url)}" target="_blank" rel="noopener" aria-label="${esc(s.title)} ${label}">${label}</a>`;
+  }
   function bookButton(s, st) {
     const t = mainTicket(s);
     if (st === "on") return `<a class="btn btn-book" href="${esc(t.url)}" target="_blank" rel="noopener">예매하기</a>`;
@@ -84,6 +90,7 @@
         <p class="when">${esc(when(s))}</p>
         <h4><button type="button" data-open="${s.id}">${esc(s.title)}</button></h4>
         <p class="who">${[byline(s), s.venueName].filter(Boolean).map(esc).join(" · ")}</p>
+        ${st === "out" ? "" : `<div class="card-book">${cardBook(s, st)}</div>`}
       </article>`;
     };
     // 달마다 묶어서 보여 준다: "10월 · 3개 공연"
