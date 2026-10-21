@@ -24,7 +24,7 @@
 | `data/overrides.json` | KOPIS에 없는 값(예매 오픈 시각, 매진, 소개글) |
 | `scripts/sync_kopis.py` | KOPIS 동기화 스크립트 |
 | `.github/workflows/sync-kopis.yml` | 5분마다 동기화하는 GitHub Actions |
-| `assets/` | 로고(투명 PNG), 공연장 사진, 글꼴(마루 부리, Pretendard), 포스터 |
+| `assets/` | 로고(투명 PNG), 공연장 사진, 글꼴(Noto Serif KR, Inter, Pretendard), 포스터 |
 
 ## 공연 정보 갱신
 

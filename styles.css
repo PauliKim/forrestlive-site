@@ -2,6 +2,8 @@
    기준: Claude Design의 '숲세권 라이브' 디자인 시스템(forrestlive.com 랜딩과 같은 결). 값을 바꾸면 그쪽 tokens.json과 함께 바꾼다.
    Layout: 흰 헤더 → 무대 사진 히어로 → 다가오는 공연 → 지난 공연 → 공간 → 함께 만든 공연 → 사진 위 문의와 푸터 */
 @import url("assets/fonts/pretendard.css");
+@import url("assets/fonts/noto-serif-kr.css");
+@import url("assets/fonts/inter.css");
 
 :root {
   /* 원색: forrestlive.com에서 가져온 값 */
@@ -95,6 +97,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   font-family: var(--font-ui); font-weight: 600; font-size: var(--t-15); line-height: 1; min-height: 42px; padding: 12px 22px; border-radius: var(--radius-pill);
   text-decoration: none; cursor: pointer; border: 1px solid transparent; white-space: nowrap;
 }
+.btn-sm { min-height: 0; padding: 7px 14px; font-size: var(--t-13); }
 .btn-book { background: var(--accent); color: var(--on-accent); }
 .btn-book:hover { background: var(--forest); }
 .btn-line { background: transparent; color: var(--accent); border-color: currentColor; }
@@ -130,10 +133,5 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   background: radial-gradient(120% 70% at 70% 0%, rgba(113,156,145,.35), transparent 60%), linear-gradient(160deg, #2b5f4a, var(--deep));
 }
 .poster .blank img { width: 26%; max-width: 88px; opacity: .55; margin-top: -18%; }
-.date-layer {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 56px 18px 16px;
-  background: linear-gradient(180deg, rgba(15,42,29,0) 0%, rgba(15,42,29,.72) 55%, rgba(15,42,29,.9) 100%);
-  color: #fff; display: flex; flex-direction: column; gap: 2px;
-}
-.date-layer b { font-family: var(--font-serif); font-weight: 600; font-size: var(--t-20); line-height: 1.25; letter-spacing: -0.02em; }
-.date-layer span { font-family: var(--font-ui); font-size: var(--t-13); opacity: .9; }
+/* 배지: 포스터 왼쪽 위. 오픈 예정·매진처럼 예외일 때만 */
+.badge { position: absolute; top: 12px; left: 12px; z-index: 1; font: 600 var(--t-12)/1 var(--font-ui); letter-spacing: 0.02em; color: var(--ink); background: rgba(255,255,255,.92); backdrop-filter: blur(6px); padding: 7px 11px; border-radius: var(--radius-pill); }
