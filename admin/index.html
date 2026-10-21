@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<script>
+/* 로그인(Cloudflare Access)은 forrestlive.pages.dev에 걸려 있다. forrestlive.com의 DNS가 Cloudflare 밖(가비아)에 있어
+   concert.forrestlive.com에는 Access를 걸 수 없기 때문이다. 다른 주소로 들어오면 그쪽으로 넘긴다(브랜치 미리보기와 로컬은 그대로). */
+if (location.hostname === "concert.forrestlive.com") location.replace("https://forrestlive.pages.dev/admin/" + location.search);
+</script>
 <title>문구 관리 · 숲세권 라이브</title>
 <link rel="icon" href="../assets/logo/emblem-forest.png">
 <link rel="stylesheet" href="../styles.css">
