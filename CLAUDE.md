@@ -16,6 +16,9 @@
 - `data/shows.json` 공연 데이터. **자동 동기화가 고치는 파일이라 손으로 고치지 않는다.**
 - `data/overrides.json` KOPIS에 없는 값(openAt 예매 오픈 시각, soldOut, intro 소개글 등). 사람이 고치는 곳은 여기다
 - `data/venues.json` 지점 정보(KOPIS 공연시설 상세로 갱신)
+- `data/copy.json` 고정 문구(번호별). `data/copy-schema.json` 문구 항목 목록(구역, 위치, 자리표시, 잠금). 사람이 고치는 곳이다
+- `admin/` 문구 관리 화면(/admin). `functions/api/copy.js` 저장 서버(Cloudflare Pages Function, Access 로그인 확인 후 GitHub에 커밋). `functions/_lib/copy.js` 공용 함수
+- `scripts/apply_copy.py` copy.json 문구를 index.html의 `data-copy` 요소에 써 넣음. `tests/test_copy.py` 문구 점검
 - `scripts/sync_kopis.py` KOPIS OPEN API 동기화. `tests/test_sync.py` 네트워크 없이 도는 점검
 - `.github/workflows/sync-kopis.yml` 5분마다 변경분, 매일 04:10 전체 동기화 후 자동 커밋(작성자 forrestlive-bot)
 - `_headers` 캐시 설정, `_redirects` `/concert/*` → 루트 매핑
@@ -24,6 +27,7 @@
 ## 자주 쓰는 명령
 - 미리보기: `python3 -m http.server 8000` → http://localhost:8000 (`/concert/` 경로 확인은 Pages 배포본에서)
 - 동기화 점검: `python3 tests/test_sync.py` (스크립트를 고치면 반드시 실행)
+- 문구 점검: `python3 tests/test_copy.py` (문구, index.html, app.js를 고치면 실행)
 - 동기화 직접 실행(필요할 때만): `set -a; source .env; set +a; python3 scripts/sync_kopis.py --no-hold`
   - `.env`에 `KOPIS_API_KEY=32자리키` 한 줄. `.env`는 커밋 금지(.gitignore에 있음)
   - 로컬에서 돌린 결과는 커밋하지 말고 되돌린다. 실제 반영은 GitHub Actions가 한다
@@ -51,7 +55,11 @@
 - 공연 카드는 포스터 → 일시 → 공연명 → 아티스트 · 지점 → 작은 예매 버튼(예매 중 `예매하기`, 예매 오픈 전 `예매처 보기`, 매진은 버튼 없이 배지). 공연명과 아티스트명을 같은 말로 두 번 쓰지 않는다(`byline()` 참고).
 - 메인 화면에는 가격을 보여 주지 않는다(아티스트마다 금액이 달라 비교되어 보이므로). 가격은 상세 시트에서만.
 - 예매 중은 기본 상태라 카드에 표시하지 않고, 예매 오픈 전·매진만 포스터 위 배지로 알린다.
-- 고정 문구 전체와 번호는 `문구.md`에 있다. 문구를 고치면 `문구.md`도 함께 고친다.
+- 고정 문구는 `data/copy.json`에서만 고친다. index.html·app.js에 문구를 직접 쓰지 않는다.
+  - index.html: 요소에 `data-copy="번호"`를 달고 기본 문구를 넣는다(안에는 글자와 `<br>`만). 고친 뒤 `python3 scripts/apply_copy.py`
+  - app.js: `t("번호", { n })`, HTML에 넣을 때는 `et()`. 미리보기 위치 표시용으로 `data-copy-dyn="번호"`를 단다
+  - 새 문구는 `data/copy-schema.json`과 `data/copy.json`에 같은 번호로 추가한다. `scripts/apply_copy.py`와 `functions/_lib/copy.js`의 applyCopy는 같은 동작을 유지한다
+- 어드민 저장은 main에 바로 커밋된다(작성자 forrestlive-admin). 사람 작업 전에 `git pull --rebase origin main`.
 - 소개 문구는 사람이 쓴 것처럼 담백하게. 과장된 수식어나 AI 같은 말투를 쓰지 않는다.
 - 푸터의 “공연 정보 출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr)” 문구는 KOPIS 이용 조건이라 지우지 않는다.
 - 모바일 폭에서도 확인한다.
@@ -59,6 +67,7 @@
 ## 보안
 - KOPIS 인증키는 GitHub Secret `KOPIS_API_KEY`에만 둔다. 코드, 커밋, 로그, 이슈에 키를 쓰지 않는다.
 - `docs/KOPIS_API.md`(키 포함 문서)와 `.env`는 커밋하지 않는다.
+- 문구 저장 서버의 `GITHUB_TOKEN`, `ACCESS_AUD` 등은 Cloudflare Pages 환경 변수에만 둔다. 저장 서버는 Access 로그인 토큰을 직접 검증하고, 설정이 없으면 저장하지 않는다.
 
 ## 참고 문서
 - `설정_순서.md` 처음 설정한 순서와 현재 상태, 도메인 검토 결과, 막혔을 때

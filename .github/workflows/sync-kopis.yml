@@ -51,6 +51,8 @@ jobs:
             git config user.email "forrestlive-bot@users.noreply.github.com"
             git add data assets/posters
             git commit -m "공연 정보 갱신 (KOPIS)"
+            # 그사이 어드민이 문구를 저장했을 수 있으니 최신 main 위에 얹어 올린다
+            git pull --rebase origin main
             git push
           else
             echo "변경 없음"

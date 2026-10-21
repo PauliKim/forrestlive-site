@@ -7,13 +7,13 @@
 (function (p) { if (p.length > 1 && !p.endsWith("/") && !/\.[a-z0-9]+$/i.test(p)) location.replace(p + "/" + location.search + location.hash); })(location.pathname);
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>공연 일정 · 숲세권 라이브</title>
+<title data-copy="A-01">공연 일정 · 숲세권 라이브</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="도시 속 작은 울림을 전하는 숲, 숲세권 라이브. 문래점과 카인드스퀘어점에서 열리는 공연 일정과 예매 링크를 모았습니다.">
+<meta name="description" data-copy="A-02" content="도시 속 작은 울림을 전하는 숲, 숲세권 라이브. 문래점과 카인드스퀘어점에서 열리는 공연 일정과 예매 링크를 모았습니다.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="숲세권 라이브">
-<meta property="og:title" content="숲세권 라이브 공연 일정">
-<meta property="og:description" content="도시 속 작은 울림을 전하는 숲. 다가오는 공연을 보고 바로 예매할 수 있습니다.">
+<meta property="og:title" data-copy="A-03" content="숲세권 라이브 공연 일정">
+<meta property="og:description" data-copy="A-04" content="도시 속 작은 울림을 전하는 숲. 다가오는 공연을 보고 바로 예매할 수 있습니다.">
 <meta property="og:url" content="https://concert.forrestlive.com/">
 <meta property="og:image" content="https://concert.forrestlive.com/assets/img/og.jpg">
 <link rel="canonical" href="https://concert.forrestlive.com/">
@@ -92,6 +92,7 @@
 .venue dl { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 6px 14px; margin: 0; font-size: var(--t-15); }
 .venue dt { color: var(--muted); }
 .venue dd { margin: 0; }
+.venue dd:empty, .venue dt:has(+ dd:empty) { display: none; }
 .venue .links { display: flex; gap: var(--s-2); flex-wrap: wrap; }
 .details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-4); margin-top: var(--s-5); }
 .details figure { margin: 0; }
@@ -204,10 +205,10 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <div class="wrap">
     <a class="logo" href="#top" aria-label="숲세권 라이브 처음으로"><img src="assets/logo/wordmark-forest.png" alt="숲세권 라이브"></a>
     <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="#upcoming">공연</a>
-      <a href="#archive">지난 공연</a>
-      <a href="#space">공간</a>
-      <a href="#contact">문의</a>
+      <a href="#upcoming" data-copy="B-01">공연</a>
+      <a href="#archive" data-copy="B-02">지난 공연</a>
+      <a href="#space" data-copy="B-03">공간</a>
+      <a href="#contact" data-copy="B-04">문의</a>
     </nav>
   </div>
 </header>
@@ -217,8 +218,8 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
     <img src="assets/img/stage.jpg" srcset="assets/img/stage-sm.jpg 800w, assets/img/stage.jpg 1600w" sizes="100vw" alt="이끼 벽과 등나무꽃 아래 피아노와 드럼이 놓인 숲세권 라이브 무대">
     <div class="wrap">
       <div>
-        <h1 id="hero-title">도시 속 작은 울림을<br>전하는 숲</h1>
-        <p class="lede">2021년 여름, 문래동 지하에 작은 숲을 들이고 공연을 시작했습니다. 이제는 독립문 카인드스퀘어에서도 숲이 자라고 있습니다.</p>
+        <h1 id="hero-title" data-copy="B-05">도시 속 작은 울림을<br>전하는 숲</h1>
+        <p class="lede" data-copy="B-06">2021년 여름, 문래동 지하에 작은 숲을 들이고 공연을 시작했습니다. 이제는 독립문 카인드스퀘어에서도 숲이 자라고 있습니다.</p>
       </div>
       <div class="next" id="next" hidden></div>
     </div>
@@ -227,9 +228,9 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <section class="section" id="upcoming" aria-labelledby="up-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="label">Upcoming</span>
-        <h2 id="up-title">다가오는 공연</h2>
-        <p id="up-sub"></p>
+        <span class="label" data-copy="C-01">Upcoming</span>
+        <h2 id="up-title" data-copy="C-02">다가오는 공연</h2>
+        <p id="up-sub" data-copy-dyn="C-03"></p>
         <div class="filters">
           <div class="chips" role="group" aria-label="지점" id="f-venue"></div>
           <div class="chips" role="group" aria-label="월" id="f-month"></div>
@@ -242,22 +243,22 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <section class="section soft" id="archive" aria-labelledby="ar-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="label">Archive</span>
-        <h2 id="ar-title">지난 공연</h2>
-        <p id="ar-sub"></p>
+        <span class="label" data-copy="D-01">Archive</span>
+        <h2 id="ar-title" data-copy="D-02">지난 공연</h2>
+        <p id="ar-sub" data-copy-dyn="D-03"></p>
       </div>
       <div class="years chips" role="group" aria-label="연도" id="years"></div>
       <div class="panel"><ul class="archive" id="archive-list"></ul></div>
-      <button class="btn btn-line more" type="button" id="more" hidden>더 보기</button>
+      <button class="btn btn-line more" type="button" id="more" data-copy-dyn="D-05" hidden>더 보기</button>
     </div>
   </section>
 
   <section class="section" id="space" aria-labelledby="sp-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="label">Space</span>
-        <h2 id="sp-title">공간</h2>
-        <p>숲은 두 곳에 있습니다. 공연마다 지점이 다르니 예매 전에 꼭 확인해 주세요.</p>
+        <span class="label" data-copy="E-01">Space</span>
+        <h2 id="sp-title" data-copy="E-02">공간</h2>
+        <p data-copy="E-03">숲은 두 곳에 있습니다. 공연마다 지점이 다르니 예매 전에 꼭 확인해 주세요.</p>
       </div>
       <div class="venues">
         <article class="venue">
@@ -265,16 +266,16 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
           <div class="info">
             <h3>문래점</h3>
             <dl>
-              <dt>주소</dt><dd data-venue="mullae" data-field="address">서울특별시 영등포구 도림로126길 1 (문래동3가) 지하 1층</dd>
-              <dt>가까운 역</dt><dd>2호선 문래역</dd>
-              <dt>객석</dt><dd>약 50~70석</dd>
-              <dt data-row hidden>전화</dt><dd data-row hidden data-venue="mullae" data-field="tel"></dd>
-              <dt>무대</dt><dd>업라이트 피아노, 드럼 세트, 기타·베이스 앰프, 라이브 녹음·촬영 장비</dd>
-              <dt>문 연 날</dt><dd>2021년 7월</dd>
+              <dt data-copy="E-04">주소</dt><dd data-venue="mullae" data-field="address">서울특별시 영등포구 도림로126길 1 (문래동3가) 지하 1층</dd>
+              <dt data-copy="E-05">가까운 역</dt><dd data-copy="E-10">2호선 문래역</dd>
+              <dt data-copy="E-06">객석</dt><dd data-copy="E-11">약 50~70석</dd>
+              <dt data-row hidden data-copy="E-07">전화</dt><dd data-row hidden data-venue="mullae" data-field="tel"></dd>
+              <dt data-copy="E-08">무대</dt><dd data-copy="E-12">업라이트 피아노, 드럼 세트, 기타·베이스 앰프, 라이브 녹음·촬영 장비</dd>
+              <dt data-copy="E-09">문 연 날</dt><dd data-copy="E-13">2021년 7월</dd>
             </dl>
             <div class="links">
-              <a class="btn btn-line" data-venue="mullae" data-field="naver" href="https://map.naver.com/p/entry/place/36797413" target="_blank" rel="noopener">네이버 지도</a>
-              <a class="btn btn-line" data-venue="mullae" data-field="kakao" href="https://map.kakao.com/link/map/%EC%88%B2%EC%84%B8%EA%B6%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%20%EB%AC%B8%EB%9E%98%EC%A0%90,37.513979,126.896507" target="_blank" rel="noopener">카카오맵</a>
+              <a class="btn btn-line" data-venue="mullae" data-field="naver" href="https://map.naver.com/p/entry/place/36797413" target="_blank" rel="noopener" data-copy="E-18">네이버 지도</a>
+              <a class="btn btn-line" data-venue="mullae" data-field="kakao" href="https://map.kakao.com/link/map/%EC%88%B2%EC%84%B8%EA%B6%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%20%EB%AC%B8%EB%9E%98%EC%A0%90,37.513979,126.896507" target="_blank" rel="noopener" data-copy="E-19">카카오맵</a>
             </div>
           </div>
         </article>
@@ -283,22 +284,24 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
           <div class="info">
             <h3>카인드스퀘어점</h3>
             <dl>
-              <dt>주소</dt><dd data-venue="kind" data-field="address">서울특별시 종로구 사직로 8 (교북동) 카인드스퀘어</dd>
-              <dt>가까운 역</dt><dd>3호선 독립문역</dd>
-              <dt>문 연 날</dt><dd>2026년 9월</dd>
+              <dt data-copy="E-04">주소</dt><dd data-venue="kind" data-field="address">서울특별시 종로구 사직로 8 (교북동) 카인드스퀘어</dd>
+              <dt data-copy="E-05">가까운 역</dt><dd data-copy="E-14">3호선 독립문역</dd>
+              <dt data-copy="E-06">객석</dt><dd data-copy="E-15"></dd>
+              <dt data-copy="E-08">무대</dt><dd data-copy="E-16"></dd>
+              <dt data-copy="E-09">문 연 날</dt><dd data-copy="E-17">2026년 9월</dd>
             </dl>
             <div class="links">
-              <a class="btn btn-line" data-venue="kind" data-field="naver" href="https://map.naver.com/p/entry/place/2043943713" target="_blank" rel="noopener">네이버 지도</a>
-              <a class="btn btn-line" data-venue="kind" data-field="kakao" href="https://map.kakao.com/link/map/%EC%88%B2%EC%84%B8%EA%B6%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%20%EC%B9%B4%EC%9D%B8%EB%93%9C%EC%8A%A4%ED%80%98%EC%96%B4%EC%A0%90,37.57212,126.961099" target="_blank" rel="noopener">카카오맵</a>
+              <a class="btn btn-line" data-venue="kind" data-field="naver" href="https://map.naver.com/p/entry/place/2043943713" target="_blank" rel="noopener" data-copy="E-18">네이버 지도</a>
+              <a class="btn btn-line" data-venue="kind" data-field="kakao" href="https://map.kakao.com/link/map/%EC%88%B2%EC%84%B8%EA%B6%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%20%EC%B9%B4%EC%9D%B8%EB%93%9C%EC%8A%A4%ED%80%98%EC%96%B4%EC%A0%90,37.57212,126.961099" target="_blank" rel="noopener" data-copy="E-19">카카오맵</a>
             </div>
           </div>
         </article>
       </div>
       <div class="details">
-        <figure><img src="assets/img/tv-terrarium-sm.jpg" alt="브라운관 TV 안의 이끼 테라리움과 그 위의 탁상 달력" loading="lazy"><figcaption>무대 위 TV 테라리움</figcaption></figure>
-        <figure><img src="assets/img/piano-keys-sm.jpg" alt="뚜껑을 연 업라이트 피아노 건반" loading="lazy"><figcaption>업라이트 피아노</figcaption></figure>
-        <figure><img src="assets/img/microphone-sm.jpg" alt="등나무꽃 사이의 콘덴서 마이크" loading="lazy"><figcaption>보컬 마이크</figcaption></figure>
-        <figure><img src="assets/img/terrarium-globe-sm.jpg" alt="천장에 매달린 유리 테라리움" loading="lazy"><figcaption>천장에 매단 유리 테라리움</figcaption></figure>
+        <figure><img src="assets/img/tv-terrarium-sm.jpg" alt="브라운관 TV 안의 이끼 테라리움과 그 위의 탁상 달력" loading="lazy"><figcaption data-copy="E-20">무대 위 TV 테라리움</figcaption></figure>
+        <figure><img src="assets/img/piano-keys-sm.jpg" alt="뚜껑을 연 업라이트 피아노 건반" loading="lazy"><figcaption data-copy="E-21">업라이트 피아노</figcaption></figure>
+        <figure><img src="assets/img/microphone-sm.jpg" alt="등나무꽃 사이의 콘덴서 마이크" loading="lazy"><figcaption data-copy="E-22">보컬 마이크</figcaption></figure>
+        <figure><img src="assets/img/terrarium-globe-sm.jpg" alt="천장에 매달린 유리 테라리움" loading="lazy"><figcaption data-copy="E-23">천장에 매단 유리 테라리움</figcaption></figure>
       </div>
     </div>
   </section>
@@ -306,9 +309,9 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <section class="section soft" id="series-section" aria-labelledby="se-title">
     <div class="wrap">
       <div class="section-head">
-        <span class="label">Together</span>
-        <h2 id="se-title">함께 만든 공연</h2>
-        <p id="series-sub"></p>
+        <span class="label" data-copy="F-01">Together</span>
+        <h2 id="se-title" data-copy="F-02">함께 만든 공연</h2>
+        <p id="series-sub" data-copy-dyn="F-03"></p>
       </div>
       <ul class="series" id="series"></ul>
     </div>
@@ -319,13 +322,13 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
   <img src="assets/img/microphone.jpg" alt="" loading="lazy">
   <div class="wrap contact" id="contact">
     <div>
-      <span class="label">Contact</span>
-      <h2>무대에 서고 싶거나,<br>함께 공연을 만들고 싶다면</h2>
-      <p>출연, 공연 기획, 브랜드 협업 모두 메일로 이야기 나눕니다. 숲세권 라이브는 꽃과 나무의 이름을 붙인 단독 공연과 MONDAY:SOOP 같은 시리즈를 직접 기획합니다. 원하는 날짜와 지점을 함께 적어 주시면 더 빨리 답할 수 있습니다.</p>
+      <span class="label" data-copy="G-01">Contact</span>
+      <h2 data-copy="G-02">무대에 서고 싶거나,<br>함께 공연을 만들고 싶다면</h2>
+      <p data-copy="G-03">출연, 공연 기획, 브랜드 협업 모두 메일로 이야기 나눕니다. 숲세권 라이브는 꽃과 나무의 이름을 붙인 단독 공연과 MONDAY:SOOP 같은 시리즈를 직접 기획합니다. 원하는 날짜와 지점을 함께 적어 주시면 더 빨리 답할 수 있습니다.</p>
     </div>
     <div class="mail">
-      <code id="mail-addr">eddie@pondmakers.com</code>
-      <button class="btn btn-book" type="button" id="copy-mail">메일 주소 복사</button>
+      <code id="mail-addr" data-copy="G-04">eddie@pondmakers.com</code>
+      <button class="btn btn-book" type="button" id="copy-mail" data-copy="G-05">메일 주소 복사</button>
       <span class="note" id="mail-note" role="status"></span>
     </div>
   </div>
@@ -333,13 +336,13 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
     <div class="wrap">
       <img src="assets/logo/emblem-white.png" alt="숲세권 라이브 엠블럼">
       <div>
-        <p>숲세권 라이브는 폰드메이커스가 운영합니다. 문의 eddie@pondmakers.com</p>
-        <p class="source">공연 정보 출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr) <span id="updated"></span></p>
-        <p>© 2026 Pondmakers Inc.</p>
+        <p data-copy="G-08">숲세권 라이브는 폰드메이커스가 운영합니다. 문의 eddie@pondmakers.com</p>
+        <p class="source"><span data-copy="G-09">공연 정보 출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr)</span> <span id="updated" data-copy-dyn="G-10"></span></p>
+        <p data-copy="G-11">© 2026 Pondmakers Inc.</p>
       </div>
       <nav aria-label="관련 사이트">
-        <a href="https://forrestlive.com/" target="_blank" rel="noopener">숲세권 라이브 소개</a>
-        <a href="https://www.kopis.or.kr/" target="_blank" rel="noopener">공연예술통합전산망</a>
+        <a href="https://forrestlive.com/" target="_blank" rel="noopener" data-copy="G-12">숲세권 라이브 소개</a>
+        <a href="https://www.kopis.or.kr/" target="_blank" rel="noopener" data-copy="G-13">공연예술통합전산망</a>
       </nav>
     </div>
   </footer>
