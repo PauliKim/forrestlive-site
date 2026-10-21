@@ -18,166 +18,192 @@
 <meta property="og:image" content="https://concert.forrestlive.com/assets/img/og.jpg">
 <link rel="canonical" href="https://concert.forrestlive.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#194931">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/logo/emblem-forest.png">
-<link rel="preload" href="assets/fonts/MaruBuri-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Noto+Serif+KR:wght@400;600&display=swap">
 <link rel="stylesheet" href="styles.css">
 <style>
-/* 히어로 */
-.hero { position: relative; color: var(--on-forest); background: var(--deep); }
+/* 히어로: 랜딩처럼 사진 위 큰 세리프 한 줄 */
+.hero { position: relative; color: var(--on-photo); background: var(--deep); }
 .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,42,29,.05) 20%, rgba(15,42,29,.82) 100%); }
-.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 32px; padding-block: clamp(180px, 30vw, 300px) 40px; }
-.hero h1 { color: #fff; font-size: clamp(2.125rem, 5vw, var(--t-56)); line-height: 1.2; }
-.hero .lede { margin-top: 12px; max-width: 30em; color: rgba(242,245,240,.9); font-size: var(--t-17); }
-.next { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; background: rgba(15,42,29,.72); backdrop-filter: blur(6px); padding: 16px; border-radius: 10px; max-width: 420px; border: 1px solid rgba(242,245,240,.14); }
-.next .label { font-family: var(--font-ui); font-size: var(--t-13); opacity: .8; }
-.next .when { font-size: var(--t-21); color: #fff; }
-.next b { display: block; font: 600 var(--t-26)/1.2 var(--font-serif); color: #fff; margin: 2px 0; }
-.next .who { font-family: var(--font-ui); font-size: var(--t-15); opacity: .9; }
-.next .actions { grid-column: 1 / -1; display: flex; gap: 8px; flex-wrap: wrap; }
-.next .btn-line { color: #fff; }
-.next .btn-line:hover { background: rgba(255,255,255,.08); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,41,14,.08) 25%, rgba(4,41,14,.45) 60%, rgba(4,41,14,.78) 100%); }
+.hero .wrap { position: relative; z-index: 1; min-height: min(86svh, 820px); display: flex; flex-direction: column; justify-content: flex-end; gap: var(--s-6); padding-block: var(--s-8) var(--s-6); }
+.hero h1 { color: #fff; font-size: var(--t-display); line-height: 1.25; letter-spacing: -0.04em; }
+.hero .lede { margin-top: var(--s-4); max-width: 30em; color: rgba(255,255,255,.9); font-size: var(--t-17); }
+/* 다음 공연: 사진 아래쪽 한 줄 */
+.next { display: grid; grid-template-columns: 7.5em minmax(0, 1fr) auto auto; align-items: center; gap: var(--s-3) var(--s-5); padding-top: var(--s-4); border-top: 1px solid rgba(255,255,255,.3); }
+.next .label { color: rgba(255,255,255,.85); }
+.next .when { font-size: var(--t-15); color: rgba(255,255,255,.9); }
+.next b { display: block; font: 600 var(--t-30)/1.2 var(--font-serif); color: #fff; letter-spacing: -0.02em; }
+.next .who { font-size: var(--t-15); opacity: .9; }
+.next .actions { display: flex; gap: var(--s-2); flex-wrap: wrap; }
 
-/* 섹션 공통 */
-.section { padding-block: 64px; }
-.section + .section { border-top: 1px solid var(--line); }
-.section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 24px; margin-bottom: 28px; }
-.section-head h2 { font-size: var(--t-34); }
-.section-head p { color: var(--muted); margin-top: 6px; max-width: 34em; }
-.filters { display: flex; flex-wrap: wrap; gap: 12px 20px; }
+/* 섹션 공통: 가운데 머리말 → 세이지 세리프 제목 → 설명 */
+.section { padding-block: var(--s-7) calc(var(--s-7) + 8px); scroll-margin-top: 68px; }
+.section.soft { background: var(--surface); }
+.section-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--s-2); margin-bottom: var(--s-6); }
+.section-head h2 { font-size: var(--t-section); color: var(--heading); line-height: 1.25; }
+.section-head p { color: var(--muted); max-width: 34em; }
+.filters { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-2) var(--s-5); margin-top: var(--s-3); }
 
-/* 공연 카드 */
-.shows { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 28px; }
-.show { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
-.show .poster-wrap { position: relative; display: block; text-decoration: none; padding: 0; border: 0; background: none; cursor: pointer; text-align: left; color: inherit; }
-.show .body { padding-top: 2px; display: flex; flex-direction: column; gap: 4px; }
-.show h3 { font-size: var(--t-26); line-height: 1.25; }
-.show .artist { margin-top: 2px; }
-.show h3 button { all: unset; cursor: pointer; }
-.show h3 button:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
-.show .artist { font-family: var(--font-ui); font-weight: 500; font-size: var(--t-17); color: var(--text); }
-.show .meta { color: var(--muted); font-size: var(--t-15); }
-.show .foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: auto; padding-top: 10px; }
-.empty { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; align-items: center; padding: 24px; border: 1px dashed var(--line); border-radius: 10px; }
-.empty img { border-radius: var(--radius); aspect-ratio: 1; object-fit: cover; }
-.show .poster-wrap:hover .poster > img, .show .poster-wrap:focus-visible .poster > img { filter: brightness(1.05); }
+/* 다가오는 공연: 달마다 묶는다 */
+.month { display: flex; align-items: baseline; gap: var(--s-3); padding-bottom: var(--s-3); margin-bottom: var(--s-5); border-bottom: 1px solid var(--line); }
+.month h3 { font-size: var(--t-30); }
+.month span { font-size: var(--t-15); color: var(--muted); }
+.month-group + .month-group { margin-top: var(--s-7); }
+.shows { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-6) var(--s-5); }
+.show { display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
+.show .poster-wrap { position: relative; display: block; text-decoration: none; padding: 0; border: 0; background: none; cursor: pointer; text-align: left; color: inherit; border-radius: var(--radius-md); }
+.show .body { display: flex; flex-direction: column; gap: 2px; }
+.show .when-text { display: none; }
+.show h4 { font: 600 var(--t-21)/1.35 var(--font-serif); letter-spacing: -0.02em; }
+.show h4 button { all: unset; cursor: pointer; }
+.show h4 button:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.show .artist { font-weight: 500; font-size: var(--t-15); color: var(--text); }
+.show .meta { color: var(--muted); font-size: var(--t-13); }
+.show .foot { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); flex-wrap: wrap; margin-top: auto; padding-top: var(--s-3); }
+.show .foot .btn { min-height: 38px; padding: 10px 18px; font-size: var(--t-13); }
+.show .poster-wrap:hover .poster > img, .show .poster-wrap:focus-visible .poster > img { transform: scale(1.03); }
+.empty { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: var(--s-5); align-items: center; padding: var(--s-5); background: var(--surface); border-radius: var(--radius-lg); }
+.empty img { border-radius: var(--radius-md); aspect-ratio: 1; object-fit: cover; }
 
-/* 지난 공연 */
-.years { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-.archive { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-.archive li a { display: grid; grid-template-columns: 7.5em minmax(0, 1.2fr) minmax(0, 1fr) 15em; gap: 16px; align-items: baseline; padding: 14px 4px; border-bottom: 1px solid var(--line); text-decoration: none; }
-.archive li a:hover { background: var(--surface); }
-.archive .d { color: var(--muted); font-size: var(--t-15); font-variant-numeric: tabular-nums; }
-.archive .t { font: 600 var(--t-21)/1.3 var(--font-serif); color: var(--heading); }
-.archive .a { font-family: var(--font-ui); font-weight: 500; font-size: var(--t-15); }
+/* 지난 공연: 연한 회색 바탕 위 흰 판 */
+.years { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-2); margin-bottom: var(--s-5); }
+.panel { background: var(--card); border-radius: var(--radius-lg); padding: var(--s-2) var(--s-5); }
+.archive { list-style: none; margin: 0; padding: 0; }
+.archive li + li a { border-top: 1px solid var(--line); }
+.archive li a { display: grid; grid-template-columns: 6em minmax(0, 1.2fr) minmax(0, 1fr) 15em; gap: var(--s-4); align-items: baseline; padding: 16px 4px; text-decoration: none; }
+.archive li a:hover .t { color: var(--accent); }
+.archive .d { font: 500 var(--t-13)/1 var(--font-label); color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+.archive .t { font: 600 var(--t-20)/1.35 var(--font-serif); letter-spacing: -0.02em; }
+.archive .a { font-weight: 500; font-size: var(--t-15); }
 .archive .s { color: var(--muted); font-size: var(--t-13); text-align: right; }
-.more { margin-top: 20px; }
+.more { margin: var(--s-5) auto 0; display: flex; }
 
 /* 공간 */
-.venues { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; }
-.venue { background: var(--surface); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.venues { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s-5); }
+.venue { background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
 .venue > img { aspect-ratio: 16 / 9; object-fit: cover; width: 100%; }
-.venue .no-photo { aspect-ratio: 16 / 9; background: var(--forest); display: grid; place-items: center; }
+.venue .no-photo { aspect-ratio: 16 / 9; background: linear-gradient(160deg, #2b5f4a, var(--deep)); display: grid; place-items: center; }
 .venue .no-photo img { width: 64px; opacity: .85; }
-.venue .info { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 14px; }
-.venue h3 { font-size: var(--t-26); }
+.venue .info { padding: var(--s-5) var(--s-5) var(--s-6); display: flex; flex-direction: column; gap: var(--s-4); }
+.venue h3 { font-size: var(--t-30); }
 .venue dl { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 6px 14px; margin: 0; font-size: var(--t-15); }
 .venue dt { color: var(--muted); }
 .venue dd { margin: 0; }
-.venue .links { display: flex; gap: 8px; flex-wrap: wrap; }
-.details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
+.venue .links { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+.details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-4); margin-top: var(--s-5); }
 .details figure { margin: 0; }
-.details img { aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); width: 100%; }
-.details figcaption { font-size: var(--t-13); color: var(--muted); margin-top: 6px; }
+.details img { aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); width: 100%; }
+.details figcaption { font-size: var(--t-13); color: var(--muted); margin-top: var(--s-2); text-align: center; }
 
-/* 기획 시리즈와 문의 */
-.series { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--forest); }
-.series div { padding: 18px 20px 20px 0; border-right: 1px solid var(--line); }
-.series div + div { padding-left: 20px; }
-.series div:last-child { border-right: 0; }
-.series b { display: block; font: 600 var(--t-44)/1 var(--font-serif); color: var(--heading); font-variant-numeric: tabular-nums; }
-.series span { display: block; margin-top: 8px; font-weight: 600; color: var(--heading); }
-.series small { display: block; color: var(--muted); font-size: var(--t-13); margin-top: 2px; }
-.contact { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px; align-items: center; background: var(--forest); color: var(--on-forest); border-radius: 10px; padding: 32px; }
-.contact h3 { color: #fff; font-size: var(--t-26); }
-.contact p { margin-top: 8px; opacity: .9; max-width: 32em; }
-.mail { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-.mail code { font: 600 var(--t-21)/1.2 var(--font-ui); color: #fff; user-select: all; }
-.mail .btn-line { color: #fff; }
-.mail .note { width: 100%; font-size: var(--t-13); opacity: .8; min-height: 1.4em; }
+/* 함께 만든 공연: 흰 판 위 목록 */
+.series { list-style: none; margin: 0 auto; padding: var(--s-2) var(--s-5); max-width: 860px; background: var(--card); border-radius: var(--radius-lg); }
+.series li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) 5em; gap: var(--s-2) var(--s-5); align-items: baseline; padding: var(--s-4) 0; }
+.series li + li { border-top: 1px solid var(--line); }
+.series b { font: 600 var(--t-20)/1.35 var(--font-serif); letter-spacing: -0.02em; }
+.series small { color: var(--muted); font-size: var(--t-15); }
+.series span { font: 600 var(--t-15)/1 var(--font-label); color: var(--accent); text-align: right; font-variant-numeric: tabular-nums; }
 
-/* 푸터 */
-.site-footer { background: var(--forest); color: var(--on-forest); margin-top: 0; }
-.site-footer .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 28px; align-items: center; padding-block: 36px 40px; font-size: var(--t-15); }
-.site-footer img { height: 84px; width: auto; }
-.site-footer p { opacity: .82; font-family: var(--font-ui); }
-.site-footer .source { font-size: var(--t-13); }
-.site-footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
+/* 마무리: 랜딩처럼 사진 위 문의와 푸터 */
+.closing { position: relative; color: var(--on-photo); background: var(--deep); overflow: hidden; }
+.closing > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.closing::after { content: ""; position: absolute; inset: 0; background: rgba(4,41,14,.62); }
+.closing > .wrap, .closing > footer { position: relative; z-index: 1; }
+.contact { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--s-6); align-items: end; padding-block: var(--s-8) var(--s-7); scroll-margin-top: 68px; }
+.closing .label { color: rgba(255,255,255,.85); margin-bottom: var(--s-3); }
+.contact h2 { color: #fff; font-size: var(--t-section); line-height: 1.35; }
+.contact p { margin-top: var(--s-4); opacity: .9; max-width: 30em; }
+.mail { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); }
+.mail code { font: 600 var(--t-20)/1.2 var(--font-ui); color: #fff; user-select: all; width: 100%; }
+.mail .note { width: 100%; font-size: var(--t-13); opacity: .85; min-height: 1.4em; }
+.site-footer .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--s-5); align-items: center; padding-block: var(--s-5) var(--s-6); border-top: 1px solid rgba(255,255,255,.22); font-size: var(--t-13); }
+.site-footer img { height: 72px; width: auto; }
+.site-footer p { opacity: .85; }
+.site-footer nav { display: flex; gap: var(--s-4); flex-wrap: wrap; }
 .site-footer nav a { opacity: .9; }
 
 /* 상세 시트 */
-dialog.sheet { border: 0; padding: 0; margin: 0 0 0 auto; height: 100%; max-height: 100%; width: min(560px, 100%); background: var(--bg); color: var(--text); }
-dialog.sheet::backdrop { background: rgba(10, 22, 16, .55); }
-.sheet-inner { display: flex; flex-direction: column; gap: 22px; padding: calc(20px + env(safe-area-inset-top, 0px)) max(24px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) 24px; }
+dialog.sheet { border: 0; padding: 0; margin: 0 0 0 auto; height: 100%; max-height: 100%; max-width: 100%; width: min(560px, 100%); background: var(--bg); color: var(--text); border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
+.sheet-inner { display: flex; flex-direction: column; gap: 22px; padding: calc(20px + env(safe-area-inset-top, 0px)) max(28px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) 28px; }
 .sheet-top { display: flex; justify-content: space-between; align-items: center; }
-.close { font: 500 var(--t-15)/1 var(--font-ui); background: var(--chip); color: var(--text); border: 0; padding: 10px 14px; border-radius: var(--radius); cursor: pointer; }
+.close { font: 500 var(--t-15)/1 var(--font-ui); background: var(--chip); color: var(--text); border: 0; min-height: 40px; padding: 10px 18px; border-radius: var(--radius-pill); cursor: pointer; }
 .sheet-hero { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 20px; align-items: end; }
-.sheet h2 { font-size: var(--t-34); }
-.sheet .artist { font-family: var(--font-ui); font-weight: 500; margin-top: 4px; }
-.sheet .intro { color: var(--text); }
+.sheet h2 { font-size: var(--t-30); font-weight: 600; overflow-wrap: normal; }
+.sheet .artist { font-weight: 500; margin-top: 4px; }
+.sheet .intro { color: var(--muted); }
 .facts { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 10px 16px; margin: 0; padding: 18px 0; border-block: 1px solid var(--line); font-size: var(--t-15); }
 .facts dt { color: var(--muted); }
 .facts dd { margin: 0; }
 .book { display: flex; flex-direction: column; gap: 10px; }
-.book .btn { width: 100%; padding-block: 16px; font-size: var(--t-17); }
+.book .btn { width: 100%; min-height: 52px; font-size: var(--t-17); }
 .book small { color: var(--muted); font-size: var(--t-13); }
 .share-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .intro-images { border-top: 1px solid var(--line); padding-top: 14px; }
-.intro-images summary { cursor: pointer; font-family: var(--font-ui); font-weight: 600; font-size: var(--t-15); color: var(--heading); padding: 6px 0; }
+.intro-images summary { cursor: pointer; font-weight: 600; font-size: var(--t-15); color: var(--accent); padding: 6px 0; }
 .intro-images summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
-.intro-images img { width: 100%; height: auto; border-radius: var(--radius); margin-top: 12px; background: var(--chip); }
+.intro-images img { width: 100%; height: auto; border-radius: var(--radius-md); margin-top: 12px; background: var(--chip); }
 .share-row .note { font-size: var(--t-13); color: var(--muted); }
 
+@media (max-width: 1080px) {
+  .shows { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 @media (max-width: 960px) {
-  .shows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .series { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .series div:nth-child(2) { border-right: 0; }
-  .series div:nth-child(3) { padding-left: 0; border-top: 1px solid var(--line); }
-  .series div:nth-child(4) { border-top: 1px solid var(--line); }
   .details { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
-  .hero .wrap { grid-template-columns: minmax(0, 1fr); padding-block: 160px 28px; }
-  .hero::after { background: linear-gradient(180deg, rgba(15,42,29,.1) 0%, rgba(15,42,29,.75) 30%, rgba(15,42,29,.92) 100%); }
-  .next { max-width: none; }
+  .shows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero .wrap { min-height: min(92svh, 720px); padding-block: 180px var(--s-5); gap: var(--s-5); }
+  .hero::after { background: linear-gradient(180deg, rgba(4,41,14,.05) 15%, rgba(4,41,14,.6) 50%, rgba(4,41,14,.9) 100%); }
+  .hero .lede { font-size: var(--t-15); }
+  .next { grid-template-columns: minmax(0, 1fr); gap: var(--s-2); }
+  .next .actions { margin-top: var(--s-2); }
   .venues, .contact { grid-template-columns: minmax(0, 1fr); }
-  .archive li a { grid-template-columns: 6.2em minmax(0, 1fr); gap: 4px 12px; }
+  .panel, .series { padding-inline: var(--s-4); }
+  .archive li a { grid-template-columns: 4.5em minmax(0, 1fr); gap: 2px 12px; }
   .archive .a { grid-column: 2; }
   .archive .s { display: none; }
+  .series li { grid-template-columns: minmax(0, 1fr) auto; }
+  .series small { grid-column: 1 / -1; grid-row: 2; }
   .site-footer .wrap { grid-template-columns: minmax(0, 1fr); }
-  dialog.sheet { margin: auto 0 0; width: 100%; height: 92%; border-radius: 14px 14px 0 0; }
-  .sheet-hero { grid-template-columns: 120px minmax(0, 1fr); }
+  dialog.sheet { margin: auto 0 0; width: 100%; height: 92%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .sheet-hero { grid-template-columns: 104px minmax(0, 1fr); }
 }
 @media (max-width: 560px) {
-  .shows { grid-template-columns: minmax(0, 1fr); }
+  /* 휴대폰: 포스터 옆에 정보를 두는 목록형 */
+  .shows { grid-template-columns: minmax(0, 1fr); gap: var(--s-5); }
+  .show { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: var(--s-4); align-items: start; }
+  .show .poster { border-radius: var(--radius-sm); }
+  .show .date-layer { display: none; }
+  .show .when-text { display: block; font: 600 var(--t-15)/1.4 var(--font-serif); color: var(--accent); }
+  .show .when-text span { display: block; font: 500 var(--t-13)/1.5 var(--font-ui); color: var(--muted); }
+  .show h4 { font-size: var(--t-20); margin-top: var(--s-2); }
+  .show .foot { padding-top: var(--s-2); justify-content: flex-start; }
+  .month h3 { font-size: var(--t-21); }
+  .site-header .wrap { min-height: 60px; gap: var(--s-2); }
   .site-header .logo img { height: 20px; }
+  .site-nav { gap: 0; }
   .site-nav a { padding: 6px 7px; font-size: var(--t-13); }
-  .section { padding-block: 48px; }
+  .section { padding-block: 56px 64px; scroll-margin-top: 60px; }
   .empty { grid-template-columns: minmax(0, 1fr); }
   .empty img { max-width: 160px; }
+  .contact { padding-block: 96px var(--s-6); }
 }
 @media (prefers-reduced-motion: no-preference) {
   dialog.sheet[open] { animation: sheet-in .28s ease-out; }
   @keyframes sheet-in { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
-  .btn, .chip { transition: background-color .15s, filter .15s; }
+  .btn, .chip, .site-nav a { transition: background-color .15s, color .15s, border-color .15s; }
+  .show .poster > img { transition: transform .5s ease; }
 }
 </style>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="숲세권 라이브 처음으로"><img src="assets/logo/wordmark-white.png" alt="숲세권 라이브"></a>
+    <a class="logo" href="#top" aria-label="숲세권 라이브 처음으로"><img src="assets/logo/wordmark-forest.png" alt="숲세권 라이브"></a>
     <nav class="site-nav" aria-label="주요 메뉴">
       <a href="#upcoming">공연</a>
       <a href="#archive">지난 공연</a>
@@ -188,7 +214,7 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .55); }
 </header>
 
 <main id="top">
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="hero on-photo" aria-labelledby="hero-title">
     <img src="assets/img/stage.jpg" srcset="assets/img/stage-sm.jpg 800w, assets/img/stage.jpg 1600w" sizes="100vw" alt="이끼 벽과 등나무꽃 아래 피아노와 드럼이 놓인 숲세권 라이브 무대">
     <div class="wrap">
       <div>
@@ -202,29 +228,27 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .55); }
   <section class="section" id="upcoming" aria-labelledby="up-title">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <h2 id="up-title">다가오는 공연</h2>
-          <p id="up-sub"></p>
-        </div>
+        <span class="label">Upcoming</span>
+        <h2 id="up-title">다가오는 공연</h2>
+        <p id="up-sub"></p>
         <div class="filters">
           <div class="chips" role="group" aria-label="지점" id="f-venue"></div>
           <div class="chips" role="group" aria-label="월" id="f-month"></div>
         </div>
       </div>
-      <div class="shows" id="shows"></div>
+      <div id="shows"></div>
     </div>
   </section>
 
-  <section class="section" id="archive" aria-labelledby="ar-title">
+  <section class="section soft" id="archive" aria-labelledby="ar-title">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <h2 id="ar-title">지난 공연</h2>
-          <p id="ar-sub"></p>
-        </div>
+        <span class="label">Archive</span>
+        <h2 id="ar-title">지난 공연</h2>
+        <p id="ar-sub"></p>
       </div>
       <div class="years chips" role="group" aria-label="연도" id="years"></div>
-      <ul class="archive" id="archive-list"></ul>
+      <div class="panel"><ul class="archive" id="archive-list"></ul></div>
       <button class="btn btn-line more" type="button" id="more" hidden>더 보기</button>
     </div>
   </section>
@@ -232,10 +256,9 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .55); }
   <section class="section" id="space" aria-labelledby="sp-title">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <h2 id="sp-title">공간</h2>
-          <p>숲은 두 곳에 있습니다. 공연마다 지점이 다르니 날짜 아래 적힌 지점을 꼭 확인해 주세요.</p>
-        </div>
+        <span class="label">Space</span>
+        <h2 id="sp-title">공간</h2>
+        <p>숲은 두 곳에 있습니다. 공연마다 지점이 다르니 날짜 아래 적힌 지점을 꼭 확인해 주세요.</p>
       </div>
       <div class="venues">
         <article class="venue">
@@ -281,44 +304,47 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .55); }
     </div>
   </section>
 
-  <section class="section" id="contact" aria-labelledby="ct-title">
+  <section class="section soft" id="series-section" aria-labelledby="se-title">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <h2 id="ct-title">함께 만든 공연</h2>
-          <p id="series-sub"></p>
-        </div>
+        <span class="label">Together</span>
+        <h2 id="se-title">함께 만든 공연</h2>
+        <p id="series-sub"></p>
       </div>
-      <div class="series" id="series"></div>
-      <div class="contact">
-        <div>
-          <h3>무대에 서고 싶거나, 공간이 필요하다면</h3>
-          <p>출연, 대관, 브랜드 협업 모두 메일로 이야기 나눕니다. 생각하는 날짜와 지점을 함께 적어 주시면 답이 빠릅니다.</p>
-        </div>
-        <div class="mail">
-          <code id="mail-addr">eddie@pondmakers.com</code>
-          <button class="btn btn-line" type="button" id="copy-mail">주소 복사</button>
-          <span class="note" id="mail-note" role="status"></span>
-        </div>
-      </div>
+      <ul class="series" id="series"></ul>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <img src="assets/logo/emblem-white.png" alt="숲세권 라이브 엠블럼">
+<div class="closing on-photo">
+  <img src="assets/img/microphone.jpg" alt="" loading="lazy">
+  <div class="wrap contact" id="contact">
     <div>
-      <p>숲세권 라이브는 폰드메이커스가 운영합니다. 문의 eddie@pondmakers.com</p>
-      <p class="source">공연 정보 출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr) <span id="updated"></span></p>
-      <p>Copyright 2026 Pondmakers Inc.</p>
+      <span class="label">Contact</span>
+      <h2>무대에 서고 싶거나,<br>공간이 필요하다면</h2>
+      <p>출연, 대관, 브랜드 협업 모두 메일로 이야기 나눕니다. 생각하는 날짜와 지점을 함께 적어 주시면 답이 빠릅니다.</p>
     </div>
-    <nav aria-label="관련 사이트">
-      <a href="https://forrestlive.com/" target="_blank" rel="noopener">숲세권 라이브 소개</a>
-      <a href="https://www.kopis.or.kr/" target="_blank" rel="noopener">공연예술통합전산망</a>
-    </nav>
+    <div class="mail">
+      <code id="mail-addr">eddie@pondmakers.com</code>
+      <button class="btn btn-book" type="button" id="copy-mail">주소 복사</button>
+      <span class="note" id="mail-note" role="status"></span>
+    </div>
   </div>
-</footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="assets/logo/emblem-white.png" alt="숲세권 라이브 엠블럼">
+      <div>
+        <p>숲세권 라이브는 폰드메이커스가 운영합니다. 문의 eddie@pondmakers.com</p>
+        <p class="source">공연 정보 출처: (재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr) <span id="updated"></span></p>
+        <p>Copyright 2026 Pondmakers Inc.</p>
+      </div>
+      <nav aria-label="관련 사이트">
+        <a href="https://forrestlive.com/" target="_blank" rel="noopener">숲세권 라이브 소개</a>
+        <a href="https://www.kopis.or.kr/" target="_blank" rel="noopener">공연예술통합전산망</a>
+      </nav>
+    </div>
+  </footer>
+</div>
 
 <dialog class="sheet" id="sheet" aria-labelledby="sheet-title"></dialog>
 

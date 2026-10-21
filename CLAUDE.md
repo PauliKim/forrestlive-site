@@ -19,7 +19,7 @@
 - `scripts/sync_kopis.py` KOPIS OPEN API 동기화. `tests/test_sync.py` 네트워크 없이 도는 점검
 - `.github/workflows/sync-kopis.yml` 5분마다 변경분, 매일 04:10 전체 동기화 후 자동 커밋(작성자 forrestlive-bot)
 - `_headers` 캐시 설정, `_redirects` `/concert/*` → 루트 매핑
-- `assets/` 로고, 공연장 사진, 글꼴(마루 부리, Pretendard, OFL), `assets/posters/`(동기화가 내려받는 포스터)
+- `assets/` 로고, 공연장 사진, 글꼴(Pretendard, OFL. 제목·머리말 글꼴은 Google Fonts), `assets/posters/`(동기화가 내려받는 포스터)
 
 ## 자주 쓰는 명령
 - 미리보기: `python3 -m http.server 8000` → http://localhost:8000 (`/concert/` 경로 확인은 Pages 배포본에서)
@@ -45,7 +45,8 @@
 
 ## 화면·문구 원칙
 - 디자인 값은 `styles.css` 토큰만 쓴다. 새 색이나 글꼴을 임의로 넣지 않는다(`DESIGN.md` 참고).
-- 글꼴: 제목 마루 부리(`--font-serif`), 본문·UI Pretendard(`--font-ui`).
+- forrestlive.com 랜딩과 같은 결: 흰 바탕, 세이지 제목, 알약 버튼, 20px 둥근 사진.
+- 글꼴: 제목 Noto Serif KR(`--font-serif`), 본문·UI Pretendard(`--font-ui`), 섹션 머리말 Inter(`--font-label`).
 - 슬로건: “도시 속 작은 울림을 전하는 숲”.
 - 공연 카드에 공연명과 아티스트명을 같은 말로 두 번 쓰지 않는다(`byline()` 참고). 날짜는 포스터 위 레이어 글자로 얹는다.
 - 소개 문구는 사람이 쓴 것처럼 담백하게. 과장된 수식어나 AI 같은 말투를 쓰지 않는다.
