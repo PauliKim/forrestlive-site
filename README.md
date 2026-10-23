@@ -20,7 +20,7 @@
 | `styles.css` | 디자인 토큰과 공통 구성 요소 |
 | `app.js` | 공연 데이터를 읽어 화면을 그리는 스크립트 |
 | `data/shows.json` | 공연 데이터. KOPIS 공연목록·공연상세에서 자동 갱신 |
-| `data/venues.json` | 지점 정보(주소, 좌표, 전화). KOPIS 공연시설 상세에서 갱신 |
+| `data/venues.json` | 지점 정보(주소, 좌표, 객석 수, 개관 연도). KOPIS 공연시설 상세에서 갱신 |
 | `data/overrides.json` | KOPIS에 없는 값(예매 오픈 시각, 매진, 소개글) |
 | `scripts/sync_kopis.py` | KOPIS 동기화 스크립트 |
 | `.github/workflows/sync-kopis.yml` | 5분마다 동기화하는 GitHub Actions |

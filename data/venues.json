@@ -7,11 +7,11 @@
   "floor": "지하 1층",
   "lat": 37.513979,
   "lng": 126.896507,
-  "seats": "",
+  "seats": "65",
   "station": "2호선 문래역",
   "naverPlace": "36797413",
   "homepage": "https://forrestlive.com/",
-  "opened": ""
+  "opened": "2025"
  },
  "kind": {
   "name": "카인드스퀘어점",
@@ -21,10 +21,10 @@
   "floor": "카인드스퀘어",
   "lat": 37.57212,
   "lng": 126.961099,
-  "seats": "",
+  "seats": "120",
   "station": "3호선 독립문역",
   "naverPlace": "2043943713",
   "homepage": "https://forrestlive.com/",
-  "opened": ""
+  "opened": "2026"
  }
 }
