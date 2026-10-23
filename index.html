@@ -97,7 +97,6 @@
 .details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-4); margin-top: var(--s-5); }
 .details figure { margin: 0; }
 .details img { aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); width: 100%; }
-.details figcaption { font-size: var(--t-13); color: var(--muted); margin-top: var(--s-2); text-align: center; }
 
 /* 함께 만든 공연: 흰 판 위 목록 */
 .series { list-style: none; margin: 0 auto; padding: var(--s-2) var(--s-5); max-width: 860px; background: var(--card); border-radius: var(--radius-lg); }
@@ -268,10 +267,8 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
             <dl>
               <dt data-copy="E-04">주소</dt><dd data-venue="mullae" data-field="address">서울특별시 영등포구 도림로126길 1 (문래동3가) 지하 1층</dd>
               <dt data-copy="E-05">가까운 역</dt><dd data-copy="E-10">2호선 문래역</dd>
-              <dt data-copy="E-06">객석</dt><dd data-copy="E-11">65석</dd>
-              <dt data-row hidden data-copy="E-07">전화</dt><dd data-row hidden data-venue="mullae" data-field="tel"></dd>
-              <dt data-copy="E-08">무대</dt><dd data-copy="E-12"></dd>
-              <dt data-copy="E-09">문 연 날</dt><dd data-copy="E-13">2025년 8월</dd>
+              <dt data-copy="E-06">객석</dt><dd data-venue="mullae" data-field="seats"></dd>
+              <dt data-copy="E-09">개관 연도</dt><dd data-venue="mullae" data-field="opened"></dd>
             </dl>
             <div class="links">
               <a class="btn btn-line" data-venue="mullae" data-field="naver" href="https://map.naver.com/p/entry/place/36797413" target="_blank" rel="noopener" data-copy="E-18">네이버 지도</a>
@@ -286,9 +283,8 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
             <dl>
               <dt data-copy="E-04">주소</dt><dd data-venue="kind" data-field="address">서울특별시 종로구 사직로 8 (교북동) 카인드스퀘어</dd>
               <dt data-copy="E-05">가까운 역</dt><dd data-copy="E-14">3호선 독립문역</dd>
-              <dt data-copy="E-06">객석</dt><dd data-copy="E-15">120석</dd>
-              <dt data-copy="E-08">무대</dt><dd data-copy="E-16"></dd>
-              <dt data-copy="E-09">문 연 날</dt><dd data-copy="E-17">2026년 9월</dd>
+              <dt data-copy="E-06">객석</dt><dd data-venue="kind" data-field="seats"></dd>
+              <dt data-copy="E-09">개관 연도</dt><dd data-venue="kind" data-field="opened"></dd>
             </dl>
             <div class="links">
               <a class="btn btn-line" data-venue="kind" data-field="naver" href="https://map.naver.com/p/entry/place/2043943713" target="_blank" rel="noopener" data-copy="E-18">네이버 지도</a>
@@ -298,10 +294,10 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
         </article>
       </div>
       <div class="details">
-        <figure><img src="assets/img/tv-terrarium-sm.jpg" alt="브라운관 TV 안의 이끼 테라리움과 그 위의 탁상 달력" loading="lazy"><figcaption data-copy="E-20"></figcaption></figure>
-        <figure><img src="assets/img/piano-keys-sm.jpg" alt="뚜껑을 연 업라이트 피아노 건반" loading="lazy"><figcaption data-copy="E-21"></figcaption></figure>
-        <figure><img src="assets/img/microphone-sm.jpg" alt="등나무꽃 사이의 콘덴서 마이크" loading="lazy"><figcaption data-copy="E-22"></figcaption></figure>
-        <figure><img src="assets/img/terrarium-globe-sm.jpg" alt="천장에 매달린 유리 테라리움" loading="lazy"><figcaption data-copy="E-23"></figcaption></figure>
+        <figure><img src="assets/img/tv-terrarium-sm.jpg" alt="브라운관 TV 안의 이끼 테라리움과 그 위의 탁상 달력" loading="lazy"></figure>
+        <figure><img src="assets/img/piano-keys-sm.jpg" alt="뚜껑을 연 업라이트 피아노 건반" loading="lazy"></figure>
+        <figure><img src="assets/img/microphone-sm.jpg" alt="등나무꽃 사이의 콘덴서 마이크" loading="lazy"></figure>
+        <figure><img src="assets/img/terrarium-globe-sm.jpg" alt="천장에 매달린 유리 테라리움" loading="lazy"></figure>
       </div>
     </div>
   </section>

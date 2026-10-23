@@ -230,7 +230,7 @@
   }
   function renderAll() { now = new Date(); renderNext(); renderShows(); renderArchive(); renderSeries(); renderUpdated(); }
 
-  // 지점 정보(주소·좌표)를 KOPIS 공연시설 상세에서 받아 둔 파일로 채운다
+  // 지점 정보(주소·좌표·객석 수·개관 연도)를 KOPIS 공연시설 상세에서 받아 둔 파일로 채운다
   fetch("data/venues.json").then((r) => (r.ok ? r.json() : null)).then((v) => {
     if (!v) return;
     VENUES = v;
@@ -240,7 +240,9 @@
       if (f === "address") el.textContent = `${x.address}${x.floor && x.floor !== "카인드스퀘어" ? ` ${x.floor}` : ""}`;
       else if (f === "naver") el.href = mapUrl(x);
       else if (f === "kakao") el.href = kakaoUrl(x);
-      else if (f === "tel") { if (x.tel) { el.textContent = x.tel; el.parentElement.querySelectorAll("[data-row]").forEach((r) => r.removeAttribute("hidden")); } }
+      // 값이 비면 dd가 비어 CSS가 그 줄을 숨긴다
+      else if (f === "seats") el.textContent = /^\d+$/.test(x.seats || "") ? `${Number(x.seats).toLocaleString("ko-KR")}석` : x.seats || "";
+      else if (f === "opened") el.textContent = /^\d{4}$/.test(x.opened || "") ? `${x.opened}년` : x.opened || "";
     });
   }).catch(() => {});
 

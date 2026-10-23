@@ -83,4 +83,7 @@ assert by["PF900003"]["title"] == "월요일밴드" and by["PF900003"]["series"]
 count = len(shows)
 assert k.sync(ids, k.detail, full=False, no_hold=False, download=False) == 0
 assert len(json.loads(k.DATA.read_text())["shows"]) == count, "다시 실행해도 중복 없음"
-print("통과: 31일 창, 기존 공연 연결, 새 공연 추가, 예매처 여러 곳, 15분 대기, MONDAY:SOOP, overrides, 중복 없음, 방화벽 차단 처리")
+k.fetch = lambda url, retries=3: "<dbs><db><fcltynm>숲세권 라이브</fcltynm><adres>서울</adres><telno>070-0000-0000</telno><opende>2021</opende><seatscale>65</seatscale><la>37.5</la><lo>126.9</lo></db></dbs>".encode()
+v = k.venue_detail("FC003092")
+assert v["opened"] == "2021" and v["seats"] == "65" and "tel" not in v, "지점: 개관연도·객석수, 전화 없음"
+print("통과: 31일 창, 기존 공연 연결, 새 공연 추가, 예매처 여러 곳, 15분 대기, MONDAY:SOOP, overrides, 중복 없음, 방화벽 차단 처리, 지점 정보")

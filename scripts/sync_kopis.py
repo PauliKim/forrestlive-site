@@ -164,7 +164,8 @@ def venue_detail(fid: str) -> dict:
     db = api(f"prfplc/{fid}").find("db")
     if db is None:
         return {}
-    return {"kopisId": fid, "kopisName": t(db, "fcltynm"), "address": t(db, "adres"), "tel": t(db, "telno"),
+    return {"kopisId": fid, "kopisName": t(db, "fcltynm"), "address": t(db, "adres"),
+            "opened": t(db, "opende"), "seats": t(db, "seatscale"),
             "lat": float(t(db, "la") or 0), "lng": float(t(db, "lo") or 0), "homepage": t(db, "relateurl")}
 
 
