@@ -63,8 +63,12 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36 forrestlive-sync/2.1")
 
 
+class Blocked(RuntimeError):
+    """KOPIS 방화벽이 요청을 막았다(HTTP 400 "Request Blocked"). 대개 잠시 뒤 풀린다."""
+
+
 def fetch(url: str, retries: int = 3) -> bytes:
-    last = None
+    last, blocked = None, False
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/xml,text/xml,*/*"})
@@ -79,11 +83,13 @@ def fetch(url: str, retries: int = 3) -> bytes:
             except Exception:
                 pass
             last = f"HTTP {e.code} {e.reason} | {snippet}"
-            time.sleep(2 * (i + 1))
+            blocked = "Request Blocked" in snippet
+            # 방화벽 차단은 몇 초로는 안 풀려서 더 오래 기다린다(15, 30, 60초)
+            time.sleep(15 * 2 ** i if blocked else 2 * (i + 1))
         except Exception as e:
-            last = e
+            last, blocked = e, False
             time.sleep(2 * (i + 1))
-    raise RuntimeError(f"요청 실패: {url.split('?')[0]} ({last})")
+    raise (Blocked if blocked else RuntimeError)(f"요청 실패: {url.split('?')[0]} ({last})")
 
 
 def service_key() -> str:
@@ -397,9 +403,17 @@ def main() -> int:
             sync_venues()
         except Exception as e:  # 지점 정보는 실패해도 공연 동기화는 계속
             print(f"지점 정보 갱신 건너뜀: {e}", file=sys.stderr)
-    ids = list_ids(args.full)
-    print(f"KOPIS 후보 {len(ids)}건 ({'전체' if args.full else '변경분'})")
-    return sync(ids, detail, args.full, args.no_hold, download=True)
+    try:
+        ids = list_ids(args.full)
+        print(f"KOPIS 후보 {len(ids)}건 ({'전체' if args.full else '변경분'})")
+        return sync(ids, detail, args.full, args.no_hold, download=True)
+    except Blocked as e:
+        if args.full:
+            raise
+        # 변경분 확인은 5분 뒤 다시 돌며 어제 이후 변경을 모두 다시 보므로, 이번 회차는 건너뛴다.
+        # 차단이 계속되면 매일 새벽 전체 동기화가 실패로 알려 준다.
+        print(f"::warning::KOPIS가 요청을 일시 차단해 이번 회차를 건너뜁니다. {e}")
+        return 0
 
 
 if __name__ == "__main__":

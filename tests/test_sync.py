@@ -30,6 +30,35 @@ def fake_fetch(url, retries=3):
     path = url.split("?")[0].rsplit("/", 1)[-1]
     if path in DET: return DET[path].encode()
     return (LIST if "2026-12" in "" or "stdate=2026" in url else "<dbs></dbs>").encode()
+# 방화벽 차단(HTTP 400 "Request Blocked"): 오래 기다리며 다시 시도하고, 계속 막히면 Blocked를 낸다
+import io, urllib.error
+real_fetch, real_urlopen, real_sleep = k.fetch, k.urllib.request.urlopen, k.time.sleep
+waits, calls = [], []
+def blocked_urlopen(req, timeout=30):
+    calls.append(1)
+    if len(calls) < 3:
+        raise urllib.error.HTTPError(req.full_url, 400, "Bad Request", {}, io.BytesIO(b"<H1>Request Blocked</H1>"))
+    return io.BytesIO(b"<dbs></dbs>")
+k.urllib.request.urlopen, k.time.sleep = blocked_urlopen, waits.append
+assert real_fetch("https://example.test/x") == b"<dbs></dbs>" and waits[:2] == [15, 30], "차단은 길게 기다렸다 재시도"
+k.urllib.request.urlopen = lambda req, timeout=30: (_ for _ in ()).throw(urllib.error.HTTPError(req.full_url, 400, "Bad Request", {}, io.BytesIO(b"Request Blocked")))
+try:
+    real_fetch("https://example.test/x"); assert False
+except k.Blocked:
+    pass
+def always_blocked(url, retries=3): raise k.Blocked("요청 실패: 차단")
+k.fetch = always_blocked
+os.environ["KOPIS_API_KEY"] = "0" * 32
+sys.argv = ["sync_kopis.py"]
+assert k.main() == 0, "변경분 확인은 차단되면 건너뛴다"
+sys.argv = ["sync_kopis.py", "--full"]
+k.sync_venues = lambda: None
+try:
+    k.main(); assert False, "전체 동기화는 차단되면 실패로 알린다"
+except k.Blocked:
+    pass
+k.urllib.request.urlopen, k.time.sleep = real_urlopen, real_sleep
+
 k.fetch = fake_fetch
 os.environ["KOPIS_API_KEY"] = "test"
 
@@ -54,4 +83,4 @@ assert by["PF900003"]["title"] == "월요일밴드" and by["PF900003"]["series"]
 count = len(shows)
 assert k.sync(ids, k.detail, full=False, no_hold=False, download=False) == 0
 assert len(json.loads(k.DATA.read_text())["shows"]) == count, "다시 실행해도 중복 없음"
-print("통과: 31일 창, 기존 공연 연결, 새 공연 추가, 예매처 여러 곳, 15분 대기, MONDAY:SOOP, overrides, 중복 없음")
+print("통과: 31일 창, 기존 공연 연결, 새 공연 추가, 예매처 여러 곳, 15분 대기, MONDAY:SOOP, overrides, 중복 없음, 방화벽 차단 처리")
