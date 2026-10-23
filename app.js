@@ -6,8 +6,8 @@
   const WD = ["일", "월", "화", "수", "목", "금", "토"];
   // 지점 정보는 data/venues.json(KOPIS 공연시설 상세)에서 읽는다. 불러오기 전 기본값.
   let VENUES = {
-    mullae: { name: "문래점", address: "서울특별시 영등포구 도림로126길 1 (문래동3가)", floor: "지하 1층", naverPlace: "36797413" },
-    kind: { name: "카인드스퀘어점", address: "서울특별시 종로구 사직로 8 (교북동)", floor: "카인드스퀘어", naverPlace: "2043943713" }
+    mullae: { name: "문래점", address: "서울특별시 영등포구 도림로126길 1 (문래동3가) 지하1층", naverPlace: "36797413" },
+    kind: { name: "카인드스퀘어점", address: "서울특별시 종로구 사직로 8 (교북동) 카인드스퀘어 지하1층", naverPlace: "2043943713" }
   };
   const mapUrl = (v) => (v.naverPlace ? `https://map.naver.com/p/entry/place/${v.naverPlace}` : `https://map.naver.com/p/search/${encodeURIComponent(v.address)}`);
   const kakaoUrl = (v) => (v.lat ? `https://map.kakao.com/link/map/${encodeURIComponent("숲세권 라이브 " + v.name)},${v.lat},${v.lng}` : `https://map.kakao.com/link/search/${encodeURIComponent(v.address)}`);
@@ -171,7 +171,7 @@
     const st = status(s, now); const v = VENUES[s.venue];
     const facts = [
       ["H-06", when(s)],
-      ["H-07", v ? `${v.name}, ${v.address}${v.floor && v.floor !== "카인드스퀘어" ? ` ${v.floor}` : ""}` : s.venueName],
+      ["H-07", v ? `${v.name}, ${v.address}` : s.venueName],
       s.lineup?.length ? ["H-08", s.lineup.join(", ")] : null,
       s.runtime ? ["H-09", s.runtime] : null,
       s.price ? ["H-10", s.price] : null,
@@ -237,7 +237,7 @@
     document.querySelectorAll("[data-venue]").forEach((el) => {
       const x = VENUES[el.dataset.venue]; if (!x) return;
       const f = el.dataset.field;
-      if (f === "address") el.textContent = `${x.address}${x.floor && x.floor !== "카인드스퀘어" ? ` ${x.floor}` : ""}`;
+      if (f === "address") el.textContent = x.address; // KOPIS 주소에 층까지 들어 있다
       else if (f === "naver") el.href = mapUrl(x);
       else if (f === "kakao") el.href = kakaoUrl(x);
       // 값이 비면 dd가 비어 CSS가 그 줄을 숨긴다
