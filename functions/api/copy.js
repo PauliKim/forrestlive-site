@@ -1,68 +1,11 @@
 // 문구 저장 서버 (Cloudflare Pages Function)
 //   GET  /api/copy  → 지금 main에 있는 문구와 버전(sha), 로그인한 이메일
 //   POST /api/copy  → { items, sha } 를 받아 data/copy.json과 index.html을 main에 커밋
-//
-// 필요한 환경 변수(Cloudflare Pages 설정 → 환경 변수, 비밀값으로):
-//   GITHUB_TOKEN        이 저장소의 Contents 읽기·쓰기만 허용한 fine-grained 토큰
-//   ACCESS_TEAM_DOMAIN  Cloudflare Access 팀 주소, 예: forrestlive.cloudflareaccess.com
-//   ACCESS_AUD          /admin Access 애플리케이션의 AUD 태그
-// 선택: ADMIN_EMAILS (쉼표로 구분한 허용 이메일. Access 정책에 더해 한 번 더 확인)
-// 하나라도 없으면 저장하지 않는다.
-import { applyCopy, validateItems, verifyAccessToken, toBase64, fromBase64 } from "../_lib/copy.js";
+// 로그인 확인과 GitHub 읽기·쓰기는 ../_lib/server.js(필요한 환경 변수도 거기 적어 둠).
+import { applyCopy, validateItems } from "../_lib/copy.js";
+import { json, signedInEmail, getFile, putFile } from "../_lib/server.js";
 
-const REPO = "PauliKim/forrestlive-site";
-const BRANCH = "main";
 const COPY_PATH = "data/copy.json";
-
-const json = (body, status = 200) => new Response(JSON.stringify(body), {
-  status,
-  headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" }
-});
-
-async function signedInEmail(request, env) {
-  if (!env.ACCESS_TEAM_DOMAIN || !env.ACCESS_AUD) throw Object.assign(new Error("로그인 설정(ACCESS_TEAM_DOMAIN, ACCESS_AUD)이 아직 없습니다."), { status: 503 });
-  const team = env.ACCESS_TEAM_DOMAIN.replace(/^https?:\/\//, "").replace(/\/$/, "");
-  const cookie = (request.headers.get("cookie") || "").match(/(?:^|;\s*)CF_Authorization=([^;]+)/);
-  const token = request.headers.get("cf-access-jwt-assertion") || (cookie && cookie[1]);
-  const certs = await fetch(`https://${team}/cdn-cgi/access/certs`, { cf: { cacheTtl: 3600 } }).then((r) => r.json());
-  try {
-    const email = await verifyAccessToken(token, { keys: certs.keys || [], aud: env.ACCESS_AUD, issuer: `https://${team}` });
-    const allow = (env.ADMIN_EMAILS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
-    if (allow.length && !allow.includes(email.toLowerCase())) throw new Error(`${email}은 문구를 고칠 수 없는 계정입니다.`);
-    return email;
-  } catch (e) {
-    throw Object.assign(e, { status: 401 });
-  }
-}
-
-async function github(env, path, init = {}) {
-  if (!env.GITHUB_TOKEN) throw Object.assign(new Error("저장 설정(GITHUB_TOKEN)이 아직 없습니다."), { status: 503 });
-  const res = await fetch(`https://api.github.com/repos/${REPO}/${path}`, {
-    ...init,
-    headers: {
-      authorization: `Bearer ${env.GITHUB_TOKEN}`,
-      accept: "application/vnd.github+json",
-      "x-github-api-version": "2022-11-28",
-      "user-agent": "forrestlive-admin",
-      ...(init.body ? { "content-type": "application/json" } : {})
-    }
-  });
-  const body = await res.json().catch(() => ({}));
-  if (!res.ok) throw Object.assign(new Error(`GitHub ${res.status}: ${body.message || "요청 실패"}`), { status: res.status === 409 ? 409 : 502, github: res.status });
-  return body;
-}
-
-const getFile = async (env, path) => {
-  const f = await github(env, `contents/${path}?ref=${BRANCH}`);
-  return { sha: f.sha, text: fromBase64(f.content) };
-};
-const putFile = (env, path, text, sha, message) => github(env, `contents/${path}`, {
-  method: "PUT",
-  body: JSON.stringify({
-    message, branch: BRANCH, sha, content: toBase64(text),
-    committer: { name: "forrestlive-admin", email: "forrestlive-admin@users.noreply.github.com" }
-  })
-});
 
 export async function onRequestGet({ request, env }) {
   try {

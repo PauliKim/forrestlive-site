@@ -17,8 +17,12 @@
 - `data/overrides.json` KOPIS에 없는 값(openAt 예매 오픈 시각, soldOut, intro 소개글 등). 사람이 고치는 곳은 여기다
 - `data/venues.json` 지점 정보(KOPIS 공연시설 상세로 갱신)
 - `data/copy.json` 고정 문구(번호별). `data/copy-schema.json` 문구 항목 목록(구역, 위치, 자리표시, 잠금). 사람이 고치는 곳이다
-- `admin/` 문구 관리 화면(/admin). `functions/api/copy.js` 저장 서버(Cloudflare Pages Function, Access 로그인 확인 후 GitHub에 커밋). `functions/_lib/copy.js` 공용 함수
-- `scripts/apply_copy.py` copy.json 문구를 index.html의 `data-copy` 요소에 써 넣음. `tests/test_copy.py` 문구 점검
+- `admin/` 문구 관리 화면(/admin). `functions/api/copy.js` 저장 서버(Cloudflare Pages Function, Access 로그인 확인 후 GitHub에 커밋). `functions/_lib/copy.js` 문구 함수, `functions/_lib/server.js` 어드민 서버 공용(Access 로그인 확인, GitHub 읽기·쓰기, 여러 파일 한 커밋)
+- SEO 설정: 어드민 `/admin/seo.html` + `functions/api/seo.js`(폰드메이커스 사이트와 같은 방식). 검색·공유 문구는 copy.json A-01~A-04, 그 밖의 값(링크 미리보기 이미지, 검색 노출 noindex, 검색엔진 소유 확인 코드, 운영 정보 구조화 데이터)은 `data/seo.json`
+  - index.html `<head>`의 `<!-- seo:start -->` ~ `<!-- seo:end -->`는 자동 생성(`scripts/apply_copy.py`의 seo_block = `functions/_lib/seo.js`의 seoBlock). 그 사이를 손으로 고치지 않는다
+  - 저장은 seo.json·copy.json·index.html·새 이미지(`assets/seo/og-날짜.jpg`)를 커밋 하나로 올린다(`commitFiles`, Git Data API)
+  - `robots.txt`(/admin/ 제외, 사이트맵), `sitemap.xml`, 구조화 데이터 로고 `assets/logo/logo-512.png`
+- `scripts/apply_copy.py` copy.json 문구를 index.html의 `data-copy` 요소에, seo.json을 SEO 덩어리에 써 넣음. `tests/test_copy.py` 문구·SEO 점검(맥에서는 서버 JS도 osascript로 파이썬과 같은지 확인)
 - `scripts/sync_kopis.py` KOPIS OPEN API 동기화. `tests/test_sync.py` 네트워크 없이 도는 점검
 - `.github/workflows/sync-kopis.yml` 5분마다 변경분, 매일 04:10 전체 동기화 후 자동 커밋(작성자 forrestlive-bot)
 - `_headers` 캐시 설정, `_redirects` `/concert/*` → 루트 매핑
@@ -27,7 +31,7 @@
 ## 자주 쓰는 명령
 - 미리보기: `python3 -m http.server 8000` → http://localhost:8000 (`/concert/` 경로 확인은 Pages 배포본에서)
 - 동기화 점검: `python3 tests/test_sync.py` (스크립트를 고치면 반드시 실행)
-- 문구 점검: `python3 tests/test_copy.py` (문구, index.html, app.js를 고치면 실행)
+- 문구 점검: `python3 tests/test_copy.py` (문구, SEO, index.html, app.js, functions/를 고치면 실행)
 - 동기화 직접 실행(필요할 때만): `set -a; source .env; set +a; python3 scripts/sync_kopis.py --no-hold`
   - `.env`에 `KOPIS_API_KEY=32자리키` 한 줄. `.env`는 커밋 금지(.gitignore에 있음)
   - 로컬에서 돌린 결과는 커밋하지 말고 되돌린다. 실제 반영은 GitHub Actions가 한다

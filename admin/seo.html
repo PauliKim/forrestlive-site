@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script>
+/* 로그인(Cloudflare Access)은 forrestlive.pages.dev에 건다(admin/index.html과 같은 이유). */
+if (location.hostname === "concert.forrestlive.com") location.replace("https://forrestlive.pages.dev/admin/seo.html" + location.search);
+</script>
+<title>SEO 설정 · 숲세권 라이브</title>
+<link rel="icon" href="../assets/logo/favicon.jpg">
+<link rel="apple-touch-icon" href="../assets/logo/apple-touch-icon.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="seo-page">
+<header class="bar">
+  <div class="bar-title">
+    <img src="../assets/logo/wordmark-forest.png" alt="숲세권 라이브">
+    <span>SEO 설정</span>
+  </div>
+  <p class="bar-status" id="status" role="status">불러오는 중</p>
+  <div class="bar-actions">
+    <a class="bar-link" href="./">문구 관리</a>
+    <span class="who" id="who"></span>
+    <button class="btn btn-line btn-sm" type="button" id="revert" disabled>되돌리기</button>
+    <button class="btn btn-book" type="button" id="save" disabled>저장하고 게시</button>
+  </div>
+</header>
+
+<p class="notice" id="notice" hidden></p>
+
+<main class="seo-main">
+  <section class="seo-card" aria-labelledby="h-text">
+    <h2 id="h-text">검색 결과와 링크 미리보기 문구</h2>
+    <p class="seo-help">문구 관리의 A 구역(A-01~A-04)과 같은 값입니다. 어느 쪽에서 고쳐도 됩니다.</p>
+    <div class="seo-split">
+      <div class="seo-fields">
+        <label class="seo-field"><span class="seo-label">페이지 제목 <code>A-01</code></span>
+          <input type="text" data-text="A-01" maxlength="300"><span class="seo-count" data-count="A-01"></span></label>
+        <label class="seo-field"><span class="seo-label">검색 결과 설명 <code>A-02</code></span>
+          <textarea rows="3" data-text="A-02" maxlength="1000"></textarea><span class="seo-count" data-count="A-02"></span></label>
+        <label class="seo-field"><span class="seo-label">링크 미리보기 제목 <code>A-03</code></span>
+          <input type="text" data-text="A-03" maxlength="300"><span class="seo-count" data-count="A-03"></span></label>
+        <label class="seo-field"><span class="seo-label">링크 미리보기 설명 <code>A-04</code></span>
+          <textarea rows="2" data-text="A-04" maxlength="1000"></textarea><span class="seo-count" data-count="A-04"></span></label>
+      </div>
+      <div class="seo-previews">
+        <p class="seo-label">검색 결과 미리보기</p>
+        <div class="serp">
+          <div class="serp-site"><img src="../assets/logo/favicon.jpg" alt=""><span><b>숲세권 라이브</b><small>https://concert.forrestlive.com</small></span></div>
+          <p class="serp-title" id="serp-title"></p>
+          <p class="serp-desc" id="serp-desc"></p>
+        </div>
+        <p class="seo-label">카카오톡·SNS 링크 미리보기</p>
+        <div class="share">
+          <img id="share-img" alt="">
+          <div class="share-body"><p class="share-title" id="share-title"></p><p class="share-desc" id="share-desc"></p><p class="share-domain">concert.forrestlive.com</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-card" aria-labelledby="h-image">
+    <h2 id="h-image">링크 미리보기 이미지</h2>
+    <p class="seo-help">카카오톡, 인스타그램 DM, 페이스북, X 등에 주소를 붙여 넣으면 나오는 그림입니다. 새 그림은 가운데를 기준으로 <b>1200×630</b>에 맞춰 잘라 올립니다.</p>
+    <div class="og">
+      <img id="og-img" alt="지금 링크 미리보기 이미지">
+      <div class="og-side">
+        <p class="og-meta" id="og-meta"></p>
+        <label class="btn btn-line btn-sm og-pick">그림 고르기<input type="file" id="og-file" accept="image/jpeg,image/png,image/webp" class="sr"></label>
+        <button class="btn btn-line btn-sm" type="button" id="og-undo" hidden>새 그림 취소</button>
+        <p class="seo-help">카카오톡은 한 번 본 주소의 미리보기를 한동안 기억합니다. 바로 바꾸려면 <a href="https://developers.kakao.com/tool/debugger/sharing" target="_blank" rel="noopener">카카오 공유 디버거</a>에서 캐시를 지우세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-card" aria-labelledby="h-index">
+    <h2 id="h-index">검색 노출</h2>
+    <label class="seo-check"><input type="checkbox" id="index"> 검색엔진(구글, 네이버 등)에 사이트를 노출합니다</label>
+    <p class="seo-help" id="index-warn" hidden><b>끄면 검색 결과에서 사이트가 빠집니다.</b> 사이트를 공개하지 않을 때만 끕니다.</p>
+    <p class="seo-help">사이트맵 <a href="https://concert.forrestlive.com/sitemap.xml" target="_blank" rel="noopener">https://concert.forrestlive.com/sitemap.xml</a> 을 아래 검색엔진 관리 도구에 등록하면 새 내용이 더 빨리 반영됩니다.</p>
+  </section>
+
+  <section class="seo-card" aria-labelledby="h-verify">
+    <h2 id="h-verify">검색엔진 소유 확인</h2>
+    <p class="seo-help">검색엔진 관리 도구에서 "HTML 태그" 방식을 고르면 주는 값을 붙여 넣습니다. <code>&lt;meta … content="…"&gt;</code> 태그를 통째로 붙여 넣어도 코드만 꺼내 씁니다. 저장해 1~2분 뒤 관리 도구에서 "확인"을 누릅니다. 사이트 주소는 <code>https://concert.forrestlive.com</code>으로 등록합니다.</p>
+    <div class="seo-grid">
+      <label class="seo-field"><span class="seo-label">Google <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Search Console</a></span><input type="text" data-verify="google" spellcheck="false" autocomplete="off"></label>
+      <label class="seo-field"><span class="seo-label">네이버 <a href="https://searchadvisor.naver.com/" target="_blank" rel="noopener">서치어드바이저</a></span><input type="text" data-verify="naver" spellcheck="false" autocomplete="off"></label>
+      <label class="seo-field"><span class="seo-label">Bing <a href="https://www.bing.com/webmasters" target="_blank" rel="noopener">Webmaster Tools</a></span><input type="text" data-verify="bing" spellcheck="false" autocomplete="off"></label>
+    </div>
+  </section>
+
+  <section class="seo-card" aria-labelledby="h-org">
+    <h2 id="h-org">운영 정보(구조화 데이터)</h2>
+    <p class="seo-help">구글이 숲세권 라이브의 이름, 로고, 공식 SNS를 알아보는 데 씁니다. 화면에는 보이지 않습니다.</p>
+    <div class="seo-grid">
+      <label class="seo-field"><span class="seo-label">이름</span><input type="text" data-org="name" maxlength="100"></label>
+      <label class="seo-field"><span class="seo-label">다른 이름</span><input type="text" data-org="alternateName" maxlength="100"></label>
+      <label class="seo-field seo-wide"><span class="seo-label">공식 SNS 주소(한 줄에 하나, 10개까지)</span><textarea rows="3" data-org="sameAs" spellcheck="false" placeholder="https://www.instagram.com/…"></textarea></label>
+    </div>
+  </section>
+</main>
+
+<dialog class="confirm" id="confirm" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <h2 id="confirm-title">SEO 설정을 저장할까요?</h2>
+    <p class="confirm-sub">저장하면 1~2분 뒤 운영 사이트에 반영됩니다.</p>
+    <ol class="diff" id="diff"></ol>
+    <div class="confirm-actions">
+      <button class="btn btn-line" value="cancel">취소</button>
+      <button class="btn btn-book" value="ok">저장하고 게시</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="seo.js"></script>
+</body>
+</html>

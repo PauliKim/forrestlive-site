@@ -153,6 +153,15 @@ forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사�
 2. 오른쪽 위에 로그인한 이메일이 보이고 경고 줄이 없으면 준비 완료
 3. 문구 하나를 고쳐 **저장하고 게시** → GitHub 커밋 목록에 `문구 수정: …`(작성자 forrestlive-admin)이 생기고 1~2분 뒤 사이트에 반영
 
+### 6-5. SEO 설정 화면
+
+`https://forrestlive.pages.dev/admin/seo.html` (문구 관리 머리글의 **SEO 설정**). 같은 로그인, 같은 `GITHUB_TOKEN`을 씁니다.
+
+- 고치는 것: 검색 결과·링크 미리보기 문구(A-01~A-04, 문구 관리와 같은 값), 링크 미리보기 이미지(고르면 1200×630으로 잘라 `assets/seo/og-날짜.jpg`로 올림), 검색 노출(끄면 noindex), 검색엔진 소유 확인 코드(Google·네이버·Bing), 운영 정보 구조화 데이터(이름, 다른 이름, 공식 SNS)
+- 저장하면 서버(`functions/api/seo.js`)가 `data/seo.json`, (바뀌었으면) `data/copy.json`, `index.html`, 새 이미지를 커밋 하나로 main에 올립니다(작성자 forrestlive-admin, 메시지 `SEO 설정 수정: …`).
+- Access 애플리케이션 `숲세권 문구 관리`에 **Add public hostname**으로 `forrestlive.pages.dev`, Path `api/seo`를 한 줄 더 넣어 둡니다. 서버가 로그인 토큰을 직접 검증하므로 빠져 있어도 저장은 되지만, 문구 저장 서버와 같은 보호를 받게 합니다.
+- 검색엔진 등록: Google Search Console, 네이버 서치어드바이저에 `https://concert.forrestlive.com`을 등록하고 "HTML 태그" 소유 확인 값을 SEO 설정에 넣어 저장 → 1~2분 뒤 확인. 그다음 사이트맵 `https://concert.forrestlive.com/sitemap.xml` 제출.
+
 ### 보안 메모
 
 - 저장 서버는 Cloudflare Access가 넘겨준 로그인 토큰의 서명·대상(AUD)·만료를 직접 검증합니다. 설정값이 없거나 토큰이 맞지 않으면 저장하지 않습니다. 그래서 브랜치 미리보기 주소처럼 Access가 걸리지 않은 곳에서는 미리보기만 됩니다.

@@ -1,0 +1,17 @@
+{
+ "_설명": "SEO 설정. 어드민 SEO 설정(/admin/seo.html)에서 고치면 서버가 이 파일과 index.html의 <!-- seo:start --> 덩어리를 함께 커밋한다. 손으로 고쳤으면 python3 scripts/apply_copy.py. 페이지 제목·설명·공유 문구는 data/copy.json A-01~A-04에 있다.",
+ "index": true,
+ "ogImage": "assets/img/og.jpg",
+ "ogImageWidth": 1200,
+ "ogImageHeight": 630,
+ "verification": {
+  "google": "",
+  "naver": "",
+  "bing": ""
+ },
+ "organization": {
+  "name": "숲세권 라이브",
+  "alternateName": "For:Rest LIVE",
+  "sameAs": []
+ }
+}
