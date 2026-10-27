@@ -12,6 +12,10 @@
  "organization": {
   "name": "숲세권 라이브",
   "alternateName": "For:Rest LIVE",
-  "sameAs": []
+  "sameAs": [
+   "https://www.instagram.com/for_rest_live",
+   "https://www.youtube.com/@forrestlive",
+   "https://www.instagram.com/for_rest_stage/"
+  ]
  }
 }
