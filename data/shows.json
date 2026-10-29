@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T17:39",
+ "updated": "2026-10-29T18:43",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4663,6 +4663,42 @@
    "series": "숲세권 라이브",
    "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 린지 단독 공연 〈Ways of Seeing〉입니다.",
    "openAt": "2026-10-19T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf304855",
+   "kopisId": "PF304855",
+   "date": "2026-11-21",
+   "endDate": "2026-11-21",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "토요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 55,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "장서현"
+   ],
+   "poster": "assets/posters/PF304855.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF304855_202610290235243140.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214163"
+    }
+   ],
+   "kopisUpdated": "2026-10-29 15:00:00.11594",
+   "source": "KOPIS",
+   "title": "프레스티지 포레스티 1단지",
+   "artist": "스티",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
    "soldOut": false
   }
  ]
