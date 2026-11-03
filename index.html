@@ -112,9 +112,6 @@
 .venue dd { margin: 0; }
 .venue dd:empty, .venue dt:has(+ dd:empty) { display: none; }
 .venue .links { display: flex; gap: var(--s-2); flex-wrap: wrap; }
-.details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-4); margin-top: var(--s-5); }
-.details figure { margin: 0; }
-.details img { aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-lg); width: 100%; }
 
 /* 함께 만든 공연: 흰 판 위 목록 */
 .series { list-style: none; margin: 0 auto; padding: var(--s-2) var(--s-5); max-width: 860px; background: var(--card); border-radius: var(--radius-lg); }
@@ -170,11 +167,11 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
 /* 가로 사진(3:2)은 꽉 차고, 세로 사진은 잘리지 않게 양옆을 어둡게 둔다 */
 .gallery-main { position: relative; aspect-ratio: 3 / 2; border-radius: var(--radius-lg); overflow: hidden; background: var(--deep); touch-action: pan-y; }
 .gallery-main img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border: 0; border-radius: var(--radius-pill); background: rgba(255,255,255,.92); color: var(--ink); font: 600 var(--t-20)/1 var(--font-ui); cursor: pointer; display: grid; place-items: center; }
-.gallery-nav.prev { left: 12px; } .gallery-nav.next { right: 12px; }
+.gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border: 0; border-radius: var(--radius-pill); background: rgba(255,255,255,.92); color: var(--ink); cursor: pointer; display: grid; place-items: center; padding: 0; }
+.gallery-nav svg { width: 20px; height: 20px; }
+.gallery-nav.g-prev { left: 12px; } .gallery-nav.g-next { right: 12px; }
 .gallery-nav:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .gallery-count { position: absolute; right: 12px; bottom: 12px; font: 500 var(--t-12)/1 var(--font-label); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; color: var(--ink); background: rgba(255,255,255,.92); padding: 6px 10px; border-radius: var(--radius-pill); }
-.gallery-cap { color: var(--muted); font-size: var(--t-13); min-height: 1.4em; }
 .thumbs { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px; }
 .thumbs::-webkit-scrollbar { display: none; }
 .thumbs button { flex: 0 0 72px; aspect-ratio: 1; padding: 0; border: 0; border-radius: var(--radius-sm); overflow: hidden; cursor: pointer; background: var(--chip); opacity: .55; }
@@ -184,9 +181,6 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
 
 @media (max-width: 1080px) {
   .shows { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
-@media (max-width: 960px) {
-  .details { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
   .shows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -333,12 +327,6 @@ dialog.sheet::backdrop { background: rgba(10, 22, 16, .5); }
             </div>
           </div>
         </article>
-      </div>
-      <div class="details">
-        <figure><img src="assets/img/tv-terrarium-sm.jpg" alt="브라운관 TV 안의 이끼 테라리움과 그 위의 탁상 달력" loading="lazy"></figure>
-        <figure><img src="assets/img/piano-keys-sm.jpg" alt="뚜껑을 연 업라이트 피아노 건반" loading="lazy"></figure>
-        <figure><img src="assets/img/microphone-sm.jpg" alt="등나무꽃 사이의 콘덴서 마이크" loading="lazy"></figure>
-        <figure><img src="assets/img/terrarium-globe-sm.jpg" alt="천장에 매달린 유리 테라리움" loading="lazy"></figure>
       </div>
     </div>
   </section>

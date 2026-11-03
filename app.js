@@ -208,6 +208,8 @@
   // 사진은 data/venue-photos.json(사람이 고치는 파일). 지점 카드를 누르면 공연 상세와 같은 창에 사진과 지점 정보를 보여 준다.
   let PHOTOS = {};
   const STATION = { mullae: "E-10", kind: "E-14" };
+  // 넘기기 버튼 화살표(글자 대신 그림이라 글꼴과 상관없이 가운데에 놓인다)
+  const CHEV = (pts) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="${pts}"/></svg>`;
   const isVenue = (k) => (PHOTOS[k] || []).length > 0 && k in VENUES;
   let gal = { k: "", i: 0 };
   function showPhoto(i) {
@@ -215,7 +217,6 @@
     gal.i = (i + list.length) % list.length;
     const ph = list[gal.i];
     const img = $("#g-img"); img.src = ph.src; img.alt = ph.alt || "";
-    $("#g-cap").textContent = ph.alt || "";
     $("#g-count").textContent = `${gal.i + 1} / ${list.length}`;
     sheet.querySelectorAll(".thumbs button").forEach((b, j) => {
       b.setAttribute("aria-current", j === gal.i);
@@ -238,9 +239,8 @@
       <div class="gallery">
         <div class="gallery-main" id="g-main">
           <img id="g-img" alt="">
-          ${multi ? `<button class="gallery-nav prev" type="button" data-g="-1" aria-label="${esc(t("E-21"))}" data-copy-dyn="E-21">‹</button><button class="gallery-nav next" type="button" data-g="1" aria-label="${esc(t("E-22"))}" data-copy-dyn="E-22">›</button><span class="gallery-count" id="g-count" aria-live="polite"></span>` : '<span id="g-count" hidden></span>'}
+          ${multi ? `<button class="gallery-nav g-prev" type="button" data-g="-1" aria-label="${esc(t("E-21"))}" data-copy-dyn="E-21">${CHEV("15 18 9 12 15 6")}</button><button class="gallery-nav g-next" type="button" data-g="1" aria-label="${esc(t("E-22"))}" data-copy-dyn="E-22">${CHEV("9 6 15 12 9 18")}</button><span class="gallery-count" id="g-count" aria-live="polite"></span>` : '<span id="g-count" hidden></span>'}
         </div>
-        <p class="gallery-cap" id="g-cap"></p>
         ${multi ? `<div class="thumbs">${list.map((ph, j) => `<button type="button" data-gi="${j}" aria-label="${esc(ph.alt || `${j + 1}`)}"><img src="${esc(ph.thumb || ph.src)}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}
       </div>
       <dl class="facts">${facts.map(([id, val]) => `<dt data-copy-dyn="${id}">${et(id)}</dt><dd>${esc(val)}</dd>`).join("")}</dl>
