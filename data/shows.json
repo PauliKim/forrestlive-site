@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T18:43",
+ "updated": "2026-11-03T18:47",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4696,6 +4696,42 @@
    "title": "프레스티지 포레스티 1단지",
    "artist": "스티",
    "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
+   "id": "pf305217",
+   "kopisId": "PF305217",
+   "date": "2026-11-22",
+   "endDate": "2026-11-22",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "장아린"
+   ],
+   "poster": "assets/posters/PF305217.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305217_202611031125288720.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214186"
+    }
+   ],
+   "kopisUpdated": "2026-11-03 15:00:03.094823",
+   "source": "KOPIS",
+   "title": "장키키의 토마토숲 비밀공방",
+   "artist": "장키키의 토마토숲 비밀공방",
+   "subtitle": "",
    "series": "숲세권 라이브",
    "intro": "",
    "openAt": "",
