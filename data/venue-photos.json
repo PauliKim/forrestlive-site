@@ -1,0 +1,32 @@
+{
+ "_설명": "지점 사진. 지점 카드를 누르면 열리는 창에 이 순서대로 나온다. 첫 사진이 카드 대표 사진이다. src는 큰 사진, thumb는 작은 사진(없으면 src), alt는 사진 설명.",
+ "mullae": [
+  { "src": "assets/venues/mullae/01.jpg", "thumb": "assets/venues/mullae/01-sm.jpg", "alt": "이끼 벽과 등나무꽃 아래 피아노, 앰프, 드럼이 놓인 문래점 무대" },
+  { "src": "assets/venues/mullae/02.jpg", "thumb": "assets/venues/mullae/02-sm.jpg", "alt": "무대 가운데 흰 텐트를 세운 문래점 무대" },
+  { "src": "assets/venues/mullae/03.jpg", "thumb": "assets/venues/mullae/03-sm.jpg", "alt": "기타와 앰프를 세워 둔 공연 전 무대" },
+  { "src": "assets/venues/mullae/04.jpg", "thumb": "assets/venues/mullae/04-sm.jpg", "alt": "번호가 붙은 접이식 의자 너머로 보이는 문래점 무대" },
+  { "src": "assets/venues/mullae/05.jpg", "thumb": "assets/venues/mullae/05-sm.jpg", "alt": "무대 쪽에서 바라본 문래점 객석" },
+  { "src": "assets/venues/mullae/06.jpg", "thumb": "assets/venues/mullae/06-sm.jpg", "alt": "업라이트 피아노 건반 너머로 보이는 드럼" },
+  { "src": "assets/venues/mullae/07.jpg", "thumb": "assets/venues/mullae/07-sm.jpg", "alt": "베이스 앰프 위 브라운관 TV 안의 이끼 테라리움" },
+  { "src": "assets/venues/mullae/08.jpg", "thumb": "assets/venues/mullae/08-sm.jpg", "alt": "넘기는 달력을 올려 둔 브라운관 TV 테라리움" },
+  { "src": "assets/venues/mullae/09.jpg", "thumb": "assets/venues/mullae/09-sm.jpg", "alt": "테라리움 속 이끼 위의 작은 그랜드피아노" },
+  { "src": "assets/venues/mullae/10.jpg", "thumb": "assets/venues/mullae/10-sm.jpg", "alt": "덩굴 사이에 매달린 유리 테라리움" },
+  { "src": "assets/venues/mullae/11.jpg", "thumb": "assets/venues/mullae/11-sm.jpg", "alt": "말린 꽃과 함께 나무 상자에 꽂힌 숲세권 라이브 나무 간판" },
+  { "src": "assets/venues/mullae/12.jpg", "thumb": "assets/venues/mullae/12-sm.jpg", "alt": "도림로126길 1, 초록 잎으로 덮인 문래점 건물 입구" },
+  { "src": "assets/venues/mullae/13.jpg", "thumb": "assets/venues/mullae/13-sm.jpg", "alt": "계단을 내려오면 보이는 문 옆의 안내 탁자" },
+  { "src": "assets/venues/mullae/14.jpg", "thumb": "assets/venues/mullae/14-sm.jpg", "alt": "브라운관 TV를 쌓아 둔 벽과 포스터가 걸린 복도" },
+  { "src": "assets/venues/mullae/15.jpg", "thumb": "assets/venues/mullae/15-sm.jpg", "alt": "관객이 남긴 손글씨가 적힌 입구의 칠판" }
+ ],
+ "kind": [
+  { "src": "assets/venues/kind/01.jpg", "thumb": "assets/venues/kind/01-sm.jpg", "alt": "이끼 벽 앞에 피아노, 건반, 앰프, 드럼이 놓인 카인드스퀘어점 무대" },
+  { "src": "assets/venues/kind/02.jpg", "thumb": "assets/venues/kind/02-sm.jpg", "alt": "마이크와 의자를 놓아 둔 카인드스퀘어점 무대 정면" },
+  { "src": "assets/venues/kind/03.jpg", "thumb": "assets/venues/kind/03-sm.jpg", "alt": "번호가 붙은 의자 너머로 보이는 카인드스퀘어점 무대" },
+  { "src": "assets/venues/kind/04.jpg", "thumb": "assets/venues/kind/04-sm.jpg", "alt": "객석 뒤쪽에서 바라본 카인드스퀘어점 공연장 전체" },
+  { "src": "assets/venues/kind/05.jpg", "thumb": "assets/venues/kind/05-sm.jpg", "alt": "숲세권 라이브 현수막이 걸린 카인드스퀘어 건물과 지하 입구" },
+  { "src": "assets/venues/kind/06.jpg", "thumb": "assets/venues/kind/06-sm.jpg", "alt": "벽돌 벽에 걸린 숲세권 라이브 카인드스퀘어 현수막" },
+  { "src": "assets/venues/kind/07.jpg", "thumb": "assets/venues/kind/07-sm.jpg", "alt": "건물 앞 소나무 정원에 세운 숲세권 라이브 안내판" },
+  { "src": "assets/venues/kind/08.jpg", "thumb": "assets/venues/kind/08-sm.jpg", "alt": "바깥 계단을 내려와 들어서는 지하 입구" },
+  { "src": "assets/venues/kind/09.jpg", "thumb": "assets/venues/kind/09-sm.jpg", "alt": "카인드스퀘어 건물의 엘리베이터 앞" },
+  { "src": "assets/venues/kind/10.jpg", "thumb": "assets/venues/kind/10-sm.jpg", "alt": "탁자와 의자, 전신 거울이 있는 아티스트 대기실" }
+ ]
+}

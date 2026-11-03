@@ -203,7 +203,81 @@
     if (push) { try { history.replaceState(null, "", `#${s.id}`); } catch (e) {} }
   }
   function closeSheet() { if (sheet.open) sheet.close(); }
-  sheet.addEventListener("close", () => { if (/^#(m\d+|pf\d+)$/.test(location.hash)) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} } });
+
+  // ---------- 지점 사진 창 ----------
+  // 사진은 data/venue-photos.json(사람이 고치는 파일). 지점 카드를 누르면 공연 상세와 같은 창에 사진과 지점 정보를 보여 준다.
+  let PHOTOS = {};
+  const STATION = { mullae: "E-10", kind: "E-14" };
+  const isVenue = (k) => (PHOTOS[k] || []).length > 0 && k in VENUES;
+  let gal = { k: "", i: 0 };
+  function showPhoto(i) {
+    const list = PHOTOS[gal.k]; if (!list) return;
+    gal.i = (i + list.length) % list.length;
+    const ph = list[gal.i];
+    const img = $("#g-img"); img.src = ph.src; img.alt = ph.alt || "";
+    $("#g-cap").textContent = ph.alt || "";
+    $("#g-count").textContent = `${gal.i + 1} / ${list.length}`;
+    sheet.querySelectorAll(".thumbs button").forEach((b, j) => {
+      b.setAttribute("aria-current", j === gal.i);
+      if (j === gal.i) b.scrollIntoView({ block: "nearest", inline: "nearest" });
+    });
+    // 다음 사진을 미리 받아 둔다
+    const nx = list[(gal.i + 1) % list.length]; if (nx) new Image().src = nx.src;
+  }
+  function openVenue(k, push = true) {
+    if (!isVenue(k)) return;
+    const v = VENUES[k]; const list = PHOTOS[k];
+    gal = { k, i: 0 };
+    const seats = /^\d+$/.test(v.seats || "") ? `${Number(v.seats).toLocaleString("ko-KR")}석` : v.seats || "";
+    const opened = /^\d{4}$/.test(v.opened || "") ? `${v.opened}년` : v.opened || "";
+    const facts = [["E-04", v.address], ["E-05", t(STATION[k] || "")], ["E-06", seats], ["E-09", opened]].filter(([, val]) => val);
+    const multi = list.length > 1;
+    sheet.innerHTML = `<div class="sheet-inner">
+      <div class="sheet-top"><span class="label" data-copy-dyn="E-01">${et("E-01")}</span><button class="close" type="button" data-close data-copy-dyn="H-01">${et("H-01")}</button></div>
+      <div><h2 id="sheet-title">${esc(v.name)}</h2><p class="venue-addr">${esc(v.address)}</p></div>
+      <div class="gallery">
+        <div class="gallery-main" id="g-main">
+          <img id="g-img" alt="">
+          ${multi ? `<button class="gallery-nav prev" type="button" data-g="-1" aria-label="${esc(t("E-21"))}" data-copy-dyn="E-21">‹</button><button class="gallery-nav next" type="button" data-g="1" aria-label="${esc(t("E-22"))}" data-copy-dyn="E-22">›</button><span class="gallery-count" id="g-count" aria-live="polite"></span>` : '<span id="g-count" hidden></span>'}
+        </div>
+        <p class="gallery-cap" id="g-cap"></p>
+        ${multi ? `<div class="thumbs">${list.map((ph, j) => `<button type="button" data-gi="${j}" aria-label="${esc(ph.alt || `${j + 1}`)}"><img src="${esc(ph.thumb || ph.src)}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}
+      </div>
+      <dl class="facts">${facts.map(([id, val]) => `<dt data-copy-dyn="${id}">${et(id)}</dt><dd>${esc(val)}</dd>`).join("")}</dl>
+      <div class="share-row">
+        <a class="btn btn-line" href="${mapUrl(v)}" target="_blank" rel="noopener" data-copy-dyn="E-18">${et("E-18")}</a>
+        <a class="btn btn-line" href="${kakaoUrl(v)}" target="_blank" rel="noopener" data-copy-dyn="E-19">${et("E-19")}</a>
+        <button class="btn btn-line" type="button" data-share="${k}" data-copy-dyn="H-22">${et("H-22")}</button>
+        <span class="note" role="status" id="share-note"></span>
+      </div>
+    </div>`;
+    showPhoto(0);
+    if (!sheet.open) sheet.showModal();
+    sheet.scrollTop = 0;
+    if (push) { try { history.replaceState(null, "", `#${k}`); } catch (e) {} }
+  }
+  // 사진 창에서 좌우 화살표 키와 밀기로 넘긴다
+  sheet.addEventListener("keydown", (e) => {
+    if (!gal.k || !$("#g-main") || !/^Arrow(Left|Right)$/.test(e.key)) return;
+    e.preventDefault(); showPhoto(gal.i + (e.key === "ArrowRight" ? 1 : -1));
+  });
+  let touchX = null;
+  sheet.addEventListener("touchstart", (e) => { touchX = e.target.closest("#g-main") ? e.touches[0].clientX : null; }, { passive: true });
+  sheet.addEventListener("touchend", (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 40) showPhoto(gal.i + (dx < 0 ? 1 : -1));
+  });
+  function renderVenueCards() {
+    document.querySelectorAll("[data-venue-card]").forEach((el) => el.classList.toggle("has-photos", isVenue(el.dataset.venueCard)));
+    document.querySelectorAll("[data-venue-count]").forEach((el) => {
+      const k = el.dataset.venueCount; const n = (PHOTOS[k] || []).length;
+      el.textContent = n ? t("E-20", { n }) : "";
+      el.closest("button")?.setAttribute("aria-label", t("E-23", { name: VENUES[k]?.name || "" }));
+    });
+  }
+
+  sheet.addEventListener("close", () => { gal.k = ""; if (/^#(m\d+|pf\d+|mullae|kind)$/.test(location.hash)) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} } });
   sheet.addEventListener("click", (e) => { if (e.target === sheet || e.target.closest("[data-close]")) closeSheet(); });
 
   async function copy(text, noteEl, okMsg) {
@@ -213,6 +287,11 @@
 
   document.addEventListener("click", (e) => {
     const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); openSheet(o.dataset.open); return; }
+    const g = e.target.closest("[data-g]"); if (g) { showPhoto(gal.i + Number(g.dataset.g)); return; }
+    const gi = e.target.closest("[data-gi]"); if (gi) { showPhoto(Number(gi.dataset.gi)); return; }
+    // 지점 카드: 지도 링크를 뺀 나머지를 누르면 사진 창을 연다
+    const vc = e.target.closest("[data-venue-card].has-photos");
+    if (vc && !e.target.closest("a")) { openVenue(vc.dataset.venueCard); return; }
     const c = e.target.closest(".chip[data-k]"); if (c) { filter[c.dataset.k] = c.dataset.v; renderShows(); return; }
     const y = e.target.closest("[data-year]"); if (y) { year = y.dataset.year; showAll = false; renderArchive(); return; }
     if (e.target.closest("#more")) { showAll = !showAll; renderArchive(); return; }
@@ -220,7 +299,7 @@
     if (sh) { const url = location.href.split("#")[0] + "#" + sh.dataset.share; copy(url, $("#share-note"), t("H-23")); return; }
     if (e.target.closest("#copy-mail")) copy($("#mail-addr").textContent, $("#mail-note"), t("G-06"));
   });
-  window.addEventListener("hashchange", () => { const id = location.hash.slice(1); if (DATA.some((s) => s.id === id)) openSheet(id, false); });
+  window.addEventListener("hashchange", () => { const id = location.hash.slice(1); if (DATA.some((s) => s.id === id)) openSheet(id, false); else if (isVenue(id)) openVenue(id, false); });
 
   let updated = "";
   function renderUpdated() {
@@ -231,7 +310,8 @@
   function renderAll() { now = new Date(); renderNext(); renderShows(); renderArchive(); renderSeries(); renderUpdated(); }
 
   // 지점 정보(주소·좌표·객석 수·개관 연도)를 KOPIS 공연시설 상세에서 받아 둔 파일로 채운다
-  fetch("data/venues.json").then((r) => (r.ok ? r.json() : null)).then((v) => {
+  const loadVenues = fetch("data/venues.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  loadVenues.then((v) => {
     if (!v) return;
     VENUES = v;
     document.querySelectorAll("[data-venue]").forEach((el) => {
@@ -246,8 +326,16 @@
     });
   }).catch(() => {});
 
-  // 문구와 공연 정보를 함께 불러온 뒤 그린다. 문구 파일이 없으면 HTML에 적힌 기본 문구를 쓴다.
+  // 문구 파일이 없으면 HTML에 적힌 기본 문구를 쓴다.
   const loadCopy = fetch("data/copy.json").then((r) => (r.ok ? r.json() : null)).then((c) => { if (c) { COPY = c.items; applyStatic(); } }).catch(() => {});
+  // 지점 사진. 지점 정보와 문구가 다 온 뒤 카드에 표시하고, 주소가 #mullae처럼 열려 있으면 창을 연다.
+  Promise.all([fetch("data/venue-photos.json").then((r) => (r.ok ? r.json() : null)).catch(() => null), loadVenues, loadCopy]).then(([p]) => {
+    if (p) { delete p._설명; PHOTOS = p; }
+    renderVenueCards();
+    const id = location.hash.slice(1); if (isVenue(id)) openVenue(id, false);
+  });
+
+  // 문구와 공연 정보를 함께 불러온 뒤 그린다.
   Promise.all([fetch("data/shows.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }), loadCopy]).then(([json]) => {
     DATA = json.shows;
     updated = json.updated || "";
@@ -264,7 +352,7 @@
     get ready() { return DATA.length > 0; },
     setCopy(items) {
       COPY = { ...items };
-      applyStatic(); renderAll();
+      applyStatic(); renderAll(); renderVenueCards();
       if (sheet.open && /^#/.test(location.hash)) openSheet(location.hash.slice(1), false);
     },
     // 상세 창 문구(H-)는 해당 상태의 공연을 골라 창을 열어 보여 준다
