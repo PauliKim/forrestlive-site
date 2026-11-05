@@ -32,7 +32,7 @@
   - `home/render.js` 페이지를 그리는 함수. 미리보기와 저장 서버가 같이 쓴다. `scripts/build_home.py`와 결과가 같아야 한다(`tests/test_home.py`가 비교)
   - `scripts/home.template.html` 페이지 틀, `scripts/build_home.py` 문구를 틀에 넣어 `home/index.html`, `home/en/index.html`, `home/ja/index.html`을 만든다. 만들어진 세 파일은 손으로 고치지 않는다
   - `home/home.css`, `home/home.js` 소개 사이트 전용. 토큰·글꼴·로고는 공연 사이트의 `styles.css`, `assets/`를, 지점 사진은 `data/venue-photos.json`을 같이 쓴다. 사진은 `assets/home/`
-  - `functions/_middleware.js` 접속 주소로 나눈다: forrestlive.com과 home.forrestlive.pages.dev는 `home/`을 보여 주고 나머지는 그대로 통과. `_routes.json`에 적은 경로에서만 돈다(사진·글꼴 요청에는 돌지 않게). 주소를 추가하면 둘 다 고친다
+  - `functions/_middleware.js` 접속 주소로 나눈다: forrestlive.com과 home.forrestlive.pages.dev는 `home/`을 보여 주고, www.forrestlive.com은 forrestlive.com으로 보내고, 나머지는 그대로 통과. `_routes.json`에 적은 경로에서만 돈다(사진·글꼴 요청에는 돌지 않게). 주소를 추가하면 둘 다 고친다
   - 언어 판단은 `functions/_lib/lang.js`(순수 함수). 첫 화면 `/`에서만 움직인다: 검색·공유 로봇과 `?preview`는 이동 없음, 쿠키 `lang`이 있으면 그 언어, 없으면 KR 한국어·JP `/ja/`·그 밖 `/en/`(302). `/en/`, `/ja/`에 직접 들어오면 이동시키지 않는다. 언어 메뉴를 누르면 `home/home.js`가 쿠키를 1년 남긴다
   - `home/robots.txt`, `home/sitemap.xml` forrestlive.com 전용
   - 첫 장면(히어로~“한 무대에서 움튼” 문구)은 `home/home.js`의 `draw(p)`가 스크롤 위치 0~1을 그대로 각 요소에 옮긴다. 시점을 바꾸려면 `seg(p, 시작, 끝)`의 숫자를 고친다. 동작 줄이기 설정에서는 정지 화면으로 쌓인다

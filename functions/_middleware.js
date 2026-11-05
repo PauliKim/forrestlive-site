@@ -2,6 +2,7 @@
 //   concert.forrestlive.com     → 저장소 루트의 공연 사이트(그대로 통과)
 //   forrestlive.com             → home/ 소개 사이트. 한국어 /, 영어 /en/, 일본어 /ja/
 //   home.forrestlive.pages.dev  → 위와 같음(home 브랜치 미리보기)
+//   www.forrestlive.com         → forrestlive.com으로 이동
 // 소개 사이트 첫 화면(/)에서는 나라와 고른 언어에 맞는 페이지로 옮긴다. 규칙은 _lib/lang.js.
 // 이 함수는 _routes.json에 적은 경로에서만 돈다. 사진·글꼴 같은 파일은 양쪽이 같은 주소로 받는다.
 import { redirectTarget } from "./_lib/lang.js";
@@ -12,6 +13,7 @@ const CONCERT = "https://concert.forrestlive.com/";
 
 export async function onRequest({ request, env, next }) {
   const url = new URL(request.url);
+  if (url.hostname === "www.forrestlive.com") return Response.redirect(`https://forrestlive.com${url.pathname}${url.search}`, 301);
   if (!HOME_HOSTS.has(url.hostname)) return next();
 
   const to = redirectTarget({
