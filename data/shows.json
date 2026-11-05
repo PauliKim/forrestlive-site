@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T18:54",
+ "updated": "2026-11-05T20:29",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4778,6 +4778,45 @@
    "soldOut": false
   },
   {
+   "id": "pf305599",
+   "kopisId": "PF305599",
+   "date": "2026-11-26",
+   "endDate": "2026-11-26",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "목요일(20:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 38,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "최예진",
+    "난 아카리 슈웨",
+    "배채연",
+    "김지민"
+   ],
+   "poster": "assets/posters/PF305599.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305599_202611050257212550.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214222"
+    }
+   ],
+   "kopisUpdated": "2026-11-05 15:00:03.098692",
+   "source": "KOPIS",
+   "title": "해바라기",
+   "artist": "가비엔제이",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
    "id": "pf305477",
    "kopisId": "PF305477",
    "date": "2026-11-27",
@@ -4805,6 +4844,46 @@
    "source": "KOPIS",
    "title": "ANEMONE",
    "artist": "아멘",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
+   "id": "pf305580",
+   "kopisId": "PF305580",
+   "date": "2026-11-28",
+   "endDate": "2026-11-28",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "토요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 44,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "송유찬",
+    "조주연",
+    "박준영",
+    "정지섭",
+    "신노스케"
+   ],
+   "poster": "assets/posters/PF305580.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305580_202611050220541970.png"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214214"
+    }
+   ],
+   "kopisUpdated": "2026-11-05 15:00:03.098692",
+   "source": "KOPIS",
+   "title": "Evergreen",
+   "artist": "보이드",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
    "intro": "",
