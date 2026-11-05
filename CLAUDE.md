@@ -2,7 +2,7 @@
 
 숲세권 라이브(For:Rest LIVE)의 공연 사이트와 소개 사이트를 한 저장소에서 만드는 정적 사이트.
 - 공연 사이트: https://concert.forrestlive.com (Cloudflare Pages 프로젝트 `forrestlive`, https://forrestlive.pages.dev)
-- 소개 사이트: `home/` (forrestlive.com의 한국어 `/`, 영어 `/en/`, 일본어 `/ja/`. 다국어 방식은 폰드메이커스 사이트와 같다). 프레이머 랜딩을 옮긴 것으로 구성은 프레이머와 같고 디자인은 공연 사이트를 따른다. 도메인 전환 전까지 forrestlive.com은 프레이머가 응답한다(`DEPLOY.md`의 "forrestlive.com 전환")
+- 소개 사이트: `home/` (forrestlive.com의 한국어 `/`, 영어 `/en/`, 일본어 `/ja/`. 다국어 방식은 폰드메이커스 사이트와 같다). 프레이머 랜딩을 옮긴 것으로 구성은 프레이머와 같고 디자인은 공연 사이트를 따른다. 2026-11-05에 프레이머에서 전환했다. DNS는 가비아에서 Cloudflare로 옮겼고(네임서버 adam, janet.ns.cloudflare.com), forrestlive.com은 Pages 사용자 도메인이다
 - 저장소: https://github.com/PauliKim/forrestlive-site (공개, 기본 브랜치 `main`)
 
 ## 대화와 작성 언어

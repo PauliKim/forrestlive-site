@@ -213,6 +213,8 @@ python3 tests/test_sync.py   # KOPIS 응답 예시로 해석·병합·15분 대�
 
 ## forrestlive.com 전환
 
+2026-11-05 완료. 네임서버는 `adam.ns.cloudflare.com`, `janet.ns.cloudflare.com`이고 DNS 레코드는 Cloudflare에서 관리합니다(`concert`, 루트 모두 `forrestlive.pages.dev`). 가비아 DNS 설정은 더 이상 쓰이지 않습니다. 아래는 그때의 순서입니다.
+
 소개 사이트(`home/`)를 프레이머 대신 forrestlive.com에 연결하는 순서입니다. 미리보기 https://home.forrestlive.pages.dev 를 확인한 뒤 진행합니다.
 Cloudflare Pages는 루트 도메인을 Cloudflare DNS로만 연결할 수 있어서, 가비아에 있는 네임서버를 Cloudflare로 옮겨야 합니다.
 
