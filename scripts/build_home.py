@@ -19,14 +19,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "scripts/home.template.html"
 COPY = ROOT / "data/home-copy.json"
-SITE = "https://forrestlive.com"
-PAGES = {"ko": ("home/index.html", "/"), "en": ("home/en/index.html", "/en"), "ja": ("home/ja/index.html", "/ja")}
+# 언어별 (파일, 미리보기 경로, 운영 주소). 공연 사이트처럼 하위 도메인으로 접속한다
+PAGES = {
+    "ko": ("home/index.html", "/", "https://forrestlive.com/"),
+    "en": ("home/en/index.html", "/en", "https://en.forrestlive.com/"),
+    "ja": ("home/ja/index.html", "/ja", "https://ja.forrestlive.com/"),
+}
 TOKEN = re.compile(r"\{\{([=@]?)([\w.-]+)\}\}")
 
 
 def render(template, items, lang):
-    path = PAGES[lang][1]
-    values = {"lang": lang, "path": path, "url": SITE + path}
+    values = {"lang": lang, "path": PAGES[lang][1], "url": PAGES[lang][2]}
     for code in PAGES:
         values[f"cur-{code}"] = ' aria-current="page"' if code == lang else ""
 

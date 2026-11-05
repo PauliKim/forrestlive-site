@@ -1,6 +1,6 @@
 /* forrestlive.com 소개 페이지 전용 스타일.
    값은 ../styles.css 토큰만 쓴다. 구성은 프레이머 랜딩과 같다:
-   히어로 → 숲 스위치 → 콘텐츠 → 철학과 아티스트 → 선택받는 이유 → 함께하는 방법 → 스튜디오 → ESG → 파트너 → 푸터 */
+   히어로 → 도시·성장 문구 → 콘텐츠 → 철학과 아티스트 → 선택받는 이유 → 함께하는 방법 → 스튜디오 → ESG → 파트너 → 푸터 */
 :lang(ja) {
   --font-serif: "Noto Serif KR", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --font-ui: "Pretendard Variable", "Pretendard", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
@@ -21,38 +21,38 @@ body:lang(ja) { word-break: normal; line-break: strict; }
 .h-lang a:hover { color: var(--accent); }
 .h-menu-btn { display: none; min-height: 36px; font-family: var(--font-label); letter-spacing: 0.11em; text-transform: uppercase; font-size: var(--t-12); }
 
-/* 히어로: 사진 전체, 왼쪽 아래 큰 제목, 오른쪽에 소개와 문의 버튼 */
-.h-hero { position: relative; color: var(--on-photo); background: var(--deep); overflow: hidden; }
-.h-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
-.h-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,41,14,.1) 20%, rgba(4,41,14,.42) 62%, rgba(4,41,14,.72) 100%); }
-.h-hero .wrap { position: relative; z-index: 2; min-height: calc(100svh - 68px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 24.5rem); gap: var(--s-6); align-items: end; padding-block: var(--s-7) var(--s-6); }
-.h-hero h1 { color: #fff; font-size: var(--t-display); line-height: 1.3; letter-spacing: -0.04em; }
+/* 첫 장면: 히어로 → 도시 문구 → 성장 문구를 스크롤 하나로 잇는다.
+   home.js가 .is-scroll을 붙이면 화면에 고정되어 스크롤 위치대로 움직인다.
+   동작 줄이기 설정이나 스크립트가 없으면 아래 기본 배치대로 위에서 아래로 쌓인다 */
+.h-scene { position: relative; color: var(--on-photo); background: var(--bg); }
+.h-stick { position: relative; }
+.h-photo { position: relative; height: calc(100svh - 68px); overflow: hidden; background: var(--deep); }
+.h-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; will-change: transform; }
+.h-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,41,14,.1) 20%, rgba(4,41,14,.42) 62%, rgba(4,41,14,.72) 100%); }
+.h-veil, .h-lines { display: none; }
+.h-hero-copy { position: absolute; left: 0; right: 0; top: 0; z-index: 3; height: calc(100svh - 68px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 24.5rem); gap: var(--s-6); align-items: end; padding-block: var(--s-7) var(--s-6); }
+.h-hero-copy h1 { color: #fff; font-size: var(--t-display); line-height: 1.3; letter-spacing: -0.04em; }
 .h-hero-side { display: flex; flex-direction: column; gap: var(--s-4); font-size: var(--t-15); color: rgba(255,255,255,.92); }
 .h-cta { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); margin-top: var(--s-2); }
 .h-cta-row { flex-direction: row; flex-wrap: wrap; justify-content: center; margin-top: 0; }
-.h-curve { position: absolute; z-index: 1; left: 14%; top: 8%; width: min(62vw, 900px); pointer-events: none; }
-.h-curve path, .h-circled path { stroke-dasharray: 1; }
-.h-curve path { stroke: rgba(255,255,255,.75); stroke-width: 1.5; }
+.h-beat { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-4); text-align: center; padding: var(--s-7) 20px; }
+.h-beat-city { background: var(--forest); }
+.h-beat-city h2 { color: #fff; font-size: var(--t-section); }
+.h-beat-city p { font-size: var(--t-17); color: rgba(255,255,255,.9); }
+.h-beat-grow { background: var(--bg); }
+.h-beat-grow h2 { color: var(--text); font-size: var(--t-section); line-height: 1.5; }
 
-/* 숲 스위치: 초록 판이 흰 판으로 넘어간다. 스크롤 연출은 home.js가 .is-scroll을 붙일 때만 */
-.h-story-off, .h-story-on { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-4); text-align: center; min-height: 70svh; padding: var(--s-7) 20px; }
-.h-story-off { color: var(--on-photo); background: linear-gradient(135deg, var(--sage-deep), var(--sage) 55%, var(--olive)); }
-.h-story-off h2 { color: #fff; font-size: var(--t-section); }
-.h-story-off p { font-size: var(--t-17); opacity: .92; }
-.h-story-on { background: var(--bg); }
-.h-story-on h2 { font-size: var(--t-section); line-height: 1.5; }
-.h-toggle { display: inline-flex; align-items: center; gap: var(--s-2); }
-.h-toggle .label { color: inherit; opacity: .85; }
-.h-toggle i { position: relative; width: 44px; height: 24px; border-radius: var(--radius-pill); background: rgba(255,255,255,.35); }
-.h-toggle i::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .3s ease; }
-.h-toggle.is-on i { background: var(--accent); }
-.h-toggle.is-on i::after { transform: translateX(20px); }
-.is-scroll .h-story { height: 240svh; }
-.is-scroll .h-story-stick { position: sticky; top: 68px; height: calc(100svh - 68px); overflow: hidden; background: var(--bg); }
-.is-scroll .h-story-off, .is-scroll .h-story-on { position: absolute; inset: 0; min-height: 0; transition: opacity .6s ease; }
-.is-scroll .h-story-on { opacity: 0; }
-.is-scroll .h-story.on .h-story-off { opacity: 0; }
-.is-scroll .h-story.on .h-story-on { opacity: 1; }
+.is-scroll .h-scene { height: 460svh; }
+.is-scroll .h-stick { position: sticky; top: 68px; height: calc(100svh - 68px); overflow: hidden; }
+.is-scroll .h-photo { position: absolute; inset: 0; height: auto; }
+.is-scroll .h-veil { display: block; position: absolute; inset: 0; z-index: 1; opacity: 0; background: var(--deep); }
+.is-scroll .h-lines { display: block; position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; pointer-events: none; }
+.h-lines path { stroke-linecap: round; }
+.h-lines .line { stroke: #fff; stroke-width: 1.6; stroke-dasharray: 1; }
+.h-lines .ring { stroke: rgba(255,255,255,.42); stroke-width: 1; stroke-dasharray: 1; }
+.h-lines .flood { stroke: var(--bg); stroke-width: 0; }
+.is-scroll .h-beat { position: absolute; inset: 0; z-index: 4; background: none; padding-inline: 20px; }
+.is-scroll [data-reveal] .w { display: inline-block; opacity: 0; will-change: transform, opacity; }
 
 /* 섹션 공통 */
 .h-section { padding-block: var(--s-7) calc(var(--s-7) + 8px); }
@@ -110,7 +110,7 @@ body:lang(ja) { word-break: normal; line-break: strict; }
 /* 함께하는 방법 */
 .h-circled { position: relative; padding: .35em .7em; color: var(--text) !important; }
 .h-circled svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.h-circled path { stroke: var(--accent); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.h-circled path { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 1; vector-effect: non-scaling-stroke; }
 .h-circled span { position: relative; }
 .h-ways { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); }
 .h-ways .panel { padding: var(--s-5) var(--s-5) var(--s-6); box-shadow: 0 1px 2px rgba(15,42,29,.05); }
@@ -206,8 +206,7 @@ body:lang(ja) { word-break: normal; line-break: strict; }
   .h-nav .site-nav { flex-direction: column; }
   .h-nav .site-nav a { font-size: var(--t-13); }
   .h-lang { padding-top: var(--s-2); margin-top: var(--s-2); border-top: 1px solid var(--line); }
-  .h-hero .wrap { grid-template-columns: minmax(0, 1fr); align-content: end; gap: var(--s-5); }
-  .h-curve { left: -10%; top: 4%; width: 120vw; }
+  .h-hero-copy { grid-template-columns: minmax(0, 1fr); align-content: end; gap: var(--s-5); }
   .h-esg-intro, .h-footer .wrap { grid-template-columns: minmax(0, 1fr); }
   .h-steps { grid-template-columns: minmax(0, 1fr); margin-top: var(--s-5); }
   .h-big-num { display: none; }
@@ -235,10 +234,8 @@ body:lang(ja) { word-break: normal; line-break: strict; }
   .h-footer .wrap { padding-block: 96px var(--s-5); }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .h-curve path { animation: h-draw 2.4s ease-out both; }
   .h-circled path { stroke-dashoffset: 1; transition: stroke-dashoffset 1.2s ease-out; }
   .h-circled.drawn path { stroke-dashoffset: 0; }
-  @keyframes h-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
   .btn, .site-nav a { transition: background-color .15s, color .15s, border-color .15s; }
   .h-card img { transition: opacity .2s; }
   .h-card:hover img { opacity: .92; }

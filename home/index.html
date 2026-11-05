@@ -17,8 +17,8 @@
 <meta name="twitter:image" content="https://forrestlive.com/assets/home/og.jpg">
 <link rel="canonical" href="https://forrestlive.com/">
 <link rel="alternate" hreflang="ko" href="https://forrestlive.com/">
-<link rel="alternate" hreflang="en" href="https://forrestlive.com/en">
-<link rel="alternate" hreflang="ja" href="https://forrestlive.com/ja">
+<link rel="alternate" hreflang="en" href="https://en.forrestlive.com/">
+<link rel="alternate" hreflang="ja" href="https://ja.forrestlive.com/">
 <link rel="alternate" hreflang="x-default" href="https://forrestlive.com/">
 <meta name="google-site-verification" content="Le_T4bmRPoWLiUSoGeb8VPwa8ro7DM0qvk60yCl9TRY">
 <meta name="naver-site-verification" content="2d176ff285ea3bf50eb3356fc36ec396b9f63639">
@@ -32,7 +32,7 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="숲세권 라이브"><img src="/assets/logo/wordmark-forest.png" alt="숲세권 라이브"></a>
+    <a class="logo" href="https://forrestlive.com/" data-path="/" aria-label="숲세권 라이브"><img src="/assets/logo/wordmark-forest.png" alt="숲세권 라이브"></a>
     <button class="btn btn-book btn-sm h-menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="h-nav">Menu</button>
     <div class="h-nav" id="h-nav">
       <nav class="site-nav" aria-label="주요 메뉴">
@@ -44,40 +44,42 @@
         <a href="https://concert.forrestlive.com/">Concert</a>
       </nav>
       <nav class="h-lang" aria-label="언어 선택">
-        <a href="/" hreflang="ko" lang="ko" aria-current="page">KO</a><a href="/en" hreflang="en" lang="en">EN</a><a href="/ja" hreflang="ja" lang="ja">JA</a>
+        <a href="https://forrestlive.com/" data-path="/" hreflang="ko" lang="ko" aria-current="page">KO</a><a href="https://en.forrestlive.com/" data-path="/en" hreflang="en" lang="en">EN</a><a href="https://ja.forrestlive.com/" data-path="/ja" hreflang="ja" lang="ja">JA</a>
       </nav>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="h-hero on-photo" aria-labelledby="hero-title">
-    <img src="/assets/img/stage.jpg" srcset="/assets/img/stage-sm.jpg 800w, /assets/img/stage.jpg 1600w" sizes="100vw" alt="이끼 벽과 등나무꽃 아래 피아노와 드럼이 놓인 숲세권 라이브 무대">
-    <svg class="h-curve" viewBox="0 0 900 640" fill="none" aria-hidden="true"><path pathLength="1" d="M20 610C210 520 390 380 470 230 520 135 500 40 440 36 350 30 300 190 360 340c55 136 240 200 520 110"/></svg>
-    <div class="wrap">
-      <h1 id="hero-title">도시 속 작은 울림,<br>숲세권 라이브</h1>
-      <div class="h-hero-side">
-        <p>숲세권 라이브는 아티스트의 순간을 기록하는 음악 플랫폼이자, 음악이 가장 자연스러운 온도로 머무는 도심 속 작은 숲입니다.</p>
-        <p>화려함보다 호흡을, 완성보다 기억에 남는 장면을 소중히 여깁니다. 여기서 음악은 한 곡을 넘어 한 그루의 나무가 되고, 그 나무들이 모여 이곳의 숲을 이룹니다.</p>
-        <p>아티스트가 가장 아티스트답게 빛나는 무대, 그 조용한 울림이 자라나는 곳<br>숲세권 라이브입니다.</p>
-        <div class="h-cta">
-          <a class="btn btn-book" href="https://pondmakers.fillout.com/t/pSFxrTnHL5us" target="_blank" rel="noopener">아티스트 출연 문의</a>
-          <a class="btn btn-line" href="https://pondmakers.fillout.com/t/dSHyMGjVaVus" target="_blank" rel="noopener">브랜드/콘텐츠 협업 문의</a>
+  <section class="h-scene on-photo" id="scene" aria-labelledby="hero-title">
+    <div class="h-stick">
+      <div class="h-photo"><img id="scene-photo" src="/assets/img/stage.jpg" srcset="/assets/img/stage-sm.jpg 800w, /assets/img/stage.jpg 1600w" sizes="100vw" alt="이끼 벽과 등나무꽃 아래 피아노와 드럼이 놓인 숲세권 라이브 무대"></div>
+      <div class="h-veil" id="scene-veil"></div>
+      <!-- 스크롤을 따라 그려지는 선. 마지막 선이 굵어지며 다음 흰 화면이 된다 -->
+      <svg class="h-lines" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+        <path class="ring" pathLength="1" d="M-60 800C270 730 600 500 720 300 790 170 760 96 700 96 610 96 560 300 640 480 730 680 1160 650 1680 300"/>
+        <path class="ring" pathLength="1" d="M-60 910C300 830 660 560 780 320 860 150 790 30 680 34 540 40 480 300 580 520 690 760 1180 760 1680 420"/>
+        <path class="line" pathLength="1" d="M-60 860C300 760 640 540 760 320 830 180 790 60 700 60 580 60 520 300 610 500 710 720 1160 710 1680 360"/>
+        <path class="flood" d="M-60 860C300 760 640 540 760 320 830 180 790 60 700 60 580 60 520 300 610 500 710 720 1160 710 1680 360"/>
+      </svg>
+      <div class="wrap h-hero-copy" id="scene-hero">
+        <h1 id="hero-title">도시 속 작은 울림,<br>숲세권 라이브</h1>
+        <div class="h-hero-side">
+          <p>숲세권 라이브는 아티스트의 순간을 기록하는 음악 플랫폼이자, 음악이 가장 자연스러운 온도로 머무는 도심 속 작은 숲입니다.</p>
+          <p>화려함보다 호흡을, 완성보다 기억에 남는 장면을 소중히 여깁니다. 여기서 음악은 한 곡을 넘어 한 그루의 나무가 되고, 그 나무들이 모여 이곳의 숲을 이룹니다.</p>
+          <p>아티스트가 가장 아티스트답게 빛나는 무대, 그 조용한 울림이 자라나는 곳<br>숲세권 라이브입니다.</p>
+          <div class="h-cta">
+            <a class="btn btn-book" href="https://pondmakers.fillout.com/t/pSFxrTnHL5us" target="_blank" rel="noopener">아티스트 출연 문의</a>
+            <a class="btn btn-line" href="https://pondmakers.fillout.com/t/dSHyMGjVaVus" target="_blank" rel="noopener">브랜드/콘텐츠 협업 문의</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="h-story" id="about" aria-label="Forest">
-    <div class="h-story-stick">
-      <div class="h-story-off">
-        <div class="h-toggle" aria-hidden="true"><span class="label">Forest</span><i></i></div>
-        <h2>도시 한가운데, 음악이 숨 쉬는 곳</h2>
-        <p>2021년 7월의 어느 여름, 숲세권 라이브는 노래하는 사람과<br>듣는 사람이 가장 가까워질 수 있는 공간을 꿈꾸며 시작되었습니다.</p>
+      <div class="h-beat h-beat-city" id="about">
+        <h2 data-reveal>도시 한가운데, 음악이 숨 쉬는 곳</h2>
+        <p data-reveal>2021년 7월의 어느 여름, 숲세권 라이브는 노래하는 사람과<br>듣는 사람이 가장 가까워질 수 있는 공간을 꿈꾸며 시작되었습니다.</p>
       </div>
-      <div class="h-story-on">
-        <div class="h-toggle is-on" aria-hidden="true"><span class="label">Forest</span><i></i></div>
-        <h2>한 무대에서 움튼<br>숲세권 라이브의 음악들은 자라듯 번져<br>공간과 공연으로 자연스럽게 확장됩니다.</h2>
+      <div class="h-beat h-beat-grow" id="scene-grow">
+        <h2 data-reveal>한 무대에서 움튼<br>숲세권 라이브의 음악들은 자라듯 번져<br>공간과 공연으로 자연스럽게 확장됩니다.</h2>
       </div>
     </div>
   </section>
