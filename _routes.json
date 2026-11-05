@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/", "/index.html", "/en", "/en/", "/ja", "/ja/", "/ko", "/ko/", "/robots.txt", "/sitemap.xml", "/stories", "/stories/*", "/services", "/services/*", "/journal", "/journal/*", "/concert", "/concert/*", "/api/*"],
+  "exclude": []
+}

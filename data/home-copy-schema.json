@@ -1,0 +1,483 @@
+{
+ "_설명": "소개 사이트 문구 목록. 어드민(/admin/home.html)이 이 목록으로 칸을 그린다. data/home-copy.json의 항목과 같아야 한다.",
+ "groups": [
+  {
+   "id": "A",
+   "name": "검색·공유",
+   "desc": "검색 결과와 링크 미리보기에 나옵니다.",
+   "items": [
+    {
+     "id": "meta.title",
+     "where": "페이지 제목",
+     "multiline": true
+    },
+    {
+     "id": "meta.description",
+     "where": "검색 결과 설명",
+     "multiline": true
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "name": "공통",
+   "desc": "머리글과 여러 곳에 함께 쓰는 문구입니다. 화면에 보이지 않는 설명도 있습니다.",
+   "items": [
+    {
+     "id": "site.name",
+     "where": "사이트 이름"
+    },
+    {
+     "id": "nav.menu",
+     "where": "메뉴 설명(화면에 안 보임)"
+    },
+    {
+     "id": "nav.language",
+     "where": "언어 메뉴 설명(화면에 안 보임)"
+    },
+    {
+     "id": "cta.artist",
+     "where": "아티스트 문의 버튼"
+    },
+    {
+     "id": "cta.brand",
+     "where": "브랜드 문의 버튼"
+    },
+    {
+     "id": "emblem.alt",
+     "where": "엠블럼 설명(화면에 안 보임)"
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "첫 장면",
+   "desc": "히어로부터 스크롤 장면까지입니다.",
+   "items": [
+    {
+     "id": "hero.title",
+     "where": "큰 제목",
+     "multiline": true
+    },
+    {
+     "id": "hero.p1",
+     "where": "소개 1",
+     "multiline": true
+    },
+    {
+     "id": "hero.p2",
+     "where": "소개 2",
+     "multiline": true
+    },
+    {
+     "id": "hero.p3",
+     "where": "소개 3",
+     "multiline": true
+    },
+    {
+     "id": "hero.photo",
+     "where": "사진 설명(화면에 안 보임)",
+     "multiline": true
+    },
+    {
+     "id": "story.title",
+     "where": "도시 문구 제목"
+    },
+    {
+     "id": "story.body",
+     "where": "도시 문구 본문",
+     "multiline": true
+    },
+    {
+     "id": "story.turn",
+     "where": "“한 무대에서 움튼” 문구",
+     "multiline": true
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "name": "콘텐츠",
+   "desc": "Original Content와 Partners Content 문구입니다.",
+   "items": [
+    {
+     "id": "original.title",
+     "where": "Original 제목"
+    },
+    {
+     "id": "original.body",
+     "where": "Original 설명",
+     "multiline": true
+    },
+    {
+     "id": "original.forest.title",
+     "where": "숲세권 라이브 카드 제목"
+    },
+    {
+     "id": "original.forest.body",
+     "where": "숲세권 라이브 카드 설명",
+     "multiline": true
+    },
+    {
+     "id": "original.wheels.title",
+     "where": "두바퀴 라이브 카드 제목"
+    },
+    {
+     "id": "original.wheels.body",
+     "where": "두바퀴 라이브 카드 설명",
+     "multiline": true
+    },
+    {
+     "id": "partners.title",
+     "where": "Partners 제목"
+    },
+    {
+     "id": "partners.lead",
+     "where": "Partners 설명 1",
+     "multiline": true
+    },
+    {
+     "id": "partners.body",
+     "where": "Partners 설명 2",
+     "multiline": true
+    },
+    {
+     "id": "partners.kcc.title",
+     "where": "KCC 카드 제목"
+    },
+    {
+     "id": "partners.kcc.body",
+     "where": "KCC 카드 설명",
+     "multiline": true
+    },
+    {
+     "id": "partners.carol.title",
+     "where": "캐롤 카드 제목"
+    },
+    {
+     "id": "partners.carol.body",
+     "where": "캐롤 카드 설명",
+     "multiline": true
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "name": "철학",
+   "desc": "엠블럼 아래 문장과 포스터 설명입니다.",
+   "items": [
+    {
+     "id": "philosophy.body",
+     "where": "철학 문장",
+     "multiline": true
+    },
+    {
+     "id": "philosophy.photo",
+     "where": "포스터 설명(화면에 안 보임)"
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "name": "선택받는 이유",
+   "desc": "큰 번호가 나오는 구역입니다.",
+   "items": [
+    {
+     "id": "why.title",
+     "where": "제목",
+     "multiline": true
+    },
+    {
+     "id": "why.body",
+     "where": "설명",
+     "multiline": true
+    },
+    {
+     "id": "why.1.title",
+     "where": "이유 1 제목"
+    },
+    {
+     "id": "why.1.body",
+     "where": "이유 1 본문",
+     "multiline": true
+    },
+    {
+     "id": "why.2.title",
+     "where": "이유 2 제목"
+    },
+    {
+     "id": "why.2.body",
+     "where": "이유 2 본문",
+     "multiline": true
+    },
+    {
+     "id": "why.3.title",
+     "where": "이유 3 제목"
+    },
+    {
+     "id": "why.3.body",
+     "where": "이유 3 본문",
+     "multiline": true
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "name": "함께하는 방법",
+   "desc": "아티스트와 브랜드 카드입니다.",
+   "items": [
+    {
+     "id": "ways.title",
+     "where": "제목"
+    },
+    {
+     "id": "ways.body",
+     "where": "설명"
+    },
+    {
+     "id": "ways.artist.title",
+     "where": "아티스트 카드 제목"
+    },
+    {
+     "id": "ways.artist.sub",
+     "where": "아티스트 카드 부제"
+    },
+    {
+     "id": "ways.artist.1",
+     "where": "아티스트 항목 1"
+    },
+    {
+     "id": "ways.artist.2",
+     "where": "아티스트 항목 2"
+    },
+    {
+     "id": "ways.artist.3",
+     "where": "아티스트 항목 3"
+    },
+    {
+     "id": "ways.artist.4",
+     "where": "아티스트 항목 4"
+    },
+    {
+     "id": "ways.brand.title",
+     "where": "브랜드 카드 제목"
+    },
+    {
+     "id": "ways.brand.sub",
+     "where": "브랜드 카드 부제"
+    },
+    {
+     "id": "ways.brand.1",
+     "where": "브랜드 항목 1"
+    },
+    {
+     "id": "ways.brand.2",
+     "where": "브랜드 항목 2"
+    },
+    {
+     "id": "ways.brand.3",
+     "where": "브랜드 항목 3"
+    },
+    {
+     "id": "ways.brand.4",
+     "where": "브랜드 항목 4"
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "name": "스튜디오",
+   "desc": "지점 탭과 위치, 구성입니다. 사진은 공연 사이트 지점 사진을 같이 씁니다.",
+   "items": [
+    {
+     "id": "studio.label",
+     "where": "작은 머리말"
+    },
+    {
+     "id": "studio.title",
+     "where": "큰 제목"
+    },
+    {
+     "id": "studio.tab.mullae",
+     "where": "1호점 탭"
+    },
+    {
+     "id": "studio.tab.kind",
+     "where": "2호점 탭"
+    },
+    {
+     "id": "studio.mullae.location",
+     "where": "1호점 위치"
+    },
+    {
+     "id": "studio.mullae.capacity",
+     "where": "1호점 수용인원"
+    },
+    {
+     "id": "studio.kind.location",
+     "where": "2호점 위치"
+    },
+    {
+     "id": "studio.kind.capacity",
+     "where": "2호점 수용인원"
+    },
+    {
+     "id": "studio.kakao",
+     "where": "카카오맵 버튼"
+    },
+    {
+     "id": "studio.naver",
+     "where": "네이버맵 버튼"
+    },
+    {
+     "id": "studio.features",
+     "where": "구성 제목"
+    },
+    {
+     "id": "studio.features.1",
+     "where": "구성 항목 1"
+    },
+    {
+     "id": "studio.features.2",
+     "where": "구성 항목 2"
+    },
+    {
+     "id": "studio.features.3",
+     "where": "구성 항목 3"
+    },
+    {
+     "id": "studio.ops",
+     "where": "운영 형태 제목"
+    },
+    {
+     "id": "studio.ops.1",
+     "where": "운영 형태 항목 1"
+    },
+    {
+     "id": "studio.ops.2",
+     "where": "운영 형태 항목 2"
+    },
+    {
+     "id": "studio.ops.3",
+     "where": "운영 형태 항목 3"
+    },
+    {
+     "id": "studio.prev",
+     "where": "이전 버튼 설명(화면에 안 보임)"
+    },
+    {
+     "id": "studio.next",
+     "where": "다음 버튼 설명(화면에 안 보임)"
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "name": "ESG",
+   "desc": "ESG 구역과 큰 문구입니다.",
+   "items": [
+    {
+     "id": "esg.title.before",
+     "where": "ESG 앞 제목"
+    },
+    {
+     "id": "esg.energy.title",
+     "where": "재생 에너지 제목"
+    },
+    {
+     "id": "esg.energy.p1",
+     "where": "재생 에너지 문단 1",
+     "multiline": true
+    },
+    {
+     "id": "esg.energy.p2",
+     "where": "재생 에너지 문단 2",
+     "multiline": true
+    },
+    {
+     "id": "quote.text",
+     "where": "사진 위 큰 문구",
+     "multiline": true
+    },
+    {
+     "id": "quote.photo",
+     "where": "사진 설명(화면에 안 보임)"
+    },
+    {
+     "id": "esg.heading",
+     "where": "세 칸 위 제목"
+    },
+    {
+     "id": "esg.e.title",
+     "where": "Environment 제목",
+     "multiline": true
+    },
+    {
+     "id": "esg.e.body",
+     "where": "Environment 본문",
+     "multiline": true
+    },
+    {
+     "id": "esg.e.photo",
+     "where": "Environment 사진 설명(화면에 안 보임)"
+    },
+    {
+     "id": "esg.s.title",
+     "where": "Social 제목",
+     "multiline": true
+    },
+    {
+     "id": "esg.s.body",
+     "where": "Social 본문",
+     "multiline": true
+    },
+    {
+     "id": "esg.s.photo",
+     "where": "Social 사진 설명(화면에 안 보임)"
+    },
+    {
+     "id": "esg.g.title",
+     "where": "Governance 제목",
+     "multiline": true
+    },
+    {
+     "id": "esg.g.body",
+     "where": "Governance 본문",
+     "multiline": true
+    },
+    {
+     "id": "esg.g.photo",
+     "where": "Governance 사진 설명(화면에 안 보임)"
+    }
+   ]
+  },
+  {
+   "id": "J",
+   "name": "파트너·푸터",
+   "desc": "파트너 로고 위 문구와 맨 아래입니다.",
+   "items": [
+    {
+     "id": "logos.title",
+     "where": "파트너 제목"
+    },
+    {
+     "id": "logos.body",
+     "where": "파트너 설명",
+     "multiline": true
+    },
+    {
+     "id": "footer.title",
+     "where": "푸터 제목"
+    },
+    {
+     "id": "footer.related",
+     "where": "관련 사이트 설명(화면에 안 보임)"
+    },
+    {
+     "id": "footer.social",
+     "where": "소셜 설명(화면에 안 보임)"
+    }
+   ]
+  }
+ ]
+}

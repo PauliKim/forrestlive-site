@@ -202,3 +202,25 @@ python3 -m http.server 8000
 ```bash
 python3 tests/test_sync.py   # KOPIS 응답 예시로 해석·병합·15분 대기를 확인
 ```
+
+## 소개 사이트 관리(/admin/home.html)
+
+`https://forrestlive.pages.dev/admin/home.html` 에서 세 언어 문구, 영상 카드의 썸네일과 유튜브 링크, 아티스트 포스터, 공유 이미지를 고칩니다. 설정은 공연 사이트 문구 관리와 같은 환경 변수를 씁니다.
+
+- Access 애플리케이션 `숲세권 문구 관리`에 **Add public hostname**으로 `forrestlive.pages.dev`, Path `api/home`을 한 줄 더 넣어 둡니다. `api/seo`와 같은 이유입니다.
+- `main`에 합쳐져야 저장할 수 있습니다. 브랜치 미리보기에서는 로그인이 없어 미리보기만 됩니다.
+- 바꾼 그림의 이전 파일은 저장소에 남습니다. 커밋 기록으로 되돌릴 수 있습니다.
+
+## forrestlive.com 전환
+
+소개 사이트(`home/`)를 프레이머 대신 forrestlive.com에 연결하는 순서입니다. 미리보기 https://home.forrestlive.pages.dev 를 확인한 뒤 진행합니다.
+Cloudflare Pages는 루트 도메인을 Cloudflare DNS로만 연결할 수 있어서, 가비아에 있는 네임서버를 Cloudflare로 옮겨야 합니다.
+
+1. Cloudflare 대시보드 → **Add a site** → `forrestlive.com`, Free 요금제. 기존 DNS를 읽어 오면 `concert` CNAME이 있는지 확인합니다. `concert`는 DNS only(회색 구름)로 둡니다.
+2. 루트 레코드는 프레이머 값 그대로, DNS only(회색 구름)로 둡니다(`sites.framer.app`, 응답 IP 31.43.160.6, 31.43.161.6). 네임서버를 옮겨도 이 시점에는 화면이 바뀌지 않습니다. 메일(MX) 레코드는 지금 없습니다.
+3. 가비아 → 도메인 관리 → 네임서버 설정에서 Cloudflare가 알려 준 네임서버 2개로 바꿉니다. 반영까지 몇 시간~하루 걸릴 수 있습니다.
+4. Cloudflare에서 도메인이 Active가 되면 Workers & Pages → `forrestlive` → Custom domains → **Set up a custom domain** → `forrestlive.com`. 이때 루트 레코드가 Pages로 바뀌고 소개 사이트가 열립니다.
+5. https://forrestlive.com , /en/ , /ja/ , /concert 를 확인합니다. 해외 접속 이동은 이 단계에서야 실제로 확인할 수 있습니다(대한민국에서 열면 한국어가 나오고, 언어 메뉴를 고르면 쿠키가 나라보다 앞섭니다). Google Search Console과 네이버 서치어드바이저에 사이트맵 `https://forrestlive.com/sitemap.xml`을 다시 제출합니다.
+6. 며칠 문제가 없으면 프레이머 요금제와 사용자 도메인 연결을 해지합니다.
+
+되돌리기: 4단계의 사용자 도메인을 지우고 루트 레코드를 위의 프레이머 값으로 되돌리면 프레이머 화면으로 돌아갑니다. 프레이머 프로젝트는 며칠간 지우지 않습니다.

@@ -145,3 +145,26 @@ body.seo-page { height: auto; min-height: 100%; }
   .seo-split, .og { grid-template-columns: minmax(0, 1fr); }
   .bar, .bar-actions { flex-wrap: wrap; }
 }
+
+/* 소개 사이트: 영상 카드와 포스터 */
+.lang-seg { margin-bottom: 10px; }
+.field-ko { margin-top: 6px; font-size: var(--t-13); color: var(--muted); }
+.media-card { display: grid; grid-template-columns: 148px minmax(0, 1fr); gap: 12px; padding: 12px 0; align-items: start; }
+.media-card + .media-card { border-top: 1px solid var(--line); }
+.media-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-sm); background: var(--chip); display: block; }
+.media-og { aspect-ratio: 1200 / 630; }
+.media-body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.media-body b { font-size: var(--t-15); }
+.media-body input[type="url"] { width: 100%; font: 400 var(--t-13)/1.4 var(--font-ui); padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); }
+.media-body input.bad { border-color: var(--text); }
+.media-err { margin: 0; font-size: var(--t-13); font-weight: 600; }
+.media-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.file-btn { position: relative; overflow: hidden; }
+.file-btn input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.artist-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.artist-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-sm); background: var(--chip); display: block; }
+.artist-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; margin-top: 6px; }
+.artist-tools button, .artist-tools .file-btn { font: 500 12px/1 var(--font-ui); min-height: 30px; padding: 0 4px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); cursor: pointer; }
+.artist-tools button:disabled { opacity: .4; cursor: default; }
+.artist-add { margin-top: 12px; }
+.tag-new { margin-top: 6px; display: inline-block; }

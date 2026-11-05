@@ -1,9 +1,9 @@
-# 숲세권 라이브 공연 사이트
+# 숲세권 라이브 사이트
 
-숲세권 라이브(For:Rest LIVE)가 기획한 공연을 모아 보여 주는 정적 사이트.
-- 운영 주소: https://concert.forrestlive.com (Cloudflare Pages 프로젝트 `forrestlive`, https://forrestlive.pages.dev)
+숲세권 라이브(For:Rest LIVE)의 공연 사이트와 소개 사이트를 한 저장소에서 만드는 정적 사이트.
+- 공연 사이트: https://concert.forrestlive.com (Cloudflare Pages 프로젝트 `forrestlive`, https://forrestlive.pages.dev)
+- 소개 사이트: `home/` (forrestlive.com의 한국어 `/`, 영어 `/en/`, 일본어 `/ja/`. 다국어 방식은 폰드메이커스 사이트와 같다). 프레이머 랜딩을 옮긴 것으로 구성은 프레이머와 같고 디자인은 공연 사이트를 따른다. 도메인 전환 전까지 forrestlive.com은 프레이머가 응답한다(`DEPLOY.md`의 "forrestlive.com 전환")
 - 저장소: https://github.com/PauliKim/forrestlive-site (공개, 기본 브랜치 `main`)
-- forrestlive.com 루트는 프레이머 랜딩페이지다. 이 저장소와 무관하니 건드리지 않는다.
 
 ## 대화와 작성 언어
 - 사용자와는 한국어로 대화한다.
@@ -26,12 +26,23 @@
 - `scripts/sync_kopis.py` KOPIS OPEN API 동기화. `tests/test_sync.py` 네트워크 없이 도는 점검
 - `.github/workflows/sync-kopis.yml` 5분마다 변경분, 매일 04:10 전체 동기화 후 자동 커밋(작성자 forrestlive-bot)
 - `_headers` 캐시 설정, `_redirects` `/concert/*` → 루트 매핑
+- 소개 사이트
+  - `data/home-copy.json` 세 언어 문구, `data/home-media.json` 영상 카드 썸네일·유튜브 링크, 아티스트 포스터, 공유 이미지, `data/home-copy-schema.json` 어드민 문구 목록(문구 파일과 항목이 같아야 한다). 어드민 `/admin/home.html`에서 고치거나 사람이 고친다
+  - 어드민: `admin/home.html`, `admin/home.js`, 저장 서버 `functions/api/home.js`(`functions/_lib/home.js` 검사). 저장하면 데이터 파일, 세 언어 페이지, 새 그림(`assets/home/upload-날짜-번호.jpg`)을 커밋 하나로 올린다
+  - `home/render.js` 페이지를 그리는 함수. 미리보기와 저장 서버가 같이 쓴다. `scripts/build_home.py`와 결과가 같아야 한다(`tests/test_home.py`가 비교)
+  - `scripts/home.template.html` 페이지 틀, `scripts/build_home.py` 문구를 틀에 넣어 `home/index.html`, `home/en/index.html`, `home/ja/index.html`을 만든다. 만들어진 세 파일은 손으로 고치지 않는다
+  - `home/home.css`, `home/home.js` 소개 사이트 전용. 토큰·글꼴·로고는 공연 사이트의 `styles.css`, `assets/`를, 지점 사진은 `data/venue-photos.json`을 같이 쓴다. 사진은 `assets/home/`
+  - `functions/_middleware.js` 접속 주소로 나눈다: forrestlive.com과 home.forrestlive.pages.dev는 `home/`을 보여 주고 나머지는 그대로 통과. `_routes.json`에 적은 경로에서만 돈다(사진·글꼴 요청에는 돌지 않게). 주소를 추가하면 둘 다 고친다
+  - 언어 판단은 `functions/_lib/lang.js`(순수 함수). 첫 화면 `/`에서만 움직인다: 검색·공유 로봇과 `?preview`는 이동 없음, 쿠키 `lang`이 있으면 그 언어, 없으면 KR 한국어·JP `/ja/`·그 밖 `/en/`(302). `/en/`, `/ja/`에 직접 들어오면 이동시키지 않는다. 언어 메뉴를 누르면 `home/home.js`가 쿠키를 1년 남긴다
+  - `home/robots.txt`, `home/sitemap.xml` forrestlive.com 전용
+  - 첫 장면(히어로~“한 무대에서 움튼” 문구)은 `home/home.js`의 `draw(p)`가 스크롤 위치 0~1을 그대로 각 요소에 옮긴다. 시점을 바꾸려면 `seg(p, 시작, 끝)`의 숫자를 고친다. 동작 줄이기 설정에서는 정지 화면으로 쌓인다
 - `assets/` 로고, 공연장 사진, 글꼴(Noto Serif KR, Inter, Pretendard 분할 파일, OFL), `assets/posters/`(동기화가 내려받는 포스터)
 
 ## 자주 쓰는 명령
 - 미리보기: `python3 -m http.server 8000` → http://localhost:8000 (`/concert/` 경로 확인은 Pages 배포본에서)
 - 동기화 점검: `python3 tests/test_sync.py` (스크립트를 고치면 반드시 실행)
 - 문구 점검: `python3 tests/test_copy.py` (문구, SEO, index.html, app.js, functions/를 고치면 실행)
+- 소개 사이트 만들기: `python3 scripts/build_home.py` (문구나 틀을 고치면 실행), 점검: `python3 tests/test_home.py`. 로컬 확인 주소는 http://localhost:8000/home/ , 언어 전환까지 보려면 `home` 브랜치 미리보기 https://home.forrestlive.pages.dev
 - 동기화 직접 실행(필요할 때만): `set -a; source .env; set +a; python3 scripts/sync_kopis.py --no-hold`
   - `.env`에 `KOPIS_API_KEY=32자리키` 한 줄. `.env`는 커밋 금지(.gitignore에 있음)
   - 로컬에서 돌린 결과는 커밋하지 말고 되돌린다. 실제 반영은 GitHub Actions가 한다
