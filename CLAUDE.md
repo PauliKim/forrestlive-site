@@ -2,7 +2,7 @@
 
 숲세권 라이브(For:Rest LIVE)의 공연 사이트와 소개 사이트를 한 저장소에서 만드는 정적 사이트.
 - 공연 사이트: https://concert.forrestlive.com (Cloudflare Pages 프로젝트 `forrestlive`, https://forrestlive.pages.dev)
-- 소개 사이트: `home/` (한국어 forrestlive.com, 영어 en.forrestlive.com, 일본어 ja.forrestlive.com. 공연 사이트처럼 하위 도메인으로 접속하고, forrestlive.com/en·/ja는 해당 주소로 넘어간다). 프레이머 랜딩을 옮긴 것으로 구성은 프레이머와 같고 디자인은 공연 사이트를 따른다. 도메인 전환 전까지 forrestlive.com은 프레이머가 응답한다(`DEPLOY.md`의 "forrestlive.com 전환")
+- 소개 사이트: `home/` (forrestlive.com의 한국어 `/`, 영어 `/en/`, 일본어 `/ja/`. 다국어 방식은 폰드메이커스 사이트와 같다). 프레이머 랜딩을 옮긴 것으로 구성은 프레이머와 같고 디자인은 공연 사이트를 따른다. 도메인 전환 전까지 forrestlive.com은 프레이머가 응답한다(`DEPLOY.md`의 "forrestlive.com 전환")
 - 저장소: https://github.com/PauliKim/forrestlive-site (공개, 기본 브랜치 `main`)
 
 ## 대화와 작성 언어
@@ -27,11 +27,14 @@
 - `.github/workflows/sync-kopis.yml` 5분마다 변경분, 매일 04:10 전체 동기화 후 자동 커밋(작성자 forrestlive-bot)
 - `_headers` 캐시 설정, `_redirects` `/concert/*` → 루트 매핑
 - 소개 사이트
-  - `data/home-copy.json` 세 언어 문구. 사람이 고치는 곳이다
+  - `data/home-copy.json` 세 언어 문구, `data/home-media.json` 영상 카드 썸네일·유튜브 링크, 아티스트 포스터, 공유 이미지, `data/home-copy-schema.json` 어드민 문구 목록(문구 파일과 항목이 같아야 한다). 어드민 `/admin/home.html`에서 고치거나 사람이 고친다
+  - 어드민: `admin/home.html`, `admin/home.js`, 저장 서버 `functions/api/home.js`(`functions/_lib/home.js` 검사). 저장하면 데이터 파일, 세 언어 페이지, 새 그림(`assets/home/upload-날짜-번호.jpg`)을 커밋 하나로 올린다
+  - `home/render.js` 페이지를 그리는 함수. 미리보기와 저장 서버가 같이 쓴다. `scripts/build_home.py`와 결과가 같아야 한다(`tests/test_home.py`가 비교)
   - `scripts/home.template.html` 페이지 틀, `scripts/build_home.py` 문구를 틀에 넣어 `home/index.html`, `home/en/index.html`, `home/ja/index.html`을 만든다. 만들어진 세 파일은 손으로 고치지 않는다
   - `home/home.css`, `home/home.js` 소개 사이트 전용. 토큰·글꼴·로고는 공연 사이트의 `styles.css`, `assets/`를, 지점 사진은 `data/venue-photos.json`을 같이 쓴다. 사진은 `assets/home/`
-  - `functions/_middleware.js` 접속 주소로 나눈다: forrestlive.com, en., ja.와 home.forrestlive.pages.dev는 `home/`의 해당 언어를 보여 주고 나머지는 그대로 통과. `_routes.json`에 적은 경로에서만 돈다(사진·글꼴 요청에는 돌지 않게). 주소를 추가하면 둘 다 고친다
-  - `home/robots.txt`, `home/sitemap.xml` 소개 사이트 세 주소 공용
+  - `functions/_middleware.js` 접속 주소로 나눈다: forrestlive.com과 home.forrestlive.pages.dev는 `home/`을 보여 주고 나머지는 그대로 통과. `_routes.json`에 적은 경로에서만 돈다(사진·글꼴 요청에는 돌지 않게). 주소를 추가하면 둘 다 고친다
+  - 언어 판단은 `functions/_lib/lang.js`(순수 함수). 첫 화면 `/`에서만 움직인다: 검색·공유 로봇과 `?preview`는 이동 없음, 쿠키 `lang`이 있으면 그 언어, 없으면 KR 한국어·JP `/ja/`·그 밖 `/en/`(302). `/en/`, `/ja/`에 직접 들어오면 이동시키지 않는다. 언어 메뉴를 누르면 `home/home.js`가 쿠키를 1년 남긴다
+  - `home/robots.txt`, `home/sitemap.xml` forrestlive.com 전용
   - 첫 장면(히어로~“한 무대에서 움튼” 문구)은 `home/home.js`의 `draw(p)`가 스크롤 위치 0~1을 그대로 각 요소에 옮긴다. 시점을 바꾸려면 `seg(p, 시작, 끝)`의 숫자를 고친다. 동작 줄이기 설정에서는 정지 화면으로 쌓인다
 - `assets/` 로고, 공연장 사진, 글꼴(Noto Serif KR, Inter, Pretendard 분할 파일, OFL), `assets/posters/`(동기화가 내려받는 포스터)
 

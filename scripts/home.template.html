@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{@lang}}">
+<html lang="{{@lang}}" data-lang="{{@lang}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,17 +9,18 @@
 <meta property="og:site_name" content="{{=site.name}}">
 <meta property="og:title" content="{{=meta.title}}">
 <meta property="og:description" content="{{=meta.description}}">
+<meta property="og:locale" content="{{@locale}}">
 <meta property="og:url" content="{{@url}}">
-<meta property="og:image" content="https://forrestlive.com/assets/home/og.jpg">
+<meta property="og:image" content="https://forrestlive.com{{@ogImage}}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://forrestlive.com/assets/home/og.jpg">
+<meta name="twitter:image" content="https://forrestlive.com{{@ogImage}}">
 <link rel="canonical" href="{{@url}}">
 <link rel="alternate" hreflang="ko" href="https://forrestlive.com/">
-<link rel="alternate" hreflang="en" href="https://en.forrestlive.com/">
-<link rel="alternate" hreflang="ja" href="https://ja.forrestlive.com/">
-<link rel="alternate" hreflang="x-default" href="https://forrestlive.com/">
+<link rel="alternate" hreflang="en" href="https://forrestlive.com/en/">
+<link rel="alternate" hreflang="ja" href="https://forrestlive.com/ja/">
+<link rel="alternate" hreflang="x-default" href="https://forrestlive.com/en/">
 <meta name="google-site-verification" content="Le_T4bmRPoWLiUSoGeb8VPwa8ro7DM0qvk60yCl9TRY">
 <meta name="naver-site-verification" content="2d176ff285ea3bf50eb3356fc36ec396b9f63639">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"숲세권 라이브","alternateName":"For:Rest LIVE","url":"https://forrestlive.com/","logo":"https://forrestlive.com/assets/logo/logo-512.png","sameAs":["https://www.instagram.com/for_rest_live","https://www.youtube.com/@forrestlive","https://concert.forrestlive.com/"]}</script>
@@ -32,7 +33,7 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="{{@url}}" data-path="{{@path}}" aria-label="{{=site.name}}"><img src="/assets/logo/wordmark-forest.png" alt="{{=site.name}}"></a>
+    <a class="logo" href="{{@path}}" aria-label="{{=site.name}}"><img src="/assets/logo/wordmark-forest.png" alt="{{=site.name}}"></a>
     <button class="btn btn-book btn-sm h-menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="h-nav">Menu</button>
     <div class="h-nav" id="h-nav">
       <nav class="site-nav" aria-label="{{=nav.menu}}">
@@ -44,7 +45,7 @@
         <a href="https://concert.forrestlive.com/">Concert</a>
       </nav>
       <nav class="h-lang" aria-label="{{=nav.language}}">
-        <a href="https://forrestlive.com/" data-path="/" hreflang="ko" lang="ko"{{@cur-ko}}>KO</a><a href="https://en.forrestlive.com/" data-path="/en" hreflang="en" lang="en"{{@cur-en}}>EN</a><a href="https://ja.forrestlive.com/" data-path="/ja" hreflang="ja" lang="ja"{{@cur-ja}}>JA</a>
+        <a data-lang-link="ko" href="/" hreflang="ko" lang="ko"{{@cur-ko}}>KO</a><a data-lang-link="en" href="/en/" hreflang="en" lang="en"{{@cur-en}}>EN</a><a data-lang-link="ja" href="/ja/" hreflang="ja" lang="ja"{{@cur-ja}}>JA</a>
       </nav>
     </div>
   </div>
@@ -91,13 +92,13 @@
         <p>{{original.body}}</p>
       </div>
       <div class="h-cards">
-        <a class="h-card" href="https://www.youtube.com/channel/UCEDGYiAk2qmg63pamdGMHSQ" target="_blank" rel="noopener">
-          <img src="/assets/home/content-forest.jpg" alt="" loading="lazy">
+        <a class="h-card" data-media="original.forest" href="{{@card.original.forest.url}}" target="_blank" rel="noopener">
+          <img src="{{@card.original.forest.image}}" alt="" loading="lazy">
           <h3>{{original.forest.title}}</h3>
           <p>{{original.forest.body}}</p>
         </a>
-        <a class="h-card" href="https://youtube.com/playlist?list=PLKgvTUUZYIhVmKz1uQLk1nBspj2XoWUcb" target="_blank" rel="noopener">
-          <img src="/assets/home/content-wheels.jpg" alt="" loading="lazy">
+        <a class="h-card" data-media="original.wheels" href="{{@card.original.wheels.url}}" target="_blank" rel="noopener">
+          <img src="{{@card.original.wheels.image}}" alt="" loading="lazy">
           <h3>{{original.wheels.title}}</h3>
           <p>{{original.wheels.body}}</p>
         </a>
@@ -109,13 +110,13 @@
         <p>{{partners.body}}</p>
       </div>
       <div class="h-cards">
-        <a class="h-card" href="https://youtube.com/playlist?list=PLKgvTUUZYIhUK8MJodtS-p3fS3ln4oz_a" target="_blank" rel="noopener">
-          <img src="/assets/home/partner-kcc.jpg" alt="" loading="lazy">
+        <a class="h-card" data-media="partners.kcc" href="{{@card.partners.kcc.url}}" target="_blank" rel="noopener">
+          <img src="{{@card.partners.kcc.image}}" alt="" loading="lazy">
           <h3>{{partners.kcc.title}}</h3>
           <p>{{partners.kcc.body}}</p>
         </a>
-        <a class="h-card" href="https://www.youtube.com/playlist?list=PLKgvTUUZYIhWxTyEnHFlrh9ovr4k8aypG" target="_blank" rel="noopener">
-          <img src="/assets/home/partner-carol.jpg" alt="" loading="lazy">
+        <a class="h-card" data-media="partners.carol" href="{{@card.partners.carol.url}}" target="_blank" rel="noopener">
+          <img src="{{@card.partners.carol.image}}" alt="" loading="lazy">
           <h3>{{partners.carol.title}}</h3>
           <p>{{partners.carol.body}}</p>
         </a>
@@ -130,15 +131,7 @@
     </div>
     <div class="h-marquee" id="marquee">
       <ul>
-        <li><img src="/assets/home/artist-1.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-2.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-3.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-4.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-5.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-6.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-7.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-8.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
-        <li><img src="/assets/home/artist-9.jpg" alt="{{=philosophy.photo}}" loading="lazy"></li>
+{{@artists}}
       </ul>
     </div>
   </section>

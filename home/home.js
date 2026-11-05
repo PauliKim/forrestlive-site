@@ -3,7 +3,8 @@
 (function () {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // 어드민 미리보기(data-preview)에서는 스크롤 연출 없이 모든 문구를 쌓아 보여 준다
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.hasAttribute("data-preview");
 
   // 좁은 화면 메뉴
   const menuBtn = $("#menu-btn");
@@ -15,10 +16,10 @@
   menuBtn.addEventListener("click", () => setMenu(!nav.classList.contains("open")));
   nav.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
 
-  // 운영 주소는 언어별 하위 도메인이다. 미리보기처럼 다른 주소에서는 경로로 이동한다
-  if (!location.hostname.endsWith("forrestlive.com")) {
-    $$("a[data-path]").forEach((a) => { a.href = a.dataset.path; });
-  }
+  // 언어 선택: 고른 언어를 쿠키(lang)에 남겨 두면 첫 화면(/)의 나라별 자동 이동보다 앞선다(functions/_middleware.js)
+  $$("[data-lang-link]").forEach((a) => a.addEventListener("click", () => {
+    try { document.cookie = `lang=${a.dataset.langLink}; path=/; max-age=31536000; samesite=lax`; } catch (e) {}
+  }));
 
   const seg = (p, from, to) => Math.min(1, Math.max(0, (p - from) / (to - from)));
 

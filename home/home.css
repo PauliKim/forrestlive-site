@@ -231,6 +231,7 @@ body:lang(ja) { word-break: normal; line-break: strict; }
   .h-logos { gap: var(--s-5); }
   .h-logos img { height: 64px; max-width: 120px; }
   .h-quote blockquote { min-height: 96vw; }
+  :lang(ja) .h-beat-grow h2 { font-size: var(--t-20); }
   .h-footer .wrap { padding-block: 96px var(--s-5); }
 }
 @media (prefers-reduced-motion: no-preference) {

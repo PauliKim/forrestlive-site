@@ -1,0 +1,51 @@
+{
+ "_설명": "소개 사이트의 그림과 링크. 어드민(/admin/home.html)에서 고치면 서버가 이 파일과 세 언어 페이지를 함께 커밋한다. 손으로 고쳤으면 python3 scripts/build_home.py.",
+ "ogImage": "assets/home/og.jpg",
+ "cards": {
+  "original.forest": {
+   "image": "assets/home/content-forest.jpg",
+   "url": "https://www.youtube.com/channel/UCEDGYiAk2qmg63pamdGMHSQ"
+  },
+  "original.wheels": {
+   "image": "assets/home/content-wheels.jpg",
+   "url": "https://youtube.com/playlist?list=PLKgvTUUZYIhVmKz1uQLk1nBspj2XoWUcb"
+  },
+  "partners.kcc": {
+   "image": "assets/home/partner-kcc.jpg",
+   "url": "https://youtube.com/playlist?list=PLKgvTUUZYIhUK8MJodtS-p3fS3ln4oz_a"
+  },
+  "partners.carol": {
+   "image": "assets/home/partner-carol.jpg",
+   "url": "https://www.youtube.com/playlist?list=PLKgvTUUZYIhWxTyEnHFlrh9ovr4k8aypG"
+  }
+ },
+ "artists": [
+  {
+   "image": "assets/home/artist-1.jpg"
+  },
+  {
+   "image": "assets/home/artist-2.jpg"
+  },
+  {
+   "image": "assets/home/artist-3.jpg"
+  },
+  {
+   "image": "assets/home/artist-4.jpg"
+  },
+  {
+   "image": "assets/home/artist-5.jpg"
+  },
+  {
+   "image": "assets/home/artist-6.jpg"
+  },
+  {
+   "image": "assets/home/artist-7.jpg"
+  },
+  {
+   "image": "assets/home/artist-8.jpg"
+  },
+  {
+   "image": "assets/home/artist-9.jpg"
+  }
+ ]
+}
