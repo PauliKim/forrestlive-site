@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T20:29",
+ "updated": "2026-11-10T19:59",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4703,6 +4703,42 @@
    "series": "숲세권 라이브",
    "intro": "도시 속 작은 울림을 전하는 숲, 숲세권 라이브에서 열리는 린지 단독 공연 〈Ways of Seeing〉입니다.",
    "openAt": "2026-10-19T20:00",
+   "soldOut": false
+  },
+  {
+   "id": "pf305981",
+   "kopisId": "PF305981",
+   "date": "2026-11-20",
+   "endDate": "2026-11-20",
+   "time": "20:00",
+   "timeNote": "",
+   "times": "금요일(20:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "정수민"
+   ],
+   "poster": "assets/posters/PF305981.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF305981_202611100214023670.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214260"
+    }
+   ],
+   "kopisUpdated": "2026-11-10 15:00:03.058793",
+   "source": "KOPIS",
+   "title": "Home",
+   "artist": "정수민",
+   "subtitle": "쇼케이스",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
    "soldOut": false
   },
   {
