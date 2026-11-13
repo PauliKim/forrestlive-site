@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T19:59",
+ "updated": "2026-11-13T19:49",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4920,6 +4920,43 @@
    "source": "KOPIS",
    "title": "Evergreen",
    "artist": "보이드",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
+   "id": "pf306336",
+   "kopisId": "PF306336",
+   "date": "2026-11-29",
+   "endDate": "2026-11-29",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 50,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [
+    "이제원",
+    "박형률"
+   ],
+   "poster": "assets/posters/PF306336.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306336_202611131111326950.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214277"
+    }
+   ],
+   "kopisUpdated": "2026-11-13 15:00:03.532917",
+   "source": "KOPIS",
+   "title": "해바라기",
+   "artist": "오르내림 & 률",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
    "intro": "",
