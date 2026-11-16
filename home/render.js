@@ -1,9 +1,9 @@
 // 소개 사이트 페이지를 그리는 함수. 어드민 미리보기(admin/home.js)와 저장 서버(functions/api/home.js)가 함께 쓴다.
 // scripts/build_home.py와 같은 결과를 낸다. 한쪽을 고치면 다른 쪽도 고친다(tests/test_home.py가 비교한다).
 export const PAGES = {
-  ko: { file: "home/index.html", path: "/", locale: "ko_KR" },
-  en: { file: "home/en/index.html", path: "/en/", locale: "en_US" },
-  ja: { file: "home/ja/index.html", path: "/ja/", locale: "ja_JP" }
+  ko: { file: "home/index.html", path: "/", locale: "ko_KR", artistForm: "https://pondmakers.fillout.com/t/pSFxrTnHL5us" },
+  en: { file: "home/en/index.html", path: "/en/", locale: "en_US", artistForm: "https://pondmakers.fillout.com/t/nyPDAvC3rAus" },
+  ja: { file: "home/ja/index.html", path: "/ja/", locale: "ja_JP", artistForm: "https://pondmakers.fillout.com/t/gjZjQ71JL9us" }
 };
 export const SITE = "https://forrestlive.com";
 export const CARD_IDS = ["original.forest", "original.wheels", "partners.kcc", "partners.carol"];
@@ -18,7 +18,7 @@ const imageUrl = (image) => (image.startsWith("data:") ? image : "/" + image);
 
 export function renderHome(template, items, media, lang, { mark = false } = {}) {
   const page = PAGES[lang];
-  const values = { lang, path: page.path, url: SITE + page.path, locale: page.locale, ogImage: escAttr(imageUrl(media.ogImage)) };
+  const values = { lang, path: page.path, url: SITE + page.path, locale: page.locale, artistForm: page.artistForm, ogImage: escAttr(imageUrl(media.ogImage)) };
   for (const code of Object.keys(PAGES)) values[`cur-${code}`] = code === lang ? ' aria-current="page"' : "";
   for (const id of CARD_IDS) {
     values[`card.${id}.image`] = escAttr(imageUrl(media.cards[id].image));

@@ -8,7 +8,7 @@
 틀의 약속
 - {{문구키}}   글자로 넣는다. 줄바꿈(\\n)은 <br>로 바꾼다.
 - {{=문구키}}  속성값으로 넣는다. 줄바꿈은 빈칸으로 바꾼다.
-- {{@lang}} {{@path}} {{@locale}} {{@cur-ko}} 같은 @값은 언어마다 스크립트가 정한다.
+- {{@lang}} {{@path}} {{@locale}} {{@artistForm}} {{@cur-ko}} 같은 @값은 언어마다 스크립트가 정한다.
 """
 import html
 import json
@@ -20,12 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "scripts/home.template.html"
 COPY = ROOT / "data/home-copy.json"
 MEDIA = ROOT / "data/home-media.json"
-# 언어별 (파일, 경로, og:locale)
+# 언어별 (파일, 경로, og:locale, 아티스트 출연 문의 폼)
 SITE = "https://forrestlive.com"
 PAGES = {
-    "ko": ("home/index.html", "/", "ko_KR"),
-    "en": ("home/en/index.html", "/en/", "en_US"),
-    "ja": ("home/ja/index.html", "/ja/", "ja_JP"),
+    "ko": ("home/index.html", "/", "ko_KR", "https://pondmakers.fillout.com/t/pSFxrTnHL5us"),
+    "en": ("home/en/index.html", "/en/", "en_US", "https://pondmakers.fillout.com/t/nyPDAvC3rAus"),
+    "ja": ("home/ja/index.html", "/ja/", "ja_JP", "https://pondmakers.fillout.com/t/gjZjQ71JL9us"),
 }
 esc = lambda text: html.escape(text, quote=True)
 TOKEN = re.compile(r"\{\{([=@]?)([\w.-]+)\}\}")
@@ -33,7 +33,7 @@ TOKEN = re.compile(r"\{\{([=@]?)([\w.-]+)\}\}")
 
 def render(template, items, media, lang):
     path = PAGES[lang][1]
-    values = {"lang": lang, "path": path, "url": SITE + path, "locale": PAGES[lang][2], "ogImage": esc("/" + media["ogImage"])}
+    values = {"lang": lang, "path": path, "url": SITE + path, "locale": PAGES[lang][2], "artistForm": PAGES[lang][3], "ogImage": esc("/" + media["ogImage"])}
     for card, value in media["cards"].items():
         values[f"card.{card}.image"] = esc("/" + value["image"])
         values[f"card.{card}.url"] = esc(value["url"])
