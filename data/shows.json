@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T16:00",
+ "updated": "2026-11-19T22:47",
  "source": "공연예술통합전산망(KOPIS)",
  "shows": [
   {
@@ -4993,6 +4993,74 @@
    "source": "KOPIS",
    "title": "흰 코스모스",
    "artist": "예함",
+   "subtitle": "단독 공연",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
+   "id": "pf306969",
+   "kopisId": "PF306969",
+   "date": "2026-12-12",
+   "endDate": "2026-12-12",
+   "time": "19:00",
+   "timeNote": "",
+   "times": "토요일(19:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "전석 66,000원",
+   "runtime": "1시간 40분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "assets/posters/PF306969.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306969_202611190135567800.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214335"
+    }
+   ],
+   "kopisUpdated": "2026-11-19 15:00:03.237592",
+   "source": "KOPIS",
+   "title": "Grove",
+   "artist": "406호 프로젝트, 연말정산",
+   "subtitle": "",
+   "series": "숲세권 라이브",
+   "intro": "",
+   "openAt": "",
+   "soldOut": false
+  },
+  {
+   "id": "pf306981",
+   "kopisId": "PF306981",
+   "date": "2026-12-13",
+   "endDate": "2026-12-13",
+   "time": "17:00",
+   "timeNote": "",
+   "times": "일요일(17:00)",
+   "venue": "kind",
+   "venueName": "카인드스퀘어점",
+   "price": "현장판매 50,000원, 사전예약 44,000원",
+   "runtime": "1시간 30분",
+   "age": "만 7세 이상",
+   "lineup": [],
+   "poster": "assets/posters/PF306981.jpg",
+   "introImages": [
+    "https://www.kopis.or.kr/upload/pfmIntroImage/PF_PF306981_202611190213091360.jpg"
+   ],
+   "tickets": [
+    {
+     "site": "멜론티켓",
+     "url": "https://ticket.melon.com/performance/index.htm?prodId=214320"
+    }
+   ],
+   "kopisUpdated": "2026-11-19 18:00:03.032953",
+   "source": "KOPIS",
+   "title": "세계수",
+   "artist": "블낫블",
    "subtitle": "단독 공연",
    "series": "숲세권 라이브",
    "intro": "",
