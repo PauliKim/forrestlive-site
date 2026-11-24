@@ -106,7 +106,7 @@ forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사�
 
 ## 6단계. 문구 관리 화면(/admin) 켜기
 
-`https://forrestlive.pages.dev/admin/` 에서 고정 문구를 고치고 미리 본 뒤 저장하면, 서버(`functions/api/copy.js`)가 `data/copy.json`과 `index.html`을 main에 커밋합니다. 처음 한 번 아래 세 가지를 설정해야 저장이 됩니다. 설정 전에도 화면은 열리고 미리보기는 되지만 저장 버튼은 꺼져 있습니다.
+`https://forrestlive-site.pages.dev/admin/` 에서 고정 문구를 고치고 미리 본 뒤 저장하면, 서버(`functions/api/copy.js`)가 `data/copy.json`과 `index.html`을 main에 커밋합니다. 처음 한 번 아래 세 가지를 설정해야 저장이 됩니다. 설정 전에도 화면은 열리고 미리보기는 되지만 저장 버튼은 꺼져 있습니다.
 
 ### 6-1. GitHub 토큰 만들기 (저장소 쓰기 권한)
 
@@ -120,10 +120,10 @@ forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사�
 
 1. Cloudflare 대시보드 왼쪽 **Zero Trust**. 처음이면 팀 이름(예: `forrestlive`)을 정하고 **Free** 요금제를 고릅니다(50명까지 무료. 결제 수단 등록을 요구할 수 있지만 무료 요금제는 청구되지 않습니다). 팀 주소는 `forrestlive.cloudflareaccess.com` 같은 모양입니다.
 2. **Access → Applications → Add an application → Self-hosted**
-   - Application name: `숲세권 문구 관리`, Session duration: `24 hours`
-   - Domain: `forrestlive.pages.dev`, Path: `admin`
-   - **Add public hostname**으로 한 줄 더: `forrestlive.pages.dev`, Path: `api/copy`
-   - `concert.forrestlive.com`은 고를 수 없습니다. forrestlive.com의 DNS가 가비아에 있어 Cloudflare 영역이 아니기 때문입니다. 그래서 관리 화면은 `forrestlive.pages.dev/admin/`에서 쓰고, `concert.forrestlive.com/admin/`으로 들어오면 그리로 넘어갑니다.
+   - Application name: `Forrest Site Admin`, Session duration: `24 hours`
+   - Domain: `forrestlive-site.pages.dev`, Path: `admin`
+   - **Add public hostname**으로 한 줄 더: `forrestlive-site.pages.dev`, Path: `api/copy`
+   - 관리 화면은 `forrestlive-site.pages.dev/admin/`에서 쓰고, `concert.forrestlive.com/admin/`으로 들어오면 그리로 넘어갑니다.
 3. 로그인 방법은 기본값 **One-time PIN**(이메일로 받은 숫자 입력)이면 충분합니다.
 4. Policy: Action **Allow**, Include → **Emails** → 문구를 고칠 사람들의 이메일
 5. 저장 후 애플리케이션 목록에서 방금 만든 항목 → **Overview**의 **Application Audience (AUD) Tag** 값을 복사합니다.
@@ -141,25 +141,27 @@ forrestlive.com 랜딩페이지는 프레이머가 운영하므로, 공연 사�
 
 값은 다음 배포부터 적용됩니다. **Deployments** → 맨 위 배포 → **Retry deployment**로 다시 배포합니다.
 
-### 지금 설정된 값 (2026-10-21)
+### 지금 설정된 값 (2026-11-24, 회사 계정)
 
-- Zero Trust 팀: `forrestlive` (`forrestlive.cloudflareaccess.com`), Free 요금제
-- Access 애플리케이션: `숲세권 문구 관리` → `forrestlive.pages.dev/admin`, `forrestlive.pages.dev/api/copy`, 정책 `문구 관리 허용`(kimmhaa@gmail.com)
-- Pages 환경 변수: `ACCESS_TEAM_DOMAIN`, `ADMIN_EMAILS`, `ACCESS_AUD`, `GITHUB_TOKEN`(Secret)
+- Zero Trust 팀: `dry-heart-0ecc.cloudflareaccess.com`
+- Access 애플리케이션: `Forrest Site Admin` → `forrestlive-site.pages.dev`의 `admin`, `api/copy`, `api/home`, `api/seo`, 정책 `Forrest Site Admin Only`, 로그인 유지 24시간
+- Pages `forrestlive-site` 환경 변수: `ACCESS_TEAM_DOMAIN`, `ACCESS_AUD`, `ADMIN_EMAILS`, `GITHUB_TOKEN`(Secret)
+- 값을 바꾼 뒤에는 GitHub → Actions → **회사 Cloudflare 배포** → Run workflow로 다시 올려야 적용됩니다.
+- 옮기기 전(개인 계정): `숲세권 문구 관리` → `forrestlive.pages.dev`. 도메인 이전이 끝날 때까지 그대로 둡니다.
 
 ### 6-4. 확인
 
-1. `https://forrestlive.pages.dev/admin/` → 이메일 입력 → 받은 숫자 입력
+1. `https://forrestlive-site.pages.dev/admin/` → 이메일 입력 → 받은 숫자 입력
 2. 오른쪽 위에 로그인한 이메일이 보이고 경고 줄이 없으면 준비 완료
 3. 문구 하나를 고쳐 **저장하고 게시** → GitHub 커밋 목록에 `문구 수정: …`(작성자 forrestlive-admin)이 생기고 1~2분 뒤 사이트에 반영
 
 ### 6-5. SEO 설정 화면
 
-`https://forrestlive.pages.dev/admin/seo.html` (문구 관리 머리글의 **SEO 설정**). 같은 로그인, 같은 `GITHUB_TOKEN`을 씁니다.
+`https://forrestlive-site.pages.dev/admin/seo.html` (문구 관리 머리글의 **SEO 설정**). 같은 로그인, 같은 `GITHUB_TOKEN`을 씁니다.
 
 - 고치는 것: 검색 결과·링크 미리보기 문구(A-01~A-04, 문구 관리와 같은 값), 링크 미리보기 이미지(고르면 1200×630으로 잘라 `assets/seo/og-날짜.jpg`로 올림), 검색 노출(끄면 noindex), 검색엔진 소유 확인 코드(Google·네이버·Bing), 운영 정보 구조화 데이터(이름, 다른 이름, 공식 SNS)
 - 저장하면 서버(`functions/api/seo.js`)가 `data/seo.json`, (바뀌었으면) `data/copy.json`, `index.html`, 새 이미지를 커밋 하나로 main에 올립니다(작성자 forrestlive-admin, 메시지 `SEO 설정 수정: …`).
-- Access 애플리케이션 `숲세권 문구 관리`에 **Add public hostname**으로 `forrestlive.pages.dev`, Path `api/seo`를 한 줄 더 넣어 둡니다. 서버가 로그인 토큰을 직접 검증하므로 빠져 있어도 저장은 되지만, 문구 저장 서버와 같은 보호를 받게 합니다.
+- Access 애플리케이션 `Forrest Site Admin`에 **Add public hostname**으로 `forrestlive-site.pages.dev`, Path `api/seo`를 한 줄 더 넣어 둡니다. 서버가 로그인 토큰을 직접 검증하므로 빠져 있어도 저장은 되지만, 문구 저장 서버와 같은 보호를 받게 합니다.
 - 검색엔진 등록: Google Search Console, 네이버 서치어드바이저에 `https://concert.forrestlive.com`을 등록하고 "HTML 태그" 소유 확인 값을 SEO 설정에 넣어 저장 → 1~2분 뒤 확인. 그다음 사이트맵 `https://concert.forrestlive.com/sitemap.xml` 제출.
 
 ### 보안 메모
@@ -205,9 +207,9 @@ python3 tests/test_sync.py   # KOPIS 응답 예시로 해석·병합·15분 대�
 
 ## 소개 사이트 관리(/admin/home.html)
 
-`https://forrestlive.pages.dev/admin/home.html` 에서 세 언어 문구, 영상 카드의 썸네일과 유튜브 링크, 아티스트 포스터, 공유 이미지를 고칩니다. 설정은 공연 사이트 문구 관리와 같은 환경 변수를 씁니다.
+`https://forrestlive-site.pages.dev/admin/home.html` 에서 세 언어 문구, 영상 카드의 썸네일과 유튜브 링크, 아티스트 포스터, 공유 이미지를 고칩니다. 설정은 공연 사이트 문구 관리와 같은 환경 변수를 씁니다.
 
-- Access 애플리케이션 `숲세권 문구 관리`에 **Add public hostname**으로 `forrestlive.pages.dev`, Path `api/home`을 한 줄 더 넣어 둡니다. `api/seo`와 같은 이유입니다.
+- Access 애플리케이션 `Forrest Site Admin`에 **Add public hostname**으로 `forrestlive-site.pages.dev`, Path `api/home`을 한 줄 더 넣어 둡니다. `api/seo`와 같은 이유입니다.
 - `main`에 합쳐져야 저장할 수 있습니다. 브랜치 미리보기에서는 로그인이 없어 미리보기만 됩니다.
 - 바꾼 그림의 이전 파일은 저장소에 남습니다. 커밋 기록으로 되돌릴 수 있습니다.
 
