@@ -1,0 +1,65 @@
+# 회사(Pondmakers) Cloudflare Pages에 사이트를 올린다.
+# - 개인 계정 Pages가 이 저장소에 연결되어 있어 회사 계정에서는 Git 연결을 쓸 수 없다(같은 저장소를 두 계정에 연결 불가). 그래서 직접 올린다.
+# - main에 push되거나, KOPIS 동기화가 커밋을 올린 뒤(sync-kopis.yml이 부른다) 돈다.
+# - 저장소 Secret CLOUDFLARE_PAGES_TOKEN(회사 계정, Cloudflare Pages 편집 권한만)이 없으면 아무것도 하지 않는다.
+# - pull_request로는 돌지 않는다. 공개 저장소라 남의 PR이 토큰을 쓸 수 없어야 한다.
+name: 회사 Cloudflare 배포
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      home_preview:
+        description: "소개 사이트 미리보기(home 주소)에도 올리기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-company
+  cancel-in-progress: false
+
+env:
+  PROJECT: forrestlive-site
+  WRANGLER: wrangler@4.166.0
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_PAGES_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 4f377d87ce61de17cfc4e2f2f3b5060c
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - name: 토큰 확인
+        id: token
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then echo "ok=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::CLOUDFLARE_PAGES_TOKEN이 아직 없어 건너뜁니다."; fi
+      - if: steps.token.outputs.ok
+        uses: actions/checkout@v4
+        with:
+          ref: main   # 기다리는 동안 새 커밋이 생겼으면 가장 새것을 올린다
+          persist-credentials: false
+      - if: steps.token.outputs.ok
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 프로젝트가 없으면 만들기
+        if: steps.token.outputs.ok
+        run: |
+          npx --yes "$WRANGLER" pages project list --json > "$RUNNER_TEMP/projects.json"
+          if ! grep -q "\"$PROJECT\"" "$RUNNER_TEMP/projects.json"; then
+            npx --yes "$WRANGLER" pages project create "$PROJECT" --production-branch main --compatibility-date 2026-11-24
+          fi
+      - name: 올리기
+        if: steps.token.outputs.ok
+        run: npx --yes "$WRANGLER" pages deploy . --project-name "$PROJECT" --branch main --commit-hash "$(git rev-parse HEAD)" --commit-message "main 배포"
+      - name: 소개 사이트 미리보기 올리기
+        if: steps.token.outputs.ok && inputs.home_preview
+        run: npx --yes "$WRANGLER" pages deploy . --project-name "$PROJECT" --branch home --commit-hash "$(git rev-parse HEAD)" --commit-message "소개 사이트 미리보기"
