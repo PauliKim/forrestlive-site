@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 커밋한 뒤 회사 배포 워크플로를 부르기 위해
 
 concurrency:
   group: kopis-sync
@@ -45,6 +46,7 @@ jobs:
           if [ "${{ inputs.no_hold }}" = "true" ]; then ARGS="$ARGS --no-hold"; fi
           python scripts/sync_kopis.py $ARGS
       - name: 바뀐 내용 커밋
+        id: commit
         run: |
           if [ -n "$(git status --porcelain data assets/posters)" ]; then
             git config user.name "forrestlive-bot"
@@ -54,6 +56,14 @@ jobs:
             # 그사이 어드민이 문구를 저장했을 수 있으니 최신 main 위에 얹어 올린다
             git pull --rebase origin main
             git push
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
           else
             echo "변경 없음"
           fi
+      # 이 토큰으로 올린 커밋은 push 워크플로를 깨우지 않으므로 회사 배포를 직접 부른다
+      - name: 회사 Cloudflare 배포 부르기
+        if: steps.commit.outputs.pushed
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-company.yml --ref main
